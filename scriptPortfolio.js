@@ -101,10 +101,10 @@ var root = document.querySelector(':root');
 
 activateCoderModePortfolio.onclick = function cambiosCoderModePortfolio() {
     
-    if(activateCoderModePortfolio.textContent == "CODER MODE"){
+    if(activateCoderModePortfolio.textContent == "DARK THEME"){
         activateCoderModePortfolio.textContent = "LIGHT THEME";
         document.body.style.backgroundColor = "#212121";
-        console.log('Hola este es mi activate Coder Mode');
+        console.log('Hola este es mi activate DARK THEME');
 
         //variables css
         root.style.setProperty('--main-text-color', '#d2d2d2');

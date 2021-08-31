@@ -1,12 +1,15 @@
-<!--Porfolio diseño: https://css-tricks.com/adaptive-photo-layout-with-flexbox/-->
-
 <!DOCTYPE html>
 <html lang="es">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+
+        <meta name="keywords" content="portfolio, personal page, web developer, martina, fernandez, suarez, anzorena"/>
+        <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
+        <meta http-equiv="Content-Language" content="es"/>
+        <meta name="author" content="MartinaFSA/">
+
         <title>Portfolio - Martina Fernández Suárez Anzorena</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -15,8 +18,8 @@
 
         <link href="https://api.fontshare.com/css?f[]=general-sans@200,300,400,500&f[]=clash-display@500&f[]=bespoke-sans@300&f[]=rx-100@400&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="estilos.css">
-        <link rel="stylesheet" href="estilosPortfolio.css">
+        <link rel="stylesheet" href="estilos/sintaxis.css">
+        <link rel="stylesheet" href="estilos/estilosPortfolio.css">
     </head>
 
     <body>
@@ -28,23 +31,23 @@
             <!--INTRODUCCIÓN A LA PÁGINa-->
             <section id="introPage">
                 <!--FIGURAS-->
-                <div id="introPage__rectanguloLleno"></div>
+                <div class="formaLlena introPage__rectanguloLleno"></div>
 
-                <div id="introPage__rectanguloStroke"></div>
+                <div id="introPage__rectanguloStroke" class="formaStroke"></div>
                 
-                <div id="introPage__rectanguloVerticalLleno"></div>
+                <div id="introPage__rectanguloVerticalLleno" class="formaLlena"></div>
                 
-                <div id="introPage__rectanguloVerticalStroke"></div>
+                <div id="introPage__rectanguloVerticalStroke" class="formaStroke"></div>
 
-                <div id="introPage__cuadradoLleno"></div>
+                <div id="introPage__cuadradoLleno" class="formaLlena"></div>
 
-                <div id="introPage__cuadradoStroke"></div>
+                <div id="introPage__cuadradoStroke" class="formaStroke"></div>
                 
                 <div id="introPage__trianguloLleno"></div>
                 
-                <div id="introPage__trianguloStroke1"></div>
-                <div id="introPage__trianguloStroke2"></div>
-                <div id="introPage__trianguloStroke3"></div>
+                <div id="introPage__trianguloStroke1" class="trianguloStroke"></div>
+                <div id="introPage__trianguloStroke2" class="trianguloStroke"></div>
+                <div id="introPage__trianguloStroke3" class="trianguloStroke"></div>
 
                 <div id="pageIntro__flecha1">
                     <div id="pageIntro__flecha1--paloCentral"></div>
@@ -58,14 +61,14 @@
                 <!--TEXTo-->
                 <div id="introPage__titulosPortfolio">
                     <p id="introPage__titulosPortfolio--titulo">PORTFOLIO</p>
-                    <button class="navBar__linkPortfolio" id="introPage__titulosPortfolio--coderMode">CODER MODE</button>
+                    <button class="navBar__linkPortfolio" id="introPage__titulosPortfolio--coderMode">DARK THEME</button>
                 </div>
             </section>
             
             <!--NAVIGATION BAR-->
             <section id="ctn__navBarPortfolio">
                 <nav>
-                    <a href="index.html" target="_blank" id="navBar__mainPortfolio">MartinaFSA</a>
+                    <a href="index.php" target="_blank" id="navBar__mainPortfolio">MartinaFSA</a>
                     <a href="#webs" class="navBar__linkPortfolio" id="navBar__linkWebs">WEBS</a>
                     <!--<a href="#diseño" class="navBar__linkPortfolio" id="navBar__linkDiseño">DISEÑO</a>-->
                 </nav>
@@ -78,32 +81,8 @@
             <section id="webs">
 
                 <p class="sectionTitlePortfolio">Páginas Web</p>
-
-                <div class="filaFlex fade-in">
-                
-                    <div class="columnaFlex9 presentacionPagina">
-                        <div class="fondo__PresentacionPagina"></div>
-
-                        <div class="imagen__PresentacionPagina" >
-                            <img src="img/paginas/portfolio_page1_preview.JPG" alt="" class="previews">
-                        </div>
-
-                        <div class="clickMe4Modal">
-                            <div class="clickMe4Modal__content">
-                                <button class="clickMe4Modal__content--button" id="modalDePagina1--abrir">Ver más</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle">XXXXX XXXXXXX</p>
-                        <p class="descripcionProyecto">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
-                        <p><b>Tecnologías utilizadas: </b></p>
-                        <p>Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
-                    </div>
-                </div>
-
-                <div class="filaFlex fade-in">
+                <!--La página 2 es la primera en mostrarse-->
+                <article class="filaFlex fade-in">
                 
                     <div class="columnaFlex9 presentacionPagina">
                         <div class="fondo__PresentacionPagina"></div>
@@ -126,10 +105,34 @@
                             <p><b>Tecnologías utilizadas: </b>HTML, CSS, JS, SQL y PHP</p>
                         <p>Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">acá</a></p>
                     </div>
-                </div>
+                </article>
+
+                <article class="filaFlex fade-in">
+                
+                    <div class="columnaFlex9 presentacionPagina">
+                        <div class="fondo__PresentacionPagina"></div>
+
+                        <div class="imagen__PresentacionPagina" >
+                            <img src="img/paginas/portfolio_page1_preview.JPG" alt="" class="previews">
+                        </div>
+
+                        <div class="clickMe4Modal">
+                            <div class="clickMe4Modal__content">
+                                <button class="clickMe4Modal__content--button" id="modalDePagina1--abrir">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columnaFlex3 textoSobreLaPagina">
+                        <p class="sectionSubtitle">Página en proceso</p>
+                        <p class="descripcionProyecto">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
+                        <p><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
+                        <p>Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1" target="_blank">este link </a>de Figma.</p>
+                    </div>
+                </article>
 
             <!--
-                <div class="filaFlex fade-in">
+                <article class="filaFlex fade-in">
                 
                     <div class="columnaFlex9 presentacionPagina">
                         <div class="fondo__PresentacionPagina"></div>
@@ -151,9 +154,9 @@
                         <p><b>Tecnologías utilizadas: </b></p>
                         <p>Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
                     </div>
-                </div>
+                </article>
 
-                <div class="filaFlex fade-in">
+                <article class="filaFlex fade-in">
                 
                     <div class="columnaFlex9 presentacionPagina">
                         <div class="fondo__PresentacionPagina"></div>
@@ -175,12 +178,12 @@
                         <p><b>Tecnologías utilizadas: </b></p>
                         <p>Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
                     </div>
-                </div> 
+                </article> 
             -->
             </section>
 
             <!--MODALES-->
-            <div class="modal" id="modalDePagina1">
+            <article class="modal" id="modalDePagina1">
                 <div class="modal__content">
                     <header class="modal__header">
                         <p class="modalTitle">pag1</p>
@@ -190,7 +193,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" id="capturaPaginaEntera">
+                            <img src="" alt="" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -199,10 +202,10 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </article>
 
 
-            <div class="modal" id="modalDePagina2">
+            <article class="modal" id="modalDePagina2">
                 <div class="modal__content">
                     <header class="modal__header">
                         <p class="modalTitle">Recetario</p>
@@ -212,7 +215,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="img/paginas/segundaPagina__completa.png" alt="Captura completa de la página" id="capturaPaginaEntera">
+                            <img src="img/paginas/segundaPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -221,10 +224,10 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </article>
             
         <!--
-            <div class="modal" id="modalDePagina3">
+            <article class="modal" id="modalDePagina3">
                 <div class="modal__content">
                     <header class="modal__header">
                         <p class="modalTitle">pag3</p>
@@ -234,7 +237,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" id="capturaPaginaEntera">
+                            <img src="" alt="" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -243,9 +246,9 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </article>
                     
-            <div class="modal" id="modalDePagina4">
+            <article class="modal" id="modalDePagina4">
                 <div class="modal__content">
                     <header class="modal__header">
                         <p class="modalTitle">pag4</p>
@@ -255,7 +258,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" id="capturaPaginaEntera">
+                            <img src="" alt="" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -264,7 +267,7 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </article>
         -->
 
             <!--DISEÑOS-->

@@ -35,18 +35,22 @@ let activateCoderMode = document.getElementById("coderMode");
 var root = document.querySelector(':root');
 
 activateCoderMode.onclick = function cambiosCoderMode() {
-    if(document.getElementById("coderMode").textContent == "CODER MODE"){
+    if(document.getElementById("coderMode").textContent == "DARK THEME"){
         activateCoderMode.textContent = "LIGHT THEME";
         document.body.style.backgroundColor = "#212121";
-        console.log('Hola este es mi activate Coder Mode');
+        console.log('Hola este es mi activate DARK THEME');
 
-        //variables css
+        //Variables css
+        //Textos
         root.style.setProperty('--main-text-color', '#d2d2d2');
         root.style.setProperty('--small-text-color', '#282fb8');
         root.style.setProperty('--textos-parrafos', '#8c8c8c');
         root.style.setProperty('--color-link-hover', '#bfbfbf');
-        root.style.setProperty('--shadow-sombra-y-luz', '8px 8px 8px #07070769, -8px -8px 8px #4141414a');
         root.style.setProperty('--toques-amarillos', '#78c751');
+        root.style.setProperty('--grisVerde', '#78c751');
+        //Shadows
+        root.style.setProperty('--shadow-sombra-y-luz', '8px 8px 8px #07070769, -8px -8px 8px #4141414a');
+        //Backgrounds
         root.style.setProperty('--fondo-botones', '#323232');
         root.style.setProperty('--icon-color', '#78c751');
         root.style.setProperty('--fondito-flechaCaja', '#lalala');
@@ -58,30 +62,41 @@ activateCoderMode.onclick = function cambiosCoderMode() {
         root.style.setProperty('--form-bg', '#d2d2d2');
         root.style.setProperty('--inputPlaceholder', '#353535');
         root.style.setProperty('--sombra-presentacionPag-foto', '6px 6px 17px red, -6px -6px 17px blue;')
-        
-        document.querySelector('footer').style.backgroundColor = "#242424";
 
         //Index
-        document.getElementById("pageIntro__rectanguloStroke").style.border = "1px solid #f2d338";
-        document.getElementById("pageIntro__rectanguloVerticalStroke").style.border = "1px solid #d3d3d3";
-        document.getElementById("pageIntro__cuadradoStroke").style.border = "1px solid #12e9ed";
-        document.getElementById("pageIntro__trianguloStroke1").style.borderBottom = "1px solid #ed7112";
-        document.getElementById("pageIntro__trianguloStroke2").style.borderBottom = "1px solid #ed7112";
-        document.getElementById("pageIntro__trianguloStroke3").style.borderBottom = "1px solid #ed7112";
-        document.getElementById("pageIntro__cruz1").style.borderBottom = "1px solid #d3d3d3";
-        document.getElementById("pageIntro__cruz2").style.borderBottom = "1px solid #d3d3d3";
-        document.getElementById("pageIntro__flecha1--paloCentral").style.backgroundColor = "#d3d3d3";
-        document.getElementById("pageIntro__flecha1--palito").style.borderBottom = "4px solid #d3d3d3";
-        document.getElementById("pageIntro__flecha1--palito2").style.borderBottom = "4px solid #d3d3d3";
+        //Stroke Formas
+        document.getElementsByClassName("pageIntro__rectanguloVerticalStroke")[0].style.border = "1px solid #d3d3d3";
+        document.getElementsByClassName("pageIntro__rectanguloStroke")[0].style.border = "1px solid rgb(239, 195, 20)";
+        document.getElementsByClassName("pageIntro__cuadradoStroke")[0].style.border = "1px solid #12e9ed";
+        document.getElementsByClassName("pageIntro__trianguloStroke1")[0].style.borderBottom = "1px solid #ed7112";
+        document.getElementsByClassName("pageIntro__trianguloStroke2")[0].style.borderBottom = "1px solid #ed7112";
+        document.getElementsByClassName("pageIntro__trianguloStroke3")[0].style.borderBottom = "1px solid #ed7112";
+        document.getElementsByClassName("pageIntro__cruz1")[0].style.borderBottom = "1px solid #d3d3d3";
+        document.getElementsByClassName("pageIntro__cruz2")[0].style.borderBottom = "1px solid #d3d3d3";
+        /*document.getElementsByClassName("pageIntro__flecha1--paloCentral")[0].style.backgroundColor = "#d3d3d3";
+        document.getElementsByClassName("pageIntro__flecha1--palito")[0].style.borderBottom = "4px solid #d3d3d3";
+        document.getElementsByClassName("pageIntro__flecha1--palito2")[0].style.borderBottom = "4px solid #d3d3d3";
+        Le puse --toques-amarillos a la cruz así que esto no lo necesito pero campaz lo vuelva a poner en gris*/
+        //Fondo Formas
+        document.getElementsByClassName("formaLlena")[0].style.backgroundColor = "rgba(53, 53, 53, 0.5)";
+        document.getElementsByClassName("formaLlena")[1].style.backgroundColor = "rgba(53, 53, 53, 0.5)";
+        document.getElementsByClassName("formaLlena")[2].style.backgroundColor = "rgba(53, 53, 53, 0.5)";
+        document.getElementById("pageIntro__trianguloLleno").style.borderBottom = "15vw solid rgba(53, 53, 53, 0.5)";
+
+        //Barra de navegación flotante
         document.getElementsByClassName("barraFlotante__aLi")[0].style.color = "#78c751";
         document.getElementsByClassName("barraFlotante__aLi")[1].style.color = "#78c751";
         document.getElementsByClassName("barraFlotante__aLi")[2].style.color = "#78c751";
         document.getElementsByClassName("barraFlotante__aLi")[3].style.color = "#78c751";
         document.getElementsByClassName("barraFlotante__aLi")[4].style.color = "#78c751";
-        //document.getElementsByClassName("barraFlotante__aLi")[5].style.color = "#78c751";
+        //document.getElementsByClassName("barraFlotante__aLi")[5].style.color = "#78c751"; Este es exp laboral
+
         document.getElementsByClassName("sectionSubtitle")[0].style.color = "#919191";
         document.getElementsByClassName("sectionSubtitle")[1].style.color = "#919191";
-    }else {
+
+        //Fondo footer
+        document.querySelector('footer').style.backgroundColor = "#242424";
+        } else {
         location.reload();
     }
 };

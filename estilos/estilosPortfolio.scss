@@ -4,13 +4,13 @@
     padding: 0%;
 }
 
+body {
+    overflow-y: auto;
+}
+
 :root {
     --negro-a-verde: #353535;
     --sombra-presentacionPag-foto: 6px 6px 17px #979696cf, -6px -6px 17px #dcdcdcad;
-}
-
-body {
-    overflow-y: auto;
 }
 
 /*Navigation Bar*/
@@ -289,7 +289,7 @@ body {
     border: 1px solid var(--negro-a-verde);
 
     object-fit: cover;
-    object-position: center center;
+    object-position: top center;
     cursor: pointer;
 }
 
@@ -356,6 +356,26 @@ body {
   align-content: center;
 
   z-index: 100;
+  
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #fafafa;
+        border: 2px solid rgb(239, 195, 20);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #fafafa;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #fafafa;
+        border-radius: 5px;
+    }
 }
 
 .modal__content {
@@ -410,42 +430,24 @@ body {
 
 .modal__body {
   width: 100%;
-  height: 80%;
 
   padding: 3%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .modal__body-columna1 {
   padding: 0%;
   margin: 0%;
-
-  height: 190%;
-  width: 57%;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .modal__body-columna2 {
   padding: 0%;
   margin: 0%;
-
-  height: 91%;
-  width: 40%;
-
-  display: flex;
-  flex-direction: column;
 }
 
-#capturaPaginaEntera, .destacable1, .destacable2 {
+.capturaPaginaEntera, .destacable1, .destacable2 {
     border: 1px solid #495c4b;
     border-radius: 2px;
-
-    object-fit: contain;
+    width: 100%;
     object-position: top center;
 }
 
@@ -558,13 +560,12 @@ body {
 /*MEDIA SCREENS y breakpoints*/
 
 @media (max-width: 800px) {
-/*Sección páginas*/
+    /*Sección páginas*/
     .sectionTitlePortfolio {
         text-align: center;
 
         padding: 70px 0px 0px;
     }        
-    
 }
 
 @media (min-width: 800px) {
@@ -669,6 +670,23 @@ body {
     .imagen__PresentacionPagina, .fondo__PresentacionPagina {
         position: absolute;
     }
+
+    //Modal
+    .modal__body-columna1 {
+        width: 90%;
+    
+        display: block;
+    }
+
+    .capturaPaginaEntera, .destacable1, .destacable2 {
+        margin-bottom: 3%;
+    }
+  
+    .modal__body-columna2 {
+        width: 90%;
+    
+        display: block;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -755,23 +773,27 @@ body {
         left: 0%;
     }
 
-    /*Sección páginas
-        
-    .presentacionPagina {
-        padding: 50px 0%;
-        height: 100%;
-
-        /*position: relative;
+    //Modal
+    
+    .modal__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    .fondo__PresentacionPagina, .previews, .clickMe4Modal, .imagen__PresentacionPagina {
-        width: 100%;
-        height: 500px;
+    
+    .modal__body-columna1 {
+        height: 190%;
+        width: 57%;
+    
+        display: flex;
+        flex-direction: column;
     }
-
-    .imagen__PresentacionPagina, .fondo__PresentacionPagina {
-        position: absolute;
+  
+    .modal__body-columna2 {
+        height: 91%;
+        width: 40%;
+    
+        display: flex;
+        flex-direction: column;
     }
-
-*/
 }
