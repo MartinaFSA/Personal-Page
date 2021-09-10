@@ -35,7 +35,7 @@ let activateCoderMode = document.getElementById("coderMode");
 var root = document.querySelector(':root');
 
 activateCoderMode.onclick = function cambiosCoderMode() {
-    if(document.getElementById("coderMode").textContent == "DARK THEME"){
+    if(activateCoderMode.textContent == "DARK THEME"){
         activateCoderMode.textContent = "LIGHT THEME";
         document.body.style.backgroundColor = "#212121";
         console.log('Hola este es mi activate DARK THEME');
@@ -65,6 +65,8 @@ activateCoderMode.onclick = function cambiosCoderMode() {
 
         //Index
         //Stroke Formas
+        document.getElementById("landingDarkTheme").style.display = "block";
+        document.getElementById("pageIntro__text").style.backgroundColor = "transparent";
         document.getElementsByClassName("pageIntro__rectanguloVerticalStroke")[0].style.border = "1px solid #d3d3d3";
         document.getElementsByClassName("pageIntro__rectanguloStroke")[0].style.border = "1px solid rgb(239, 195, 20)";
         document.getElementsByClassName("pageIntro__cuadradoStroke")[0].style.border = "1px solid #12e9ed";

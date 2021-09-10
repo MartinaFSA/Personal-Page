@@ -29,48 +29,40 @@
         
         <header>
             <!--INTRODUCCIÓN A LA PÁGINa-->
-            <section id="introPage">
-                <!--FIGURAS-->
-                <div class="formaLlena introPage__rectanguloLleno"></div>
-
-                <div id="introPage__rectanguloStroke" class="formaStroke"></div>
-                
-                <div id="introPage__rectanguloVerticalLleno" class="formaLlena"></div>
-                
-                <div id="introPage__rectanguloVerticalStroke" class="formaStroke"></div>
-
-                <div id="introPage__cuadradoLleno" class="formaLlena"></div>
-
-                <div id="introPage__cuadradoStroke" class="formaStroke"></div>
-                
-                <div id="introPage__trianguloLleno"></div>
-                
-                <div id="introPage__trianguloStroke1" class="trianguloStroke"></div>
-                <div id="introPage__trianguloStroke2" class="trianguloStroke"></div>
-                <div id="introPage__trianguloStroke3" class="trianguloStroke"></div>
-
-                <div id="pageIntro__flecha1">
-                    <div id="pageIntro__flecha1--paloCentral"></div>
-                    <div id="pageIntro__flecha1--palito"></div>
-                    <div id="pageIntro__flecha1--palito2"></div>
+            <section id="pageIntro">
+                <!--TEXTO BIENVENIDA-->
+                <div id="pageIntro__ctn--text">
+                    <div id="pageIntro__text">
+                        <div class="textoTitulo textoMainColor">
+                            <p>PORTFOLIO</p>
+                        </div>
+                        
+                        <div class="textoTitulo textoGrisVerde">        
+                            <button class="navBar__linkPortfolio" id="introPage__titulosPortfolio--coderMode">DARK THEME</button>
+                        </div>
+                    </div>
                 </div>
+                            
+                <div id="landingDarkTheme">
+                    <!--FIGURAS-->
+                    <div id="introPage__rectanguloStroke" class="formaStroke"></div>
+                    
+                    <div id="introPage__rectanguloVerticalStroke" class="formaStroke"></div>
 
-                <div id="introPage__cruz1"></div>
-                <div id="introPage__cruz2"></div>
-
-                <!--TEXTo-->
-                <div id="introPage__titulosPortfolio">
-                    <p id="introPage__titulosPortfolio--titulo">PORTFOLIO</p>
-                    <button class="navBar__linkPortfolio" id="introPage__titulosPortfolio--coderMode">DARK THEME</button>
+                    <div id="introPage__cuadradoStroke" class="formaStroke"></div>
+                    
+                    <div id="introPage__trianguloStroke1" class="trianguloStroke"></div>
+                    <div id="introPage__trianguloStroke2" class="trianguloStroke"></div>
+                    <div id="introPage__trianguloStroke3" class="trianguloStroke"></div>
                 </div>
             </section>
             
             <!--NAVIGATION BAR-->
             <section id="ctn__navBarPortfolio">
                 <nav>
-                    <a href="index.php" target="_blank" id="navBar__mainPortfolio">MartinaFSA</a>
-                    <a href="#webs" class="navBar__linkPortfolio" id="navBar__linkWebs">WEBS</a>
-                    <!--<a href="#diseño" class="navBar__linkPortfolio" id="navBar__linkDiseño">DISEÑO</a>-->
+                    <a href="index.php" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem">MartinaFSA</a>
+                    <a href="#webs" id="navBar__linkWebs" class="navBar__linkPortfolio textoMediano">WEBS</a>
+                    <!--<a href="#diseño" class="navBar__linkPortfolio textoMediano" id="navBar__linkDiseño">DISEÑO</a>-->
                 </nav>
             </section>
         </header>
@@ -80,7 +72,7 @@
             <!--PÁGINAS-->
             <section id="webs">
 
-                <p class="sectionTitlePortfolio">Páginas Web</p>
+                <p class="sectionTitlePortfolio textoGrande">Páginas Web</p>
                 <!--La página 2 es la primera en mostrarse-->
                 <article class="filaFlex fade-in">
                 
@@ -93,17 +85,17 @@
                         
                         <div class="clickMe4Modal">
                             <div class="clickMe4Modal__content">
-                                <button class="clickMe4Modal__content--button" id="modalDePagina2--abrir">Ver más</button>
+                                <button class="clickMe4Modal__content--button textoMediano" id="modalDePagina2--abrir">Ver más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle">Recetario</p>
-                        <p class="descripcionProyecto">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página <!--tiene un filtro de ingredientes y varias categorías según mis criterios de orden propios, 
+                        <p class="sectionSubtitle textoMediano">Recetario</p>
+                        <p class="descripcionProyecto textoChico">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página <!--tiene un filtro de ingredientes y varias categorías según mis criterios de orden propios, 
                             además, incluye una sección de recetas guardadas para que el usuario acceda a sus recetas favoritas rápidamente.-->contiene una sección de recetas guardadas a la que se accede iniciando sesión.</p>
-                            <p><b>Tecnologías utilizadas: </b>HTML, CSS, JS, SQL y PHP</p>
-                        <p>Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">acá</a></p>
+                            <p class="textoChico"><b>Tecnologías utilizadas: </b>HTML, CSS, JS, SQL y PHP</p>
+                        <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">acá</a></p>
                     </div>
                 </article>
 
@@ -118,16 +110,16 @@
 
                         <div class="clickMe4Modal">
                             <div class="clickMe4Modal__content">
-                                <button class="clickMe4Modal__content--button" id="modalDePagina1--abrir">Ver más</button>
+                                <button class="clickMe4Modal__content--button textoMediano" id="modalDePagina1--abrir">Ver más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle">Página en proceso</p>
-                        <p class="descripcionProyecto">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
-                        <p><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
-                        <p>Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1" target="_blank">este link </a>de Figma.</p>
+                        <p class="sectionSubtitle textoMediano">Página en proceso</p>
+                        <p class="descripcionProyecto textoChico">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
+                        <p class="textoChico"><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
+                        <p class="textoChico">Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1" target="_blank">este link </a>de Figma.</p>
                     </div>
                 </article>
 
@@ -143,16 +135,16 @@
 
                         <div class="clickMe4Modal">
                             <div class="clickMe4Modal__content">
-                                <button class="clickMe4Modal__content--button" id="modalDePagina3--abrir">Ver más</button>
+                                <button class="clickMe4Modal__content--button textoMediano" id="modalDePagina3--abrir">Ver más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle">XXXXX XXXXXXX</p>
-                        <p class="descripcionProyecto">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
-                        <p><b>Tecnologías utilizadas: </b></p>
-                        <p>Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
+                        <p class="sectionSubtitle textoMediano">XXXXX XXXXXXX</p>
+                        <p class="descripcionProyecto textoChico">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
+                        <p class="textoChico"><b>Tecnologías utilizadas: </b></p>
+                        <p class="textoChico">Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
                     </div>
                 </article>
 
@@ -167,16 +159,16 @@
 
                         <div class="clickMe4Modal">
                             <div class="clickMe4Modal__content">
-                                <button class="clickMe4Modal__content--button" id="modalDePagina4--abrir">Ver más</button>
+                                <button class="clickMe4Modal__content--button textoMediano" id="modalDePagina4--abrir">Ver más</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle">XXXXX XXXXXXX</p>
-                        <p class="descripcionProyecto">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
-                        <p><b>Tecnologías utilizadas: </b></p>
-                        <p>Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
+                        <p class="sectionSubtitle textoMediano">XXXXX XXXXXXX</p>
+                        <p class="descripcionProyecto textoChico">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
+                        <p class="textoChico"><b>Tecnologías utilizadas: </b></p>
+                        <p class="textoChico">Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
                     </div>
                 </article> 
             -->
@@ -275,7 +267,7 @@
             <!--
             <section id="diseño">
 
-                <p class="sectionTitlePortfolio">Diseño</p>
+                <p class="sectionTitlePortfolio textoGrande">Diseño</p>
 
                 <div id="ctn__diseños" class="fade-in">
                     <div class="item1 diseño_item">
@@ -326,19 +318,18 @@
 
             </section>-->
         </main>
-
     
         <footer>
-            <!--Sólo funciona con PHP :// github no supportea php-->
+            <div id="footerSec"></div>
             <div id="footer__fila">
                 <div id="footer__contacto">
                     <form action="" method="POST">
-                        <p class="texto__footer">Mandame un mail</p>
+                        <p class="texto__footer textoMediano">Mandame un mail</p>
                         
-                        <label for="nombreAsunto">Nombre</label>
-                        <input type="text" name="nombreAsunto" placeholder="Ingresá tu nombre">
+                        <label for="nombreAsunto" class="textoChico">Nombre</label>
+                        <input type="text" name="nombreAsunto" placeholder="Ingresá tu nombre" autocomplete="name" required>
 
-                        <label for="emisor">Mail</label>
+                        <label for="emisor" class="textoChico">Mail</label>
                         <input type="email" name="emisor" autocomplete="email" placeholder="Ingresá tu mail" required>
 
                         <textarea name="mensaje" style="resize: none;" placeholder="Escribí tu mensaje acá" required></textarea>
@@ -368,8 +359,8 @@
                         if(isset($mensaje)) { //Si $mensaje existe...
                                 
                             echo "<section id='contenedorDeModal'>
-                                <div id='modalAviso' class='ctn__modalPHP'>
-                                    <div class='modalPHP'>
+                                <div id='modalAviso'>
+                                    <div class='modalPHP textoChico'>
                                         <p>" . $mensaje . "</p>
                                     </div>
                                 </div>
@@ -378,20 +369,18 @@
                         }
                     ?>
                 </div>
+
                 <div id="footer__redes"> 
-                    <div>
-                        <p id="sectionTitleFooter">Gracias por tu visita<!-- y armemos un proyecto!--></p>
-                    </div>
-                    <p class="texto__footer">Seguime en mis redes</p>
+                    <p class="texto__footer textoMediano">Seguime en mis redes</p>
                     <div class="social">
                         <a href="https://github.com/MartinaFSA" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
-                        <a href="https://www.linkedin.com/in/martina-fern%C3%A1ndez-su%C3%A1rez-anzorena-7ab978213/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                         <a href="#" target="_blank" class="footer__social--link"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                     </div>
                 </div>
             </div>
             <div id="backToTop">
-                <a href="#introPage" class="texto__footer">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
+                <a href="#pageIntro" class="texto__footer textoMediano">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
             </div>
         </footer>
 

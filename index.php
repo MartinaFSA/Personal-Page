@@ -35,42 +35,27 @@
                 <div id="pageIntro__ctn--text">
                     <div id="pageIntro__text">
                         <div class="textoTitulo textoMainColor">
-                            <p>soy Martina Fernández Suárez</p>
+                            <p>Martina Fernández Suárez</p>
                         </div>
                         
                         <div class="textoTitulo textoGrisVerde">
-                            <p>Bienvenido a mi página</p>
+                            <p>Desarrolladora Web Trainee</p>
                         </div>
                     </div>
                 </div>
                 
-                <!--FIGURAS-->
-                <div class="formaLlena pageIntro__rectanguloLleno"></div>
+                <div id="landingDarkTheme">
+                    <!--FIGURAS-->
+                    <div class="formaStroke pageIntro__rectanguloStroke"></div>
+                    
+                    <div class="formaStroke pageIntro__rectanguloVerticalStroke"></div>
 
-                <div class="formaStroke pageIntro__rectanguloStroke"></div>
-                
-                <div class="formaLlena pageIntro__rectanguloVerticalLleno"></div>
-                
-                <div class="formaStroke pageIntro__rectanguloVerticalStroke"></div>
-
-                <div class="formaLlena pageIntro__cuadradoLleno"></div>
-
-                <div class="formaStroke pageIntro__cuadradoStroke"></div>
-                
-                <div id="pageIntro__trianguloLleno"></div>
-                
-                <div class="trianguloStroke pageIntro__trianguloStroke1"></div>
-                <div class="trianguloStroke pageIntro__trianguloStroke2"></div>
-                <div class="trianguloStroke pageIntro__trianguloStroke3"></div>
-
-                <div class="pageIntro__flecha1">
-                    <div class="pageIntro__flecha1--paloCentral"></div>
-                    <div class="pageIntro__flecha1--palito"></div>
-                    <div class="pageIntro__flecha1--palito2"></div>
+                    <div class="formaStroke pageIntro__cuadradoStroke"></div>
+                    
+                    <div class="trianguloStroke pageIntro__trianguloStroke1"></div>
+                    <div class="trianguloStroke pageIntro__trianguloStroke2"></div>
+                    <div class="trianguloStroke pageIntro__trianguloStroke3"></div>
                 </div>
-
-                <div class="pageIntro__cruz1"></div>
-                <div class="pageIntro__cruz2"></div>
             </section>
         </header>
         
@@ -142,7 +127,7 @@
                     <ul>
                         <button> <li> <a href="https://github.com/MartinaFSA" target="_blank" class="perfil__misRedes--button textoChico">Github</a> </li> </button>
                         
-                        <button> <li> <a href="https://www.linkedin.com/in/martina-fern%C3%A1ndez-su%C3%A1rez-anzorena-7ab978213/" target="_blank" class="perfil__misRedes--button textoChico">LinkedIn</a> </li> </button>
+                        <button> <li> <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="perfil__misRedes--button textoChico">LinkedIn</a> </li> </button>
 
                         <button> <li><a href="https://www.instagram.com/martinafsa/?utm_medium=copy_link" target="_blank" class="perfil__misRedes--button textoChico">Instagram</a> </li> </button>
                                             
@@ -418,7 +403,7 @@
                     <p class="texto__footer textoMediano">Seguime en mis redes</p>
                     <div class="social">
                         <a href="https://github.com/MartinaFSA" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
-                        <a href="https://www.linkedin.com/in/martina-fern%C3%A1ndez-su%C3%A1rez-anzorena-7ab978213/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                         <a href="#" target="_blank" class="footer__social--link"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                     </div>
                 </div>
@@ -426,18 +411,6 @@
             <div id="backToTop">
                 <a href="#pageIntro" class="texto__footer textoMediano">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
             </div>
-            <!--
-            <div id="footer__randomImage">
-                <div id="footer__randomImage--ctnImg">
-                    <img src="img/randomImages/" id="randomImage" alt="Un dibujo o gif random hecho por Martina">
-                </div>
-    
-                
-                <div id="footer__randomImage--ctnText">
-                    <p id="footer__randomImage--text">Refrescá la página para ver otro dibujo</p>
-                </div>
-            </div>
-            -->
         </footer>
 
         <script src="scripts.js"></script>

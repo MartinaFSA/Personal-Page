@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 
 .textoTitulo {
   width: 100%;
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 .textoMainColor {
   color: var(--main-text-color); }
@@ -87,61 +87,37 @@ body::-webkit-scrollbar {
   position: relative;
   /*Formas*/
   /*Título*/ }
-  #pageIntro .formaLlena {
-    background-color: #858585;
-    opacity: 50%;
-    z-index: -3; }
+  #pageIntro::before {
+  content: "";
+  background: url("../img/background_lineas.png") repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.65; }
   #pageIntro .formaStroke {
     background-color: transparent;
     border: var(--formas-stroke-border);
     z-index: -2; }
-  #pageIntro .pageIntro__rectanguloLleno {
-    height: 12.5vh;
-    width: 50vw;
-    position: absolute;
-    top: calc(100vh - 65vh);
-    right: calc(100vw - 45vw); }
   #pageIntro .pageIntro__rectanguloStroke {
     height: 12.5vh;
     width: 60vw;
     position: absolute;
     top: calc(100vh - 75vh);
     right: calc(100vw - 50vw); }
-  #pageIntro .pageIntro__rectanguloVerticalLleno {
-    height: 60vh;
-    width: 15vh;
-    position: absolute;
-    top: calc(100vh - 60vh);
-    left: 20vh; }
   #pageIntro .pageIntro__rectanguloVerticalStroke {
     height: 60vh;
     width: 15vh;
     position: absolute;
     top: calc(100vh - 65vh);
     left: 15vh; }
-  #pageIntro .pageIntro__cuadradoLleno {
-    height: 18vh;
-    width: 18vh;
-    position: absolute;
-    top: -5vh;
-    right: 0; }
   #pageIntro .pageIntro__cuadradoStroke {
     height: 18vh;
     width: 18vh;
     position: absolute;
     top: calc(100vh - 90vh);
     right: calc(100vw - 95vw); }
-  #pageIntro #pageIntro__trianguloLleno {
-    border-bottom: 15vw solid rgba(123, 123, 123, 0.5);
-    border-right: 8.5vw solid transparent;
-    border-left: 8.5vw solid transparent;
-    transform: rotate(225deg);
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: calc(100vh - 20vw);
-    right: calc(100vw - 85vw);
-    z-index: -3; }
   #pageIntro .trianguloStroke {
     background-color: var(--tringulo-background-stroke);
     height: 1px;
@@ -162,48 +138,17 @@ body::-webkit-scrollbar {
     position: absolute;
     top: calc(100vh - 13vw + 1.9vw);
     right: calc(100vw - 82.8vw); }
-  #pageIntro .pageIntro__flecha1--paloCentral {
-    background-color: var(--toques-amarillos);
-    transform: rotate(90deg);
-    height: 3px;
-    width: 50vh;
-    position: absolute;
-    top: calc(100vh - 44vh);
-    right: calc(100vw - 30vh); }
-  #pageIntro .pageIntro__flecha1--palito {
-    border-bottom: 3px solid var(--toques-amarillos);
-    transform: rotate(65deg);
-    height: 0;
-    width: 5vh;
-    position: absolute;
-    top: calc(100vh - 44vh + 23vh);
-    right: calc(100vw - 6.5vh); }
-  #pageIntro .pageIntro__flecha1--palito2 {
-    border-bottom: 3px solid var(--toques-amarillos);
-    transform: rotate(115deg);
-    height: 0;
-    width: 5vh;
-    position: absolute;
-    top: calc(100vh - 44vh + 23vh);
-    right: calc(100vw - 8.4vh); }
-  #pageIntro .pageIntro__cruz1, #pageIntro .pageIntro__cruz2 {
-    background-color: #353535;
-    opacity: 70%;
-    transform: rotate(225deg);
-    height: 1px;
-    width: 7vh;
-    position: absolute;
-    top: calc(100vh - 90vh);
-    right: calc(100vw - 45vw); }
-  #pageIntro .pageIntro__cruz2 {
-    transform: rotate(135deg); }
   #pageIntro #pageIntro__ctn--text {
     height: 100%;
     width: 100%;
+    padding: 0%;
+    margin: 0%;
     display: flex;
     justify-content: center;
     align-items: center; }
   #pageIntro #pageIntro__text {
+    background-color: rgba(239, 195, 20, 0.8);
+    padding: 15px 50px;
     font-weight: bold;
     font-family: 'General Sans', sans-serif;
     text-align: center;
@@ -212,6 +157,10 @@ body::-webkit-scrollbar {
     display: block;
     position: absolute;
     z-index: 8; }
+
+#landingDarkTheme {
+  display: none;
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Barra de navegación por secciones*/
@@ -716,56 +665,7 @@ footer {
       color: #fafafa;
       text-align: center;
       font: 16px 'Karla', sans-serif; }
-
-/*
-#footer__randomImage {
-    width: 100%;
-    height: 100%;
-
-    padding: 0%;
-    margin: 0%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#footer__randomImage--ctnImg {
-    background-color: #595959;
-
-    margin: 0%;
-    padding: 0%;
-
-    width: 80%;
-}
-
-#randomImage {
-    box-shadow:  8px 8px 8px #9d9d9d,
-                 -8px -8px 8px #ededed;
-                 
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
-#footer__randomImage--ctnText {
-    word-wrap: break-word;
-    width: 30%;
-    height: 100%;
-}
-
-#footer__randomImage--text {
-    color: var(--small-text-color);
-    font-family: 'General Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    
-    margin-top: 24%;
-}*/
+      
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*MEDIA SCREENS y breakpoints*/
 @media screen and (max-width: 350px) {

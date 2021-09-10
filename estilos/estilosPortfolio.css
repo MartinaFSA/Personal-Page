@@ -20,7 +20,6 @@ body {
 
 #navBar__mainPortfolio {
   color: var(--negro-a-verde);
-  font-size: calc(1rem + 1.5vw);
   font-family: 'Clash Display', sans-serif;
   position: fixed;
   right: 3%;
@@ -29,8 +28,7 @@ body {
 .navBar__linkPortfolio {
   color: var(--negro-a-verde);
   font-family: 'General Sans', sans-serif;
-  font-weight: lighter;
-  font-size: calc(1rem + 0.5vw); }
+  font-weight: lighter; }
 
 .navBar__linkPortfolio:hover {
   text-decoration: line-through;
@@ -52,17 +50,6 @@ body {
   height: 100vh;
   width: 100%; }
 
-#introPage__rectanguloLleno {
-  background-color: #878787;
-  transform: rotate(93deg);
-  opacity: 50%;
-  height: 12.5vh;
-  width: 25vh;
-  position: absolute;
-  top: 38vh;
-  left: 3vw;
-  z-index: -3; }
-
 #introPage__rectanguloStroke {
   background-color: transparent;
   border: 1px solid #353535;
@@ -74,17 +61,6 @@ body {
   top: 36vh;
   left: 5vw;
   z-index: -2; }
-
-#introPage__rectanguloVerticalLleno {
-  background-color: #878787;
-  transform: rotate(160deg);
-  opacity: 50%;
-  height: 15vh;
-  width: 25vh;
-  position: absolute;
-  top: 63vh;
-  left: 20vw;
-  z-index: -3; }
 
 #introPage__rectanguloVerticalStroke {
   background-color: transparent;
@@ -98,15 +74,6 @@ body {
   left: 25vw;
   z-index: -2; }
 
-#introPage__cuadradoLleno {
-  background-color: #878787;
-  opacity: 50%;
-  height: 16vh;
-  width: 16vh;
-  position: absolute;
-  top: -5vh;
-  right: 2vw; }
-
 #introPage__cuadradoStroke {
   background-color: transparent;
   border: 1px solid #353535;
@@ -116,18 +83,6 @@ body {
   position: absolute;
   top: 1vh;
   right: 1vw; }
-
-#introPage__trianguloLleno {
-  border-bottom: 15vw solid #878787;
-  border-right: 8.5vw solid transparent;
-  border-left: 8.5vw solid transparent;
-  opacity: 50%;
-  transform: rotate(60deg);
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 0.5vh;
-  left: 4vw; }
 
 #introPage__trianguloStroke1 {
   border-bottom: 1px solid #353535;
@@ -159,24 +114,6 @@ body {
   top: 8vw;
   left: 9vw; }
 
-#introPage__cruz1, #introPage__cruz2 {
-  border-bottom: 1px solid #353535;
-  transform: rotate(225deg);
-  height: 0;
-  width: 7vh;
-  position: absolute;
-  top: calc(100vh - 90vh);
-  right: calc(100vw - 45vw); }
-
-#introPage__cruz2 {
-  border-bottom: 1px solid #353535;
-  transform: rotate(135deg);
-  height: 0;
-  width: 7vh;
-  position: absolute;
-  top: calc(100vh - 90vh);
-  right: calc(100vw - 45vw); }
-
 #introPage__titulosPortfolio {
   text-align: center !important;
   text-transform: uppercase;
@@ -188,7 +125,6 @@ body {
 
 #introPage__titulosPortfolio--titulo {
   color: var(--main-text-color);
-  font-size: calc(1rem + 1.5vw);
   font-weight: bold;
   letter-spacing: 3px; }
 
@@ -207,7 +143,8 @@ body {
 
 .sectionTitlePortfolio {
   color: var(--main-text-color);
-  font: bold calc(1rem + 1vw) "General Sans", sans-serif;
+  font-family: "General Sans", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px; }
 
@@ -352,7 +289,6 @@ body {
 .textoSobreLaPagina {
   color: var(--textos-parrafos);
   word-wrap: break-word;
-  height: 500px;
   display: flex;
   justify-content: center;
   align-content: center; }
@@ -439,7 +375,6 @@ body {
 
 /*FOOTER*/
 #sectionTitleFooter {
-  font-size: calc(1rem + 1vw);
   font-weight: bold;
   font-family: 'General Sans', sans-serif;
   text-align: center;
@@ -498,7 +433,7 @@ body {
   .columnaFlex3 {
     width: 100%;
     text-align: center;
-    padding: 0px 4%;
+    padding: 0px 4% 80px;
     display: block; }
 
   .presentacionPagina {
@@ -542,6 +477,7 @@ body {
     flex-direction: row;
     height: 100vh;
     width: 100%;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between; }
 
@@ -562,7 +498,7 @@ body {
     height: 100%;
     width: 30%;
     margin: 0%;
-    padding: 20% 0% 3%;
+    padding: 15% 0% 0%;
     display: inline-block; }
 
   .presentacionPagina {
@@ -613,5 +549,23 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column; } }
+
+@media screen and (min-width: 520px) and (max-width: 800px) {
+  :root {
+    font-size: 17px; } }
+@media screen and (max-width: 520px) {
+  :root {
+    font-size: 13px; } }
+@media screen and (min-width: 800px) and (max-width: 1500px) {
+  :root {
+    font-size: 18px; } }
+@media screen and (min-width: 1500px) {
+  .caja__title, .texto__footer {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    word-wrap: normal; }
+
+  :root {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=estilosPortfolio.css.map */
