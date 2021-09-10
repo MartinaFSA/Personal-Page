@@ -353,12 +353,12 @@
             <div id="footer__fila">
                 <div id="footer__contacto">
                     <form action="" method="POST">
-                        <p class="texto__footer textoMediano">Mandame un mail</p>
+                        <p class="texto__footer textoMediano textoFooter">Mandame un mail</p>
                         
-                        <label for="nombreAsunto" class="textoChico">Nombre</label>
+                        <label for="nombreAsunto" class="textoChico textoFooter">Nombre</label>
                         <input type="text" name="nombreAsunto" placeholder="Ingresá tu nombre" autocomplete="name" required>
 
-                        <label for="emisor" class="textoChico">Mail</label>
+                        <label for="emisor" class="textoChico textoFooter">Mail</label>
                         <input type="email" name="emisor" autocomplete="email" placeholder="Ingresá tu mail" required>
 
                         <textarea name="mensaje" style="resize: none;" placeholder="Escribí tu mensaje acá" required></textarea>
@@ -400,7 +400,7 @@
                 </div>
 
                 <div id="footer__redes"> 
-                    <p class="texto__footer textoMediano">Seguime en mis redes</p>
+                    <p class="texto__footer textoMediano textoFooter">Seguime en mis redes</p>
                     <div class="social">
                         <a href="https://github.com/MartinaFSA" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
                         <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
@@ -409,7 +409,7 @@
                 </div>
             </div>
             <div id="backToTop">
-                <a href="#pageIntro" class="texto__footer textoMediano">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
+                <a href="#pageIntro" class="texto__footer textoMediano textoFooter">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
             </div>
         </footer>
 

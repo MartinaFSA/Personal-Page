@@ -53,6 +53,8 @@ body::-webkit-scrollbar {
 .textoGrisVerde {
   color: var(--grisVerde); }
 
+.textoFooter {
+  color: #353535;}
 @keyframes teVeo {
   from {
     opacity: 0; }
@@ -76,7 +78,7 @@ body::-webkit-scrollbar {
   --fondito-flechaCaja: #b1b1b14e;
   --fondo-portadaHabilidades: linear-gradient(145deg, #ffffff, #d5d5d5);
   --toques-amarillos: rgb(239, 195, 20);
-  --borde-rotar: rgba(239, 195, 20, 0.521); }
+  --borde-rotar: rgba(239, 195, 20, 0.521);}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*INTRO A LA PÁGINA*/
@@ -558,8 +560,6 @@ footer {
     font-family: 'General Sans', sans-serif;
     font-weight: 500;
     padding: 2% 0% 0%; }
-  footer .texto__footer {
-    color: var(--main-text-color); }
   footer #footer__contacto label {
     font-family: 'General Sans', sans-serif;
     font-weight: 500;
@@ -631,10 +631,10 @@ footer {
   footer #backToTop {
     text-align: center;
     width: 100%;
-    border-top: 1px solid var(--main-text-color);
+    border-top: 1px solid #353535;
     padding: 20px 0px; }
     footer #backToTop a {
-      color: var(--main-text-color); }
+      color: #353535; }
 
 #contenedorDeModal {
   width: 100%;

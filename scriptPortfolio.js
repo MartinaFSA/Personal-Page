@@ -121,7 +121,7 @@ activateCoderModePortfolio.onclick = function cambiosCoderModePortfolio() {
         root.style.setProperty('--negro-a-verde', '#78c751');
         root.style.setProperty('--shadow-portada', '8px 8px 8px #07070769, -8px -8px 8px #4141414a');
         root.style.setProperty('--borde-rotar', '#78c7517e');
-        root.style.setProperty('--form-bg', '#d2d2d2');
+        root.style.setProperty('--form-bg', '#353535');
         root.style.setProperty('--inputPlaceholder', '#353535');
         root.style.setProperty('--sombra-presentacionPag-foto', '6px 6px 17px red, -6px -6px 17px blue;')
 
