@@ -1,0 +1,288 @@
+/*GENERALES*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+  
+body {
+    background-color: #ebebeb; 
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none; 
+}
+
+/*Textos*/
+.textoChico {
+    font-size: 1rem;
+}
+
+.textoMediano {
+    font-size: 1.4rem;
+}
+
+.textoMedianoEncabezado {
+    font-size: 1.2rem;
+}
+
+:root {
+    font-size: 14px;
+}
+
+/*Clases holísticas*/
+
+.opacidadReducida {
+    opacity: 50%;
+}
+
+.ctn_fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.ocupaTodoElWidth {
+    width: 100%;
+}
+
+.is_hidden {
+    display: none;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alineacionRight {
+    text-align: right;
+}
+
+.background_border_shadow {
+    border: 1px solid rgba(191, 191, 191, 0.2);
+    background-color: #ffffff;
+    box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
+    -webkit-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
+    -moz-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);;
+}
+
+/*ESPECÍFICOS*/
+/*Header*/
+header {
+    background-color: #fff159;
+    width: 100%;
+    padding: 9px 8%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav > ul {
+    width: 100%;
+}
+
+#primeraFila_navBar, #segundaFila_navBar {
+    text-align: left;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+#primeraFila_navBar li:last-of-type, #linksCuenta {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: right;
+}
+
+/*Primera fila del navigation bar*/
+    
+#primeraFila_navBar {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#input_search {
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#input_search::placeholder {
+    color: #cbcbcb;
+    font-size: 1.1rem;
+}
+
+/*Segunda fila del navigation bar*/
+#segundaFila_navBar {
+    margin-bottom: 2px;
+}
+#segundaFila_navBar ul li:hover {
+    opacity: 100%;
+}
+
+#segundaFila_navBar, #segundaFila_navBar a {
+    color: #574534;
+    height: 30px;
+}
+
+.linksNavBar_verticalAlign {
+    line-height: 3rem;
+}
+
+#linksCuenta {
+    opacity: 90%;
+}
+
+.espaciadoLinks {
+    padding-left: 20px;
+}
+
+/*Carrusel*/
+#carrusel {
+    height: 345px;
+}
+
+/*Payment Data*/
+#ctn_paymentData {
+    padding: 0% 9%;
+    margin: 45px 0px;
+
+    width: 100%;
+}
+
+#paymentData {
+    border-radius: 6px;
+    
+    padding-left: 20px;
+
+    height: 110px;
+    width: 100%;
+}
+
+#paymentData > div {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paymentData > div:not(:last-child) {
+    width: 20%;
+}
+
+#paymentData > div:last-of-type {
+    width: 10%;
+    border-left: 1px solid #f0f0f0;
+}
+
+.paymentData_img {
+    display: inline-block;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #f0f0f0;
+}
+
+.paymentData_texts {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.paymentData_metodoPago {
+    color: #141414;
+    margin: 0%;
+    padding: 0%;
+}
+
+.paymentData_metodoPago_linkInfo {
+    color: #4d8efa;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Secciones recomendadas en inicio*/
+.seccionProductos:not(:first-of-type) {
+    padding: 0% 9%;
+    margin: 50px 0px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.encabezado {
+    color: #777777;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0px 0px 25px;
+
+    padding: 0%;
+}
+
+.link_encabezado {
+    color: #4d8efa;
+
+    display: inline-block;
+
+    margin: 0%;
+    padding: 0px 20px;
+}
+
+/*cards*/
+.card {
+    border: 1px solid rgba(191, 191, 191, 0.2);
+    background-color: #ffffff;
+    box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
+    -webkit-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
+    -moz-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);;
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: auto;
+    
+    width: 300px;
+    height: 337px;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
+    -10px 0px 26px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
+    -10px 0px 26px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
+    -10px 0px 26px -8px rgba(0,0,0,0.75);
+}
+
+.card_imagen {
+    height: 250px;
+}
+
+.card-body {
+    border-top: 1px solid #77777733;
+
+    margin: 0%;
+    padding: 20px;
+}
+
+.card-title {
+    margin: 0%;
+    padding: 0px;
+}
+
+.card_envio {
+    color: green;
+    font-weight: 600;
+
+    margin: 0%;
+    padding: 0px;
+}
+
+.card_textoHidden {
+    display: none;
+}

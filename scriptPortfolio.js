@@ -32,7 +32,7 @@ function openModal2() {
 }
 
 modalClose2.addEventListener('click', closeModal); 
-/*
+
 //Página 3
 const modal3 = document.getElementById('modalDePagina3');
 const modalOpen3 = document.getElementById('modalDePagina3--abrir');
@@ -46,7 +46,7 @@ function openModal3() {
 }
 
 modalClose3.addEventListener('click', closeModal); 
-
+/*
 //Página 4
 const modal4 = document.getElementById('modalDePagina4');
 const modalOpen4 = document.getElementById('modalDePagina4--abrir');

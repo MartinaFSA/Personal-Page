@@ -123,7 +123,6 @@
                     </div>
                 </article>
 
-            <!--
                 <article class="filaFlex fade-in">
                 
                     <div class="columnaFlex9 presentacionPagina">
@@ -141,13 +140,14 @@
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle textoMediano">XXXXX XXXXXXX</p>
-                        <p class="descripcionProyecto textoChico">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
-                        <p class="textoChico"><b>Tecnologías utilizadas: </b></p>
-                        <p class="textoChico">Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
+                        <p class="sectionSubtitle textoMediano">Copia de Mercado Libre</p>
+                        <p class="descripcionProyecto textoChico">Maquetado del front-end de la página de Mercado Libre.</p>
+                        <p class="textoChico"><b>Tecnologías utilizadas: HTML, CSS, Bootstrap.</b></p>
+                        <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index.html" target="_blank">acá.</a></p>
                     </div>
                 </article>
 
+<!--
                 <article class="filaFlex fade-in">
                 
                     <div class="columnaFlex9 presentacionPagina">
@@ -218,7 +218,6 @@
                 </div>
             </article>
             
-        <!--
             <article class="modal" id="modalDePagina3">
                 <div class="modal__content">
                     <header class="modal__header">
@@ -239,7 +238,8 @@
                     </section>
                 </div>
             </article>
-                    
+
+        <!--
             <article class="modal" id="modalDePagina4">
                 <div class="modal__content">
                     <header class="modal__header">
