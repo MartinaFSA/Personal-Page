@@ -19,6 +19,14 @@ a, a:hover {
 }
 
 /*Textos*/
+.textoNormal {
+    font-family: 'Nunito', sans-serif;
+}
+
+.fontLato {
+    font-family: 'Lato', sans-serif;
+}
+
 .textoChico {
     font-size: 1rem;
 }
@@ -28,7 +36,7 @@ a, a:hover {
 }
 
 .textoMedianoEncabezado {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 :root {
@@ -66,9 +74,13 @@ a, a:hover {
 .background_border_shadow {
     border: 1px solid rgba(191, 191, 191, 0.2);
     background-color: #ffffff;
-    box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
-    -webkit-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
-    -moz-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);;
+    box-shadow: 0px 6px 2px -5px rgba(153,153,153,0.5);
+    -webkit-box-shadow: 0px 6px 2px -5px rgba(153,153,153,0.5);
+    -moz-box-shadow: 0px 6px 2px -5px rgba(153,153,153,0.5);;
+}
+
+.seems_clickeable {
+    cursor: pointer;
 }
 
 /*ESPECÍFICOS*/
@@ -145,6 +157,11 @@ nav > ul {
     padding-left: 20px;
 }
 
+#categorias_icon {
+    padding-left: 4px;
+    font-size: 0.7rem;
+}
+
 /*Carrusel*/
 #carrusel {
     height: 345px;
@@ -187,6 +204,7 @@ nav > ul {
     display: inline-block;
     height: 50px;
     border-radius: 100%;
+    cursor: pointer;
     border: 1px solid #f0f0f0;
 }
 
@@ -237,26 +255,24 @@ h2 {
 
 /*cards*/
 .card {
-    border: 1px solid rgba(191, 191, 191, 0.2);
     background-color: #ffffff;
-    box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
-    -webkit-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);
-    -moz-box-shadow: 4px 6px 4px -5px rgba(153,153,153,0.5);;
+    box-shadow: 4px 6px 2px -5px rgba(153,153,153,0.5);
+    -webkit-box-shadow: 4px 6px 2px -5px rgba(153,153,153,0.5);
+    -moz-box-shadow: 4px 6px 2px -5px rgba(153,153,153,0.5);
+    border: 1px solid rgba(191, 191, 191, 0.2);
     border-radius: 4px;
-    cursor: pointer;
-    pointer-events: auto;
     
     width: 300px;
     height: 337px;
 }
 
 .card:hover {
-    box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
-    -10px 0px 26px -8px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
-    -10px 0px 26px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 26px -8px rgba(0,0,0,0.75)
-    -10px 0px 26px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 15px -8px rgba(62, 62, 62, 0.35),
+        -10px 10px 15px -8px rgba(62, 62, 62, 0.35);
+    -webkit-box-shadow: 10px 10px 15px -8px rgba(62, 62, 62, 0.35),
+        -10px 10px 15px -8px rgba(62, 62, 62, 0.35);
+    -moz-box-shadow: 10px 10px 15px -8px rgba(62, 62, 62, 0.35),
+        -10px 10px 15px -8px rgba(62, 62, 62, 0.35);
 }
 
 .card_imagen {
@@ -271,12 +287,14 @@ h2 {
 }
 
 .card-title {
+    color: #141414;
+    font-weight: bold;
     margin: 0%;
     padding: 0px;
 }
 
 .card_envio {
-    color: green;
+    color: #0caa58;
     font-weight: 600;
 
     margin: 0%;
@@ -285,4 +303,29 @@ h2 {
 
 .card_textoHidden {
     display: none;
+}
+    
+/*Publicidades*/
+#espacioPublicitario {
+}
+
+#espacioPublicitario article{
+    background-color: #ffffff;
+    border-radius: 6px;
+
+    height: 250px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#espacioPublicitario_imagen > img{
+    border-radius: 6px 0px 0px 6px;
+}
+
+#espacioPublicitario_imagen {
+}
+
+#espacioPublicitario_textos {
+    height: 250px;
 }

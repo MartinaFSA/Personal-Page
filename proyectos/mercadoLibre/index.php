@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <html lang="es">
 	<head>
     	<meta charset="UTF-8"/>
@@ -14,15 +14,21 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     	<link rel="stylesheet" href="estilos.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
  
+        <script src="https://kit.fontawesome.com/9170870617.js" crossorigin="anonymous"></script>
+        
 	</head>
  
 	<body>
     	<header>
-            <nav>
+            <nav class="textoNormal">
                 <!--Primera fila del navigation bar-->
                 <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
-                    <li class="col-2"><a href="index.html"><img src="img/generales/logo_navBar.png" height="100%" alt="Logo de mercado libre"></a></li>
+                    <li class="col-2"><a href="index.php"><img src="img/generales/logo_navBar.png" height="100%" alt="Logo de mercado libre"></a></li>
                     <li id="ctn_input_search" class="col-6"><input id="input_search" class="background_border_shadow" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."></li>
                     <li class="col-4"><a href="sucripcionNivel6.html"><img src="img/generales/suscripcionAlNivel6.jpg" alt="Suscribite al nivel 6 para obtener beneficios exclusivos"></a></li>
                 </ul>
@@ -32,7 +38,7 @@
                     <li class="col-2"><a href=""> <img src="img/generales/enviarAcaba.jpg" height="100%"></a></li>
                     <li class="col-6" id="ctn_linksGenerales"> 
                         <ul class="ctn_fila linksNavBar_verticalAlign textoChico" id="linksGenerales">  <!--Links generales-->
-                            <li class="linksNavBar_verticalAlign opacidadReducida">Categorías
+                            <li class="linksNavBar_verticalAlign opacidadReducida seems_clickeable">Categorías<i class="fas fa-chevron-down" id="categorias_icon"></i>
                                 <ul class="is_hidden">  <!--Despliegue de categorías-->
                                     <li> <a href="">Vehículos</a> </li>
                                     <li> <a href="">Inmuebles</a> </li>
@@ -53,7 +59,8 @@
                             <li class="linksNavBar_verticalAlign alineacionRight"> <a href="">Creá tu cuenta</a> </li>
                             <li class="linksNavBar_verticalAlign alineacionRight espaciadoLinks"> <a href="">Ingresá</a> </li>
                             <li class="linksNavBar_verticalAlign alineacionRight espaciadoLinks"> <a href="">Mis compras</a> </li>
-                            <li class="linksNavBar_verticalAlign alineacionRight espaciadoLinks"> <a href=""><!--<i>icon carrito--></a> </li>
+                            <li class="linksNavBar_verticalAlign alineacionRight espaciadoLinks"> <a href=""><i class="fas fa-bell"></i></a> </li>
+                            <li class="linksNavBar_verticalAlign alineacionRight espaciadoLinks"> <a href=""><i class="fas fa-shopping-cart"></i></a> </li>
                         </ul>
                     </li>
                 </ul>
@@ -125,12 +132,12 @@
             
         	<!--PAYMENT DATA-->
         	<section id="ctn_paymentData">
-                <div id="paymentData" class="background_border_shadow flexBetween">
+                <div id="paymentData" class="background_border_shadow flexBetween textoNormal">
                     <div> 
                         <img src="img/index/tCredito_icon.JPG" alt="" class="paymentData_img">
                         <div class="paymentData_texts">
                             <p class="paymentData_metodoPago textoMediano">Tarjeta de crédito</p>
-                            <p class="paymentData_metodoPago_linkInfo textoChico">Ver promociones bancarias</p>
+                            <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver promociones bancarias</p></a>
                         </div>
                     </div>
                      
@@ -138,7 +145,7 @@
                         <img src="img/index/tDebito_icon.JPG" alt="" class="paymentData_img">
                         <div class="paymentData_texts">
                             <p class="paymentData_metodoPago textoMediano">Tarjeta de débito</p>
-                            <p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p>
+                            <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
                         </div>
                     </div>
 
@@ -146,7 +153,7 @@
                         <img src="img/index/cuotasSinTarjeta_icon.JPG" alt="" class="paymentData_img">
                         <div class="paymentData_texts">
                             <p class="paymentData_metodoPago textoMediano">Cuotas sin tarjeta</p>
-                            <p class="paymentData_metodoPago_linkInfo textoChico">Conocé Mercado Crédito</p>
+                            <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Conocé Mercado Crédito</p></a>
                         </div>
                     </div>
 
@@ -154,7 +161,7 @@
                         <img src="img/index/efectivo_icon.JPG" alt="" class="paymentData_img">
                         <div class="paymentData_texts">
                             <p class="paymentData_metodoPago textoMediano">Efectivo</p>
-                            <p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p>
+                            <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
                         </div>
                     </div>
 
@@ -166,88 +173,160 @@
 
         	<!--OFERTAS-->
             <section class="seccionProductos">
-                <h2 class="encabezado">Ofertas</h2> 
+                <h2 class="encabezado fontLato">Ofertas</h2> 
                 <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver todas</p></a>
 
                 <!--Cards-->
-                <div class="card-deck">
+                <div class="card-deck textoNormal">
                     <div class="card">
-                      <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+                        <a href="">
+                            <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
-                      <div class="card-body">
-                        <h5 class="card-title">$33.333</h5>
-                        <p class="card-text card_envio">Envío gratis</p>
-                        <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
-                      </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$ 33.333</h5>
+                                <p class="card-text card_envio">Envío gratis</p>
+                                <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                            </div>
+                        </a>
                     </div>
 
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
-
-
-
-
-
-
-
-
-                    <div class="card background_border_shadow">
-                        <img class="card-img-top" src="ofertas_segundoProducto.JPG" alt="Card image cap">
-  
-                        <div class="card-body">
-                          <h5 class="card-title">$33.333</h5>
-                          <p class="card-text">Envío gratis</p>
-                          <p class="card-text text-muted">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
-                        </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$ 33.333</h5>
+                                <p class="card-text card_envio">Envío gratis</p>
+                                <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="card background_border_shadow">
-                        <img class="card-img-top" src="ofertas_tercerProducto.JPG" alt="Card image cap">
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
-                        <div class="card-body">
-                            <h5 class="card-title">$33.333</h5>
-                            <p class="card-text">Envío gratis</p>
-                            <p class="card-text text-muted">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
-                        </div>
+                            <div class="card-body">
+                                <h5 class="card-title">$ 33.333</h5>
+                                <p class="card-text card_envio">Envío gratis</p>
+                                <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <div class="card background_border_shadow">
-                        <img class="card-img-top" src="ofertas_cuartoProducto.JPG" alt="Card image cap">
-  
-                        <div class="card-body">
-                          <h5 class="card-title">$33.333</h5>
-                          <p class="card-text">Envío gratis</p>
-                          <p class="card-text text-muted">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
-                        </div>
-                    </div>
-  
-                    <div class="card background_border_shadow">
-                        <img class="card-img-top" src="ofertas_quintoProducto.JPG" alt="Card image cap">
 
-                        <div class="card-body">
-                            <h5 class="card-title">$33.333</h5>
-                            <p class="card-text">Envío gratis</p>
-                            <p class="card-text text-muted">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
-                        </div>
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">$ 33.333</h5>
+                                <p class="card-text card_envio">Envío gratis</p>
+                                <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                            </div>
+                        </a>
                     </div>
-  
+
+                    <div class="card">
+                        <a href="">
+                            <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+
+                            <div class="card-body">
+                                <h5 class="card-title">$ 33.333</h5>
+                                <p class="card-text card_envio">Envío gratis</p>
+                                <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
 
         	<!--Beneficios de Mercado Puntos-->
-            <section></section>
+            <section class="seccionProductos">
+                <h2 class="encabezado fontLato">Beneficios de Mercado Puntos</h2> 
+                <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver todos los beneficios</p></a>
+
+                <div>
+                    <img src="" alt="">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <p>Hasta 30% OFF</p>
+                        <p>Disney+</p>
+                    </div>
+                </div>
+
+            </section>
+            
+        	<!--PUBLICIDAD-->
+            <section class="seccionProductos" id="espacioPublicitario">
+                
+                <?php 
+                /*Matriz de publicidades*/
+                    $publicidades = [
+                        ["nombre" => "seagate",
+                        "imagen" => "seagate.jpg",
+                        "logo" => "seagate-logo.svg",
+                        "link" => "ola",
+                        "color" => "#998678",
+                        "primerParrafo" => "Espacio para todo",
+                        "segundoParrafo" => "La biblioteca de su vida"
+                        ],
+
+                        ["nombre" => "legion by lenovo",
+                        "imagen" => "legion.jpg",
+                        "logo" => "legionByLenovo.svg",
+                        "link" => "ola",
+                        "color" => "#020002",
+                        "primerParrafo" => "Hasta 6 cuotas sin interés",
+                        "segundoParrafo" => "Elegante por fuera, salvaje por dentro"
+                        ]
+                    ];
+
+                    $lengthPublidades = count($publicidades); //largo de la matriz
+                    $numeroRandom = rand(1, $lengthPublidades); //random position de la matriz
+                    $numeroRandom = $numeroRandom - 1; //Le resto un número porque los arrays empiezan en 0
+                    echo $numeroRandom;
+                    echo '<article>
+                        <a href="' . $publicidades[$numeroRandom]["link"] . '">
+                            <div id="espacioPublicitario_imagen">
+                                <img src="img/index/publicidades/' . $publicidades[$numeroRandom]["imagen"] . '" alt="">
+                                <div>
+                                    <img src="img/index/publicidades/logos/' . $publicidades[$numeroRandom]["logo"] . '" alt="">
+                                </div>
+                            </div>
+                            <div id="espacioPublicitario_textos" style="background-color:' . $publicidades[$numeroRandom]["color"] . '">
+                                <p>' . $publicidades[$numeroRandom]["primerParrafo"] . '</p>
+                                <p>' . $publicidades[$numeroRandom]["segundoParrafo"] . '</p>
+                                <a hrf=""> <p>Ver más</p> </a>
+                            </div>
+                        </a>
+                    </article>';
+                ?> 
+            </section>
 
         	<!--Descubrí-->
-            <section></section>
+            <section class="seccionProductos">
+                <h2 class="encabezado fontLato">Descubrí</h2> 
+            </section>
 
         	<!--Las mejores tiendas te esperan-->
-            <section></section>
+            <section class="seccionProductos">
+                <h2 class="encabezado fontLato">Las mejores tiendas te esperan</h2> 
+                <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver tiendas</p></a>
+
+            </section>
 
         	<!--Te puede interesar-->
-            <section></section>
+            <section class="seccionProductos">
+                <h2 class="encabezado fontLato">Te puede interesar</h2> 
+
+            </section>
 
         	<!--Categorías populares-->
-            <section></section>
-        	
+            <section class="seccionProductos">
+                <h2 class="encabezado fontLato">Categorías populares</h2>
+            </section>
     	</main>
  
     	<footer>
@@ -268,6 +347,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
+        <script src="script.js"></script>
+    </body>
 </html>
 
