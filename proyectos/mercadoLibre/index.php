@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
     	<meta charset="UTF-8"/>
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     	<meta name="keywords" content="mercado libre, compra, venta, productos"/>
     	<meta name="description" content="La comunidad de compra y venta online más grande de América Latina."/>
     	<meta http-equiv="Content-Language" content="es"/>
@@ -17,8 +17,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&display=swap" rel="stylesheet">
- 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+   
         <script src="https://kit.fontawesome.com/9170870617.js" crossorigin="anonymous"></script>
         
 	</head>
@@ -28,7 +28,7 @@
             <nav class="textoNormal">
                 <!--Primera fila del navigation bar-->
                 <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
-                    <li class="col-2"><a href="index.php"><img src="img/generales/logo_navBar.png" height="100%" alt="Logo de mercado libre"></a></li>
+                    <li class="col-2"><a href="index.php"><img src="img/generales/logo_navBar.png" height="95%" alt="Logo de mercado libre"></a></li>
                     <li id="ctn_input_search" class="col-6"><input id="input_search" class="background_border_shadow" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."></li>
                     <li class="col-4"><a href="sucripcionNivel6.html"><img src="img/generales/suscripcionAlNivel6.jpg" alt="Suscribite al nivel 6 para obtener beneficios exclusivos"></a></li>
                 </ul>
@@ -83,37 +83,37 @@
                     <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/firstSlide.JPG" alt="Suscribite al nivel 6, desde $599 por mes.">
+                                    <img class="d-block" src="img/index/carrusel/firstSlide.JPG" alt="Suscribite al nivel 6, desde $599 por mes.">
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/secondSlide.JPG" alt="Mega ofertas de fin de semana. Hasta 12 cuotas sin interés.">
+                                    <img class="d-block" src="img/index/carrusel/secondSlide.JPG" alt="Mega ofertas de fin de semana. Hasta 12 cuotas sin interés.">
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/thirdSlide.JPG" alt="Comprá los esenciales para cuidarte con hasta 30% off. Envío gratis a partir de los $3500.">
+                                    <img class="d-block" src="img/index/carrusel/thirdSlide.JPG" alt="Comprá los esenciales para cuidarte con hasta 30% off. Envío gratis a partir de los $3500.">
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/fourthSlide.JPG" alt="EcoFriday, hasta 40% off en productos sustentables.">
+                                    <img class="d-block" src="img/index/carrusel/fourthSlide.JPG" alt="EcoFriday, hasta 40% off en productos sustentables.">
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/fifthSlide.JPG" alt="Hasta 12 cuotas sin interés en Mundo Gamer.">
+                                    <img class="d-block" src="img/index/carrusel/fifthSlide.JPG" alt="Hasta 12 cuotas sin interés en Mundo Gamer.">
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <a href="">
-                                    <img class="d-block w-100" src="img/index/carrusel/sixthSlide.JPG" alt="Especial motopartes, hasta 25% off y 12 cuotas sin interés.">
+                                    <img class="d-block" src="img/index/carrusel/sixthSlide.JPG" alt="Especial motopartes, hasta 25% off y 12 cuotas sin interés.">
                                 </a>
                             </div>
                     </div>
@@ -174,7 +174,7 @@
         	<!--OFERTAS-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Ofertas</h2> 
-                <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver todas</p></a>
+                <a href=""><p class="link_encabezado textoMediano">Ver todas</p></a>
 
                 <!--Cards-->
                 <div class="card-deck textoNormal">
@@ -243,8 +243,27 @@
         	<!--Beneficios de Mercado Puntos-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Beneficios de Mercado Puntos</h2> 
-                <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver todos los beneficios</p></a>
+                <a href=""><p class="link_encabezado textoMediano">Ver todos los beneficios</p></a>
 
+                <div id="cardSlider">
+                    <div id="beneficios_card-1" class="beneficios_card">
+                        <img src="img/index/beneficios/beneficio_disney+.jpg" alt="">
+                    </div>
+
+                    <div id="beneficios_card-1" class="beneficios_card">
+                        <img src="img/index/beneficios/beneficio_star+.jpg" alt="">
+                    </div>
+
+                    <div id="beneficios_card-1" class="beneficios_card">
+                        <img src="img/index/beneficios/beneficio_HBOMax.jpg" alt="">
+                    </div>
+
+                    <div id="beneficios_card-1" class="beneficios_card">
+                        <img src="img/index/beneficios/beneficio_paramount.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- Si tuviera los recursos gráficos lo haría con esto
                 <div>
                     <img src="" alt="">
                     <div>
@@ -254,8 +273,7 @@
                         <p>Hasta 30% OFF</p>
                         <p>Disney+</p>
                     </div>
-                </div>
-
+                </div> -->
             </section>
             
         	<!--PUBLICIDAD-->
@@ -282,57 +300,303 @@
                         "segundoParrafo" => "Elegante por fuera, salvaje por dentro"
                         ]
                     ];
+                    /*["nombre" => "HP",
+                        "imagen" => "HP.jpg",
+                        "logo" => ".svg",
+                        "link" => "ola",
+                        "color" => "#020002",
+                        "primerParrafo" => "Hasta 9 cuotas sin interés",
+                        "segundoParrafo" => "Descuentos increíbles + envíos gratis*"
+                        ]*/
 
                     $lengthPublidades = count($publicidades); //largo de la matriz
                     $numeroRandom = rand(1, $lengthPublidades); //random position de la matriz
                     $numeroRandom = $numeroRandom - 1; //Le resto un número porque los arrays empiezan en 0
-                    echo $numeroRandom;
-                    echo '<article>
+                    echo '<article  style="background-color:' . $publicidades[$numeroRandom]["color"] . '">
                         <a href="' . $publicidades[$numeroRandom]["link"] . '">
                             <div id="espacioPublicitario_imagen">
-                                <img src="img/index/publicidades/' . $publicidades[$numeroRandom]["imagen"] . '" alt="">
-                                <div>
+                                <div id="imagenPublicitaria"></div>
+                                <div id="espacioPublicitario_imagen_logo">
                                     <img src="img/index/publicidades/logos/' . $publicidades[$numeroRandom]["logo"] . '" alt="">
                                 </div>
                             </div>
-                            <div id="espacioPublicitario_textos" style="background-color:' . $publicidades[$numeroRandom]["color"] . '">
-                                <p>' . $publicidades[$numeroRandom]["primerParrafo"] . '</p>
-                                <p>' . $publicidades[$numeroRandom]["segundoParrafo"] . '</p>
-                                <a hrf=""> <p>Ver más</p> </a>
+                            <div id="espacioPublicitario_textos">
+                                <p class="textoBlanco textoChicoGrande textoMayusculaEspaciado cards_textoLight fontPoppins">' . $publicidades[$numeroRandom]["primerParrafo"] . '</p>
+                                <p class="textoBlanco textoGrandeCardMayuscula fontPoppins">' . $publicidades[$numeroRandom]["segundoParrafo"] . '</p>
+                                <p class="fontLato textoBlanco texto textoChicoGrande">Ver más <i class="fas fa-chevron-right"></i></p>
                             </div>
                         </a>
-                    </article>';
+                    </article>
+                    
+                    <style>
+                        #imagenPublicitaria {
+                            background-image: url("img/index/publicidades/'.$publicidades[$numeroRandom]["imagen"].'")
+                        }
+                    </style>';
                 ?> 
             </section>
 
         	<!--Descubrí-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Descubrí</h2> 
+                <div class="flexBetween">
+                    <div class="card_descubri background_border_shadow">
+                        <div>
+                            <p class="textoChicoGrande textoMayusculaEspaciado cards_textoLight fontPoppins textoGris">Equipá tu hogar</p>
+                            <p class="textoGrandeCardMayuscula cards_textosBold fontPoppins textoGris">Hasta 18 cuotas sin interés</p>
+                            <button class="boton_azul">Ver más</button>
+                        </div>
+                        <img src="img/index/descubri/descubri_equipaTuHogar.png" alt="" class="img_descubri">
+                    </div>
+                    
+                    <div class="card_descubri background_border_shadow">
+                        <div>
+                            <p class="textoChicoGrande textoMayusculaEspaciado cards_textoLight fontPoppins textoGris">Celulares</p>
+                            <p class="textoGrandeCardMayuscula cards_textosBold fontPoppins textoGris">Hasta 9 cuotas sin interés</p>
+                            <button class="boton_azul">Ver más</button>
+                        </div>
+                        <img src="img/index/descubri/descubri_celulares.png" alt="" class="img_descubri">
+                    </div>
+                </div>
             </section>
 
         	<!--Las mejores tiendas te esperan-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Las mejores tiendas te esperan</h2> 
-                <a href=""><p class="link_encabezado textoMedianoEncabezado">Ver tiendas</p></a>
+                <a href=""><p class="link_encabezado textoMediano">Ver tiendas</p></a>
+                        
+                <div id="ctn_card_mejoresTiendas" class="flexBetween">
+                    <?php 
+                    /*Matriz de mejores tiendas
+                        $mejoresTiendas = [
+                            ["nombre" => "LG",
+                            "link" => ""
+                            ],
 
+                            ["nombre" => "Samsung",
+                            "link" => ""
+                            ]
+                        ];
+
+                        $lengthMejoresTiendas = count($mejoresTiendas); //largo de la matriz
+                        $numeroRandom = rand(1, $lengthMejoresTiendas); //random position de la matriz
+                        $numeroRandom = $numeroRandom - 1; //Le resto un número porque los arrays empiezan en 0
+                        echo '<a href="' . $mejoresTiendas[$numeroRandom]["link"] . '">
+                            <div class="card_mejoresTiendas background_border_shadow">
+                                <div class="card_mejoresTiendas_portada">
+                                    <img src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/portada_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
+                                </div>
+
+                                <div class="card_mejoresTiendas_bajoPortada">
+                                    <p class="fontPoppins textoGris textoMedianoGrande">LG</p>
+                                    <div class="card_mejoresTiendas_ctn_productos flexBetween">
+                                        <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/primerProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
+                                        <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/segundoProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
+                                        <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/tercerProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
+                                    </div>
+                                    <div class="card_mejoresTiendas_logoFlotante">
+                                        <img src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/logo-' . $mejoresTiendas[$numeroRandom]["nombre"] . '.svg" alt="">
+                                    </div>
+                                    <p class="textoGris textoNormal textoChico">Ver tienda</p>
+                                </div>
+                            </div>
+                        </a>';*/
+                    ?> 
+
+                    <a href="">
+                        <div class="card_mejoresTiendas background_border_shadow">
+                            <div class="card_mejoresTiendas_portada">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="card_mejoresTiendas_bajoPortada">
+                                <p class="fontPoppins textoGris textoMedianoGrande">LG</p>
+                                <div class="card_mejoresTiendas_ctn_productos flexBetween">
+                                    <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/LG/primerProducto_LG.jpg" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                </div>
+                                <div class="card_mejoresTiendas_logoFlotante">
+                                    <img src="img/index/mejores_tiendas/LG/logo-lg.svg" alt="">
+                                </div>
+                                <p class="textoGris textoNormal textoChico">Ver tienda</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="">
+                        <div class="card_mejoresTiendas background_border_shadow">
+                            <div class="card_mejoresTiendas_portada">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="card_mejoresTiendas_bajoPortada">
+                                <p class="fontPoppins textoGris textoMedianoGrande">Samsung</p>
+                                <div class="card_mejoresTiendas_ctn_productos flexBetween">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                </div>
+                                <div class="card_mejoresTiendas_logoFlotante">
+                                    <img src="img/index/mejores_tiendas/Samsung/logo-samsung.svg" alt="">
+                                </div>
+                                <p class="textoGris textoNormal textoChico">Ver tienda</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="card_mejoresTiendas background_border_shadow">
+                            <div class="card_mejoresTiendas_portada">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="card_mejoresTiendas_bajoPortada">
+                                <p class="fontPoppins textoGris textoMedianoGrande">Creciendo</p>
+                                <div class="card_mejoresTiendas_ctn_productos flexBetween">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                </div>
+                                <div class="card_mejoresTiendas_logoFlotante">
+                                    <img src="" alt="">
+                                </div>
+                                <p class="textoGris textoNormal textoChico">Ver tienda</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="card_mejoresTiendas background_border_shadow">
+                            <div class="card_mejoresTiendas_portada">
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="card_mejoresTiendas_bajoPortada">
+                                <p class="fontPoppins textoGris textoMedianoGrande">Frávega</p>
+                                <div class="card_mejoresTiendas_ctn_productos flexBetween">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                    <img class="card_mejoresTiendas_productos" src="" alt="">
+                                </div>
+                                <div class="card_mejoresTiendas_logoFlotante">
+                                    <img src="" alt="">
+                                </div>
+                                <p class="textoGris textoNormal textoChico">Ver tienda</p>
+                            </div>
+                        </div>
+                        
+                        <div id="flecha_mejoresTiendas">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </a>
+
+                    <!--PASAR ESTA INFORMACIÓN A MATRIZ PORQUE SON RANDOM, VAN CAMBIANDO: Citroen, rex, lego, -->
+                </div>
             </section>
 
         	<!--Te puede interesar-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Te puede interesar</h2> 
-
+                <div class="flexBetween">
+                    <div class="card_descubri background_border_shadow">
+                        <div>
+                            <p class="textoChicoGrande textoMayusculaEspaciado cards_textoLight fontPoppins textoGris">zapatillas deportivas</p>
+                            <p class="textoGrandeCardMayuscula cards_textosBold fontPoppins textoGris">Hasta 30% OFF y 6x sin interés</p>
+                            <button class="boton_azul">Ver más</button>
+                        </div>
+                        <img src="img/index/tePuedeInteresar/tePuedeInteresar_primerImagen.jpg" alt="" class="img_descubri">
+                    </div>
+                    
+                    <div class="card_descubri background_border_shadow">
+                        <div>
+                            <p class="textoChicoGrande textoMayusculaEspaciado cards_textoLight fontPoppins textoGris">Especial primavera</p>
+                            <p class="textoGrandeCardMayuscula cards_textosBold fontPoppins textoGris">Hasta 40% OFF</p>
+                            <button class="boton_azul">Ver más</button>
+                        </div>
+                        <img src="img/index/tePuedeInteresar/tePuedeInteresar_segundaImagen.jpg" alt="" class="img_descubri">
+                    </div>
+                </div>
             </section>
 
         	<!--Categorías populares-->
             <section class="seccionProductos">
                 <h2 class="encabezado fontLato">Categorías populares</h2>
+                <div id="ctn_categorias" class="background_border_shadow">
+                    <div class="flexRow">
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p class="textoChico">Computación</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-desktop"></i>
+                            <p>Electrodomésticos y Aires Ac.</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-futbol"></i>
+                            <p>Deportes y Fitness</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-building"></i>
+                            <p>Inmuebles</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Belleza y Cuidado Personal</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Juegos y Juguetes</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Entradas para Eventos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flexRow">
+                        <div class="categoria">
+                            <i class="fas fa-tablet-alt"></i>
+                            <p>Celulares y teléfonos</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-microphone-alt"></i>
+                            <p>Electrónica, Audio y Video</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-tshirt"></i>
+                            <p>Ropa y Accesorios</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-couch"></i>
+                            <p>Hogar, Muebles y Jardín</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Accesorios para Vehículos</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Consolas y Videojuegos</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Alimentos y Bebidas</p>
+                        </div>
+                        <div class="categoria">
+                            <i class="fas fa-car"></i>
+                            <p>Herramientas</p>
+                        </div>
+                    </div>
+                </div>
             </section>
     	</main>
  
     	<footer>
-            
         	<!--BENEFICION MERCADO LIBRE-->
-            <section></section>
+            <section >
+
+            </section>
             
         	<!--COLUMNAS-->
             <section></section>
