@@ -142,8 +142,8 @@
                     <div class="columnaFlex3 textoSobreLaPagina">
                         <p class="sectionSubtitle textoMediano">Copia de Mercado Libre</p>
                         <p class="descripcionProyecto textoChico">Maquetado del front-end de la página de Mercado Libre.</p>
-                        <p class="textoChico"><b>Tecnologías utilizadas: HTML, CSS, Bootstrap.</b></p>
-                        <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index.html" target="_blank">acá.</a></p>
+                        <p class="textoChico"><b>Tecnologías utilizadas: HTML, CSS, Bootstrap, JS y PHP.</b></p>
+                        <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index.php" target="_blank">acá.</a></p>
                     </div>
                 </article>
 

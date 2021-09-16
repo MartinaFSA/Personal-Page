@@ -7,7 +7,8 @@
 }
   
 body {
-    background-color: #ebebeb; 
+    background-color: #ebebeb;
+    position: relative; 
 }
 
 ul, ol, li {
@@ -18,6 +19,7 @@ a, a:hover {
     text-decoration: none; 
 }
 
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*Textos*/
 .textoNormal {
     font-family: 'Nunito', sans-serif;
@@ -35,16 +37,16 @@ a, a:hover {
     font-size: 1rem;
 }
 
+.textoMasChico {
+    font-size: 0.85rem;
+}
+
 .textoMediano {
     font-size: 1.3rem;
 }
 
 .textoMedianoGrande {
     font-size: 1.6rem;
-}
-
-.textoChicoGrande {
-    font-size: 0.85rem;
 }
 
 .textoMayusculaEspaciado {
@@ -69,8 +71,8 @@ a, a:hover {
     font-size: 14px;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*Clases holísticas*/
-
 .opacidadReducida {
     opacity: 50%;
 }
@@ -83,20 +85,16 @@ a, a:hover {
 .ocupaTodoElWidth {
     width: 100%;
 }
-
 .is_hidden {
     display: none;
 }
-
 .flexBetween {
     display: flex;
     justify-content: space-between;
 }
-
 .alineacionRight {
     text-align: right;
 }
-
 .background_border_shadow {
     border: 1px solid rgba(191, 191, 191, 0.2);
     background-color: #ffffff;
@@ -109,29 +107,23 @@ a, a:hover {
     cursor: pointer;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*ESPECÍFICOS*/
 /*Header*/
 header {
     background-color: #fff159;
     width: 100%;
-    padding: 9px 10%;
+    padding: 15px;
 }
-
-nav {
-    width: 100%;
-}
-
 nav > ul {
     width: 100%;
 }
-
 #primeraFila_navBar, #segundaFila_navBar {
     text-align: left;
     width: 100%;
     margin: 0%;
     padding: 0%;
 }
-
 #primeraFila_navBar li:last-of-type, #linksCuenta {
     margin: 0%;
     padding: 0%;
@@ -140,19 +132,16 @@ nav > ul {
 }
 
 /*Primera fila del navigation bar*/
-    
 #primeraFila_navBar {
     height: 40px;
     margin-bottom: 10px;
 }
-
 #input_search {
     border-radius: 2px;
     height: 100%;
     width: 100%;
     padding: 5px 10px;
 }
-
 #input_search::placeholder {
     color: #cbcbcb;
     font-size: 1.1rem;
@@ -160,34 +149,71 @@ nav > ul {
 
 /*Segunda fila del navigation bar*/
 #segundaFila_navBar {
-    margin-bottom: 2px;
+    position: relative;
 }
 #segundaFila_navBar ul li:hover {
     opacity: 100%;
 }
-
 #segundaFila_navBar, #segundaFila_navBar a {
-    color: #574534;
     height: 30px;
 }
-
+#linksGenerales > li > a, #linksCuenta a{
+    color: #574534;
+}
 .linksNavBar_verticalAlign {
     line-height: 3rem;
 }
-
 #linksCuenta {
     opacity: 90%;
 }
-
 .espaciadoLinks {
     padding-left: 20px;
 }
-
 #categorias_icon {
     padding-left: 4px;
     font-size: 0.7rem;
 }
+#categorias {
+    background-color: #333333;
+    border-radius: 5px;
+    width: 250px;
+    padding: 20px 0px;
 
+    position: absolute;
+    top: 42px;
+    left: -70px;
+    display: none;
+
+    z-index: 100;
+}
+#categorias > li {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 50px;
+}
+#categorias > li:hover {
+    background-color: #3483fa;
+}
+#categorias a:hover {
+    color: #ffffff;
+}
+#categorias_indicador {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+  
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 33px;
+  left: 80px;
+  display: none;
+
+  z-index: 10;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
 /*Carrusel*/
 #carrusel {
     display: flex;
@@ -195,22 +221,53 @@ nav > ul {
     align-items: flex-start;
 
     width: 100%;
-}
 
+    position: relative;
+}
 .carousel-item > a > img {
     height: auto;
     object-fit: cover;
     object-position: top center;
 }
+.carrusel_flechaFondo {
+    background-color: #ffffff;
 
+    box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+    -webkit-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+    -moz-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+
+    width: 50px;
+    height: 100px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#carrusel_flechaFondo_derecha {
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 0%;
+}
+#carrusel_flechaFondo_izquierda {
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: 0%;
+}
+.carrusel_flechaFondo > span {
+    background-color: #4d8efa;
+}
 /*Payment Data*/
 #ctn_paymentData {
-    padding: 0% 12%;
+    padding: 0%;
     margin: 35px 0px;
 
     width: 100%;
 }
-
 #paymentData {
     border-radius: 5px;
     
@@ -219,23 +276,19 @@ nav > ul {
     height: 100px;
     width: 100%;
 }
-
 #paymentData > div {
     padding: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #paymentData > div:not(:last-child) {
     width: 20%;
 }
-
 #paymentData > div:last-of-type {
     width: 10%;
     border-left: 1px solid #f0f0f0;
 }
-
 .paymentData_img {
     display: inline-block;
     height: 45px;
@@ -243,18 +296,15 @@ nav > ul {
     cursor: pointer;
     border: 1px solid #f0f0f0;
 }
-
 .paymentData_texts {
     display: inline-block;
     padding-left: 20px;
 }
-
 .paymentData_metodoPago {
     color: #141414;
     margin: 0%;
     padding: 0%;
 }
-
 .paymentData_metodoPago_linkInfo {
     color: #4d8efa;
     margin: -3px 0%;
@@ -263,14 +313,12 @@ nav > ul {
 
 /*Secciones recomendadas en inicio*/
 .seccionProductos:not(:first-of-type) {
-    padding: 0% 12%;
+    padding: 0%;
     margin: 85px 0px;
 }
-
 h2 {
     font-weight: lighter;
 }
-
 .encabezado {
     color: #777777;
     font-size: 2rem;
@@ -279,7 +327,6 @@ h2 {
 
     padding: 0%;
 }
-
 .link_encabezado {
     color: #4d8efa;
 
@@ -299,27 +346,33 @@ h2 {
     border-radius: 4px;
     
     width: 300px;
-    height: 337px;
+    height: 350px;
 }
-
 .card_imagen {
     height: 250px;
 }
-
 .card-body {
     border-top: 1px solid #77777733;
-
+    position: relative;
     margin: 0%;
     padding: 20px;
 }
-
 .card-title {
     color: #141414;
     font-weight: bold;
     margin: 0%;
     padding: 0px;
 }
-
+.card_textoOferta {
+    color: #0caa58;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.card_cuotas {
+    margin: 0%;
+    padding: 3px 0px 0px;
+}
 .card_envio {
     color: #0caa58;
     font-weight: 600;
@@ -327,13 +380,47 @@ h2 {
     margin: 0%;
     padding: 0px;
 }
-
 .card_textoHidden {
     display: none;
 }
+.card_precioAnterior {
+    text-decoration: line-through;
+    opacity: 50%;
+    font-weight: bold;
+}
+.flecha_cards {
+    border-radius: 100%;
+    background-color: #ffffff;
+    color: #4d8efa;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+    
+    box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+    -webkit-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+    -moz-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
+    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
+}
+
+/*Ofertas*/
+#ctn_ofertas {
+    position: relative;
+}
+#flecha_ofertas {
+    display: none;
+    position: absolute;
+    top: calc(337px / 2 - 35px);
+    right: -1%;
+}
     
 /*Publicidades*/
-
 #espacioPublicitario article{
     border-radius: 5px;
     height: 250px;
@@ -341,7 +428,6 @@ h2 {
 
     overflow: hidden;
 }
-
 #espacioPublicitario_imagen {
     border-radius: 5px 0px 0px 5px;
     height: 250px;
@@ -351,7 +437,6 @@ h2 {
     
     position: relative;
 }
-
 #imagenPublicitaria {
     background-position: top center;
     background-repeat: no-repeat;
@@ -360,7 +445,6 @@ h2 {
 
     height: 100%;
 }
-
 #espacioPublicitario_imagen_logo {
     background-color: #ffffff;
     border-radius: 4px;
@@ -402,24 +486,29 @@ h2 {
     align-items: center;
     overflow: hidden;
 }
-
 .beneficios_card {
     width: 400px;
 }
-
 .beneficios_card:not(:first-of-type) {
     padding: 0px 20px;
 }
-
 .beneficios_card > img, .beneficios_card {
     border-radius: 5px;
+}
+#ctn_beneficiosCards_flecha {
+    position: relative;
+}
+#flecha_beneficios {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    right: -2%;
 }
 
 /*Descubrí y Te puede interesar*/
 #ctn_descubri {
     align-items: center;
 }
-
 .card_descubri {
     background-color: #ffffff;
     border-radius: 5px;
@@ -428,23 +517,19 @@ h2 {
     position: relative;
     padding: 20px;
 }
-
 .card_descubri:not(:first-of-type) {
     margin-left: 15px;
 }
-
 .card_descubri > div {
     margin-top: 30px;
     width: 45%;
 }
-
 .card_descubri > div p {
     margin: 0%;
     padding: 0%;
     
     font-weight: 500;
 }
-
 .boton_azul {
     background-color: #4d8efa;
     border: none;
@@ -455,11 +540,9 @@ h2 {
     padding: 7px 20px;
     margin-top: 10px;
 }
-
 .boton_azul:hover {
     background-color: #236ede;
 }
-
 .img_descubri {
     position: absolute;
     right: 20px;
@@ -468,7 +551,6 @@ h2 {
     height: 180px;
     max-width: 50%;
 }
-
 /*Mejores tiendas*/
 #ctn_card_mejoresTiendas {
     position: relative;
@@ -500,6 +582,7 @@ h2 {
 .card_mejoresTiendas_portada > img {
     border-radius: 5px 5px 0px 0px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .card_mejoresTiendas_bajoPortada {
@@ -565,48 +648,30 @@ h2 {
     width: 100%;
 }
 #flecha_mejoresTiendas {
-    border-radius: 100%;
-    background-color: #ffffff;
-    color: #4d8efa;
-    font-size: 40px;
-    height: 70px;
-    width: 70px;
-    
     display: none;
-    justify-content: center;
-    align-items: center;
-    
     position: absolute;
     top: calc(340px / 2 - 35px);
     right: -3%;
-
-    z-index: 10;
-    
-    box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
-    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
-    -webkit-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
-    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
-    -moz-box-shadow: 10px 10px 15px -8px rgba(91, 91, 91, 0.35),
-    -10px 10px 15px -8px rgba(91, 91, 91, 0.35);
 }
 
 /*Categorías populares*/
+#ctn_categorias_flecha {
+    position: relative;
+}
 .flexRow {
     width: 100%;
     height: 180px;
     overflow: hidden;
 }
-
 #ctn_categorias {
     background-color: transparent;
     border-radius: 5px;
 }
-
 .categoria {
     background-color: #ffffff;
     text-align: center;
 
-    margin: 1px;
+    margin: 1px 1px 0px 0px;
     padding: 30px 10px;
 
     width: 180px;
@@ -621,7 +686,197 @@ h2 {
 
     padding-bottom: 15px;
 }
+#flecha_mejoresCategorias {
+    display: none;
+    position: absolute;
+    top: 195px;
+    right: 0%;
+}
 
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+footer {
+    background-color: #ffffff;
+}
+footer > section {
+    padding: 50px 0px;
+}
+.beneficiosMercadoLibre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beneficioMercadoLibre {
+    text-align: center;
+    width: 30%;
+    padding: 3%;
+}
+.beneficioMercadoLibre div:first-of-type > img {
+    width: 70px;
+}
+.beneficioMercadoLibre div:first-of-type {
+    padding-bottom: 30px;
+}
+.beneficioMercadoLibre p {
+    margin: 0%;
+    padding: 3px 0px;
+}
+.beneficioMercadoLibre p:nth-of-type(2n) {
+    opacity: 50%;
+    font-weight: bold;
+}
+.beneficioMercadoLibre_separacion {
+    background-color: #8e8e8e;
+    opacity: 30%;
+
+    width: 1px;
+    height: 70px;
+}
+
+#ctn_informacionMercadoLibre {
+    margin: 50px 0px;
+}
+.informacionMercadoLibre {
+    border: 1px solid #8e8e8e61;
+    border-radius: 5px;
+    text-align: center;
+
+    width: 48%;
+    height: 100px;
+
+    padding: 20px;
+}
+.informacionMercadoLibre p {
+    margin: 0%;
+    padding: 0px;
+    line-height: 1.4rem;
+}
+.informacionMercadoLibre > p {
+    opacity: 50%;
+}
+.informacionMercadoLibre a:hover {
+    color: #4d8efa;
+}
+
+#ctn_usuariosFinancieros {
+    position: relative;
+
+    width: 100%;
+    height: 1px;
+}
+#usuariosFinancieros {
+    background-color: #ef9132;
+    color: #ffffff;
+
+    position: absolute;
+    top: -40px;
+    right: 70px;
+
+    padding: 5px 10px;
+}
+#usuariosFinancieros p:not(:first-of-type) {
+    font-size: 0.6rem;
+}
+#usuariosFinancieros p {
+    margin: 0%;
+    padding: 0px;
+}
+#usuariosFinancieros p:first-of-type {
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+#usuariosFinancieros img {
+    padding: 0%;
+    margin: 0%;
+    height: 15px;
+    text-align: right;
+}
+#escudoUsuariosFinancieros {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+}
+#escudoUsuariosFinancieros img {
+    height: 60px;
+}
+#ctn_masInformacion {
+    border-bottom: 1px solid #8e8e8e61;
+}
+#ctn_masInformacion_btn {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+#masInformacion_btn {
+    background-color: transparent;
+    border-top: 1px solid #8e8e8e61;
+    border-right: 1px solid #8e8e8e61; 
+    border-left: 1px solid #8e8e8e61;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    outline: none;
+    
+    padding: 5px 10px;
+}
+input[type="button"]:focus, input[type="search"]:focus {
+    outline: none;
+}
+#icon_masInformacion {
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+#links_masInformacion {
+    background-color: #f7f7f7;
+    border-top: 1px solid #8e8e8e61;
+
+    padding: 50px  ;
+    display: none;
+}
+.ctn_masInformacion_links > ul {
+    opacity: 50%;
+}
+.ctn_masInformacion_links > ul > li > a{
+    opacity: 70%;
+    color: #323232;
+}
+.ctn_masInformacion_links > ul > li > a:hover {
+    text-decoration: underline;
+}
+.ctn_masInformacion_links > p {
+    margin: 0%;
+    padding: 0px;
+    font-weight: 500;
+}
+.masInformacion_titulo_links {
+    padding: 50px 0px 20px;
+    margin: 0%;
+}
+
+/*Ultima parte del footer*/
+#ultimaParte_links {
+    padding: 10px  ;
+}
+#fila_ultimaParte_links {
+    display: flex;
+    flex-direction: row;
+}
+#fila_ultimaParte_links > a:not(:first-of-type) {
+    padding-left: 13px;
+}
+#fila_ultimaParte_links >a:hover {
+    color: #2e2e2e;
+}
+#ultimaParte_links > div:last-of-type {
+    opacity: 60%;
+
+    margin: 0%;
+    padding: 10px 0px;
+}
+#ultimaParte_links p {
+    padding: 0px 0px 5px;
+    margin: 0%;
+}
 
 /*MEDIA SCREENS Y BREAKPOINTS*/
 
@@ -634,6 +889,41 @@ h2 {
 }
 
 /*Breakpoints*/
+
+@media screen and (max-width: 1008px) {
+    
+    #paymentData_efectivo {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*Acá cambia todo el navBAr por completo*/
+}
+
+@media screen and (max-width: 1200px) {
+    .paddingPagina_displayFlex {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    #linksGenerales_moda {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    #linksGenerales_supermercado {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .paddingPagina_displayFlex {
+        width: 1200px;
+        margin-left: calc(50% - 1200px/2);
+    }
+}
+
 @media screen and (max-width: 1024px) {
     #carrusel {
         height: 255px;
