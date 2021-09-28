@@ -5,14 +5,14 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-        <meta name="keywords" content="portfolio, personal page, web developer, martina, fernandez, suarez, anzorena"/>
+        <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez, anzorena, desarrolladora web, diseñadora gráfica"/>
         <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
         <meta http-equiv="Content-Language" content="es"/>
-        <meta name="author" content="MartinaFSA/">
+        <meta name="author" content="MartinaFSA">
 
-        <!--<link rel = "icon" href = "../img/">-->
+        <link rel = "icon" href = "img/favIcon.svg">
 
-        <title>Inicio - Martina Fernández Suárez Anzorena</title>
+        <title>Martina Fernández Suárez</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         
@@ -32,29 +32,13 @@
         <header> 
             <section id="pageIntro">
                 <!--TEXTO BIENVENIDA-->
-                <div id="pageIntro__ctn--text">
+                <div id="pageIntro__ctn--text-icon">
                     <div id="pageIntro__text">
-                        <div class="textoTitulo textoMainColor">
-                            <p>Martina Fernández Suárez</p>
-                        </div>
-                        
-                        <div class="textoTitulo textoGrisVerde">
-                            <p>Desarrolladora Web Trainee</p>
-                        </div>
+                        <p class="textoTitulo ">Hola, soy <span>Martina Fernández</span>. desarrolladora web frontend.</p>
                     </div>
-                </div>
-                
-                <div id="landingDarkTheme">
-                    <!--FIGURAS-->
-                    <div class="formaStroke pageIntro__rectanguloStroke"></div>
-                    
-                    <div class="formaStroke pageIntro__rectanguloVerticalStroke"></div>
-
-                    <div class="formaStroke pageIntro__cuadradoStroke"></div>
-                    
-                    <div class="trianguloStroke pageIntro__trianguloStroke1"></div>
-                    <div class="trianguloStroke pageIntro__trianguloStroke2"></div>
-                    <div class="trianguloStroke pageIntro__trianguloStroke3"></div>
+                    <div>
+                        <img src="img/viewer.svg" alt="">
+                    </div>
                 </div>
             </section>
         </header>
@@ -96,27 +80,22 @@
                     
                     <article id="perfil__sobreMi">
                         <p class="sectionSubtitle textoMediano">Sobre Mí</p>
-                        <p class="textoChico">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium nisl vitae laoreet interdum.Quisque rhoncus id ipsum in suscipit. Nulla lorem urna, finibus ut nisl sit amet, auctor laoreet turpis. Nam quis nibh vitae mi vestibulum semper. </p>
+                        <p class="textoChico">Estudiante de Diseño Gráfico y desarrolladora web frontend con conocimientos de backend. Me interesa la tecnología, el diseño y la programación.</p>
                     </article>
 
                     <article id="perfil__foto">
                         <div id="perfil__foto--imagen">
-                            <img src="img/MFSA_fotocv.png" width="" height="" alt="Foto de Martina">
+                            <img src="img/MFSA_fotocv1.jpg" width="" height="" alt="Foto de Martina">
                         </div>
                     </article>
 
                     <article id="perfil__contacto">
                         <p class="sectionSubtitle textoMediano">Datos</p>
                         <ul>
+                            <li class="textoChico"><b>Correo electrónico: </b>
+                            martina.fernandez.sa@gmail.com</li>
                             <li class="textoChico"><b>Ubicación:</b>
                             Boedo, CABA, Argentina</li>
-                                    
-                            <li class="textoChico"><b>Teléfono celular: </b>
-                            Error 403, <br>this information is unaccesible. </li>
-
-                            <li class="textoChico"><b>To get granted access send mail to: </b>
-                            martina.fernandez.sa@gmail.com</li>
-
                             <li class="textoChico"><b>Nacimiento: </b>
                             14 de julio de 2002</li>
                         </ul>
@@ -168,7 +147,7 @@
                             </a>
                         </div>
                     </div>
-
+<!--
                     <div class="cajasHabilidades__caja col-sm-6 col-md-3 col-lg-3">
                         <a href="#formacionAcademica">
                             <i class="fas fa-briefcase iconsSize"></i>
@@ -180,7 +159,7 @@
                             </a>
                         </div>
                     </div>
-
+-->
                     <div class="cajasHabilidades__caja col-sm-6 col-md-3 col-lg-3">
                         <a href="#idiomas">
                             <i class="fas fa-comment-dots iconsSize"></i>

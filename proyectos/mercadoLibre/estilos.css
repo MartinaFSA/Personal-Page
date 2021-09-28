@@ -24,15 +24,12 @@ a, a:hover {
 .textoNormal {
     font-family: 'Nunito', sans-serif;
 }
-
 .fontLato {
     font-family: 'Lato', sans-serif;
 }
-
 .fontPoppins {
     font-family: 'Poppins', sans-serif;
 }
-
 .textoChico {
     font-size: 1rem;
 }
@@ -261,6 +258,11 @@ nav > ul {
 .carrusel_flechaFondo > span {
     background-color: #4d8efa;
 }
+.carousel-indicators > li {
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+}
 /*Payment Data*/
 #ctn_paymentData {
     padding: 0%;
@@ -383,10 +385,15 @@ h2 {
 .card_textoHidden {
     display: none;
 }
+.card_segundo_textoHidden {
+    display: none;
+}
 .card_precioAnterior {
     text-decoration: line-through;
     opacity: 50%;
     font-weight: bold;
+    padding: 0%;
+    margin: 0%;
 }
 .flecha_cards {
     border-radius: 100%;
@@ -416,9 +423,36 @@ h2 {
 #flecha_ofertas {
     display: none;
     position: absolute;
-    top: calc(337px / 2 - 35px);
+    top: 133px;
     right: -1%;
 }
+.card_ofertas {
+    transition: all .3s ease;
+}
+.card_ofertas:hover {
+    height: unset;
+}
+.card_textoHidden.active, .card_segundo_textoHidden.active {
+    display: block;
+    z-index: 100;
+}
+.card_ofertas_corazon {
+    background-color: #ffffffa3;
+    border-radius: 100%;
+    color: #4d8efa;
+    font-size: 20px;
+    padding: 5px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    display: none;
+    z-index: 100;
+} 
+.card_ofertas_corazon.active {
+    display: block;
+} 
     
 /*Publicidades*/
 #espacioPublicitario article{
@@ -455,7 +489,7 @@ h2 {
     padding: 10px 5px;
 
     position: absolute;
-    top: calc(50% - (95px/2) );
+    top: calc(50% - 47px);
     left: 60px;
 
     display: flex;
@@ -482,17 +516,20 @@ h2 {
 
 /*Beneficios de Mercado Puntos*/
 #cardSlider {
+    width: 100%;
+
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 .beneficios_card {
     width: 400px;
+    border-radius: 5px;
 }
 .beneficios_card:not(:first-of-type) {
     padding: 0px 20px;
 }
-.beneficios_card > img, .beneficios_card {
+.beneficios_card > img {
     border-radius: 5px;
 }
 #ctn_beneficiosCards_flecha {
@@ -639,7 +676,7 @@ h2 {
 
     position: absolute;
     top: 50px;
-    left: calc((280px - 100px) /2);
+    left: 90px;
 
     display: flex;
     align-items: center;
@@ -650,7 +687,7 @@ h2 {
 #flecha_mejoresTiendas {
     display: none;
     position: absolute;
-    top: calc(340px / 2 - 35px);
+    top: calc(170px - 35px);
     right: -3%;
 }
 
@@ -920,7 +957,7 @@ input[type="button"]:focus, input[type="search"]:focus {
 @media screen and (min-width: 1200px) {
     .paddingPagina_displayFlex {
         width: 1200px;
-        margin-left: calc(50% - 1200px/2);
+        margin-left: calc(50% - 600px);
     }
 }
 

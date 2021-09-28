@@ -38,12 +38,72 @@ flecha_ofertas.onmouseenter = function () {
 flecha_ofertas.onmouseleave = function () {
     document.getElementById("flecha_ofertas").style.display = "none"
 }
-//display textos on hover
-function card_muestroLosTextos() {
-    this.style.display = "none";
-    console.log("pucaha");
-}
+/*Display textos y corazon on hover super mal hecho pero bueno por lo menos está :(*/
+var card_ofertas = document.getElementsByClassName("card_ofertas");
+let textosHidden = document.getElementsByClassName("card_textoHidden");
+let textosHidden_segundo = document.getElementsByClassName("card_segundo_textoHidden");
+let corazonHidden = document.getElementsByClassName("card_ofertas_corazon");
 
+for (var i = 0; i < card_ofertas.length; i++) {
+    console.log(i);
+    card_ofertas[i].addEventListener("mouseenter", muestroTextos);
+    card_ofertas[i].addEventListener("mouseleave", muestroTextos);
+
+    function muestroTextos() {
+        textosHidden[i].classList.toggle("active");
+        textosHidden_segundo[i].classList.toggle("active");
+        corazonHidden[i].classList.toggle("active");
+    }
+    break;
+};
+for (var y = 1; y < card_ofertas.length; y++) {
+    console.log(y);
+    card_ofertas[y].addEventListener("mouseenter", muestroTextos);
+    card_ofertas[y].addEventListener("mouseleave", muestroTextos);
+
+    function muestroTextos() {
+        textosHidden[y].classList.toggle("active");
+        textosHidden_segundo[y].classList.toggle("active");
+        corazonHidden[y].classList.toggle("active");
+    }
+    break;
+};
+for (var t = 2; t < card_ofertas.length; t++) {
+    console.log(t);
+    card_ofertas[t].addEventListener("mouseenter", muestroTextos);
+    card_ofertas[t].addEventListener("mouseleave", muestroTextos);
+
+    function muestroTextos() {
+        textosHidden[t].classList.toggle("active");
+        textosHidden_segundo[t].classList.toggle("active");
+        corazonHidden[t].classList.toggle("active");
+    }
+    break;
+};
+for (var o = 3; o < card_ofertas.length; o++) {
+    console.log(o);
+    card_ofertas[o].addEventListener("mouseenter", muestroTextos);
+    card_ofertas[o].addEventListener("mouseleave", muestroTextos);
+
+    function muestroTextos() {
+        textosHidden[o].classList.toggle("active");
+        textosHidden_segundo[o].classList.toggle("active");
+        corazonHidden[o].classList.toggle("active");
+    }
+    break;
+};
+for (var u = 4; u < card_ofertas.length; u++) {
+    console.log(u);
+    card_ofertas[u].addEventListener("mouseenter", muestroTextos);
+    card_ofertas[u].addEventListener("mouseleave", muestroTextos);
+
+    function muestroTextos() {
+        textosHidden[u].classList.toggle("active");
+        textosHidden_segundo[u].classList.toggle("active");
+        corazonHidden[u].classList.toggle("active");
+    }
+    break;
+};
 /*Categorías populares*/
 let categoria = document.querySelectorAll("div.categoria");
 categoria.onmouseenter = function () {

@@ -186,22 +186,24 @@
 
                     <!--Cards-->
                     <div class="card-deck textoNormal" id="ctn_ofertas">
-                        <div class="card">
-                            <a href="">
+                        <div class="card card_ofertas">
+                            <a href="" style="color: unset;">
                                 <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$ 35.999</p>
                                     <h5 class="card-title">$ 27.000</h5>
-                                    <p class="card_textoOferta">24% OFF</p>
-                                    <p class="card-text card_envio">Envío gratis</p>
-                                    <p class="card-text text-muted card_textoHidden">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
+                                    <p class="card_textoOferta textoChico">24% OFF</p>
+                                    <p class="card-text card_envio textoChico">Envío gratis</p>
+                                    <p class="card-text text-muted card_segundo_textoHidden textoChico">Smart Tv Jvc Lt43da5125 Led Full Hd 43 Netflix Youtube Wifi</p>
                                 </div>
+
+                                <div class="card_ofertas_corazon"> <i class="far fa-heart"></i> </div>
                             </a>
                         </div>
 
-                        <div class="card" onmouseenter="card_muestroLosTextos()">
-                            <a href="">
+                        <div class="card card_ofertas">
+                            <a href="" style="color: unset;">
                                 <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_segundoProducto.JPG" alt="Card image cap">
 
                                 <div class="card-body">
@@ -210,43 +212,49 @@
                                     <p class="card_textoOferta textoChico">34% OFF</p>
                                     <p class="textoMasChico textoGris card_cuotas">6x $9.759,67 sin interés</p>
                                     <p class="card-text card_envio textoChico">Envío gratis</p>
-                                    <p class="card-text text-muted card_textoHidden textoChico">Freezer vertical Eslabón de Lujo EVU22D1 blanco 142L 220V</p>
+                                    <p class="card-text text-muted card_segundo_textoHidden textoChico">Freezer vertical Eslabón de Lujo EVU22D1 blanco 142L 220V</p>
                                 </div>
+
+                                <div class="card_ofertas_corazon"> <i class="far fa-heart"></i> </div>
                             </a>
                         </div>
 
-                        <div class="card">
-                            <a href="">
+                        <div class="card card_ofertas">
+                            <a href="" style="color: unset;">
                                 <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_tercerProducto.JPG" alt="Card image cap">
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$78.999</p>
                                     <h5 class="card-title">$ 73.499</h5>
-                                    <p class="card_textoOferta">6% OFF</p>
+                                    <p class="card_textoOferta textoChico">6% OFF</p>
                                     <p class="textoMasChico textoGris card_cuotas">12x $6.124,92 sin interés</p>
-                                    <p class="card-text card_envio">Envío gratis</p>
-                                    <p class="card-text text-muted card_textoHidden">Smart Tv Noblex 32 Led Dk32x5000 Hd Hdmi Wifi</p>
+                                    <p class="card-text card_envio textoChico">Envío gratis</p>
+                                    <p class="card-text text-muted card_segundo_textoHidden textoChico">Smart Tv Noblex 32 Led Dk32x5000 Hd Hdmi Wifi</p>
                                 </div>
+
+                                <div class="card_ofertas_corazon"> <i class="far fa-heart"></i> </div>
                             </a>
                         </div>
 
-                        <div class="card">
-                            <a href="">
+                        <div class="card card_ofertas">
+                            <a href="" style="color: unset;">
                                 <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$ 52.899</p>
                                     <h5 class="card-title">$ 27.291</h5>
-                                    <p class="card_textoOferta">48% OFF</p>
+                                    <p class="card_textoOferta textoChico">48% OFF</p>
                                     <p class="textoMasChico textoGris card_cuotas">12x $2.274,25 sin interés</p>
-                                    <p class="card-text card_envio">Envío gratis</p>
-                                    <p class="card-text text-muted card_textoHidden">Microondas Whirlpool Con Grill 30 Ltrs Wmg30ab</p>
+                                    <p class="card-text card_envio textoChico">Envío gratis</p>
+                                    <p class="card-text text-muted card_segundo_textoHidden textoChico">Microondas Whirlpool Con Grill 30 Ltrs Wmg30ab</p>
                                 </div>
+
+                                <div class="card_ofertas_corazon"> <i class="far fa-heart"></i> </div>
                             </a>
                         </div>
 
-                        <div class="card">
-                            <a href="">
+                        <div class="card card_ofertas">
+                            <a href="" style="color: unset;">
                                 <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
 
                                 <div class="card-body">
@@ -255,8 +263,10 @@
                                     <p class="card_textoOferta">13% OFF</p>
                                     <p class="textoMasChico textoGris card_cuotas">9x $7.111 sin interés</p>
                                     <p class="card-text card_envio">Envío gratis</p>
-                                    <p class="card-text text-muted card_textoHidden">Samsung Galaxy A72 128 GB awesome black 6 GB RAM</p>
+                                    <p class="card-text text-muted card_segundo_textoHidden">Samsung Galaxy A72 128 GB awesome black 6 GB RAM</p>
                                 </div>
+
+                                <div class="card_ofertas_corazon"> <i class="far fa-heart"></i> </div>
                             </a>
                         </div>
                         
@@ -273,19 +283,19 @@
 
                     <div id="cardSlider">
                         <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_disney+.jpg" alt="">
+                            <img src="img/index/beneficios/beneficio_disney+.JPG" alt="">
                         </div>
 
                         <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_star+.jpg" alt="">
+                            <img src="img/index/beneficios/beneficio_star+.JPG" alt="">
                         </div>
 
                         <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_HBOMax.jpg" alt="">
+                            <img src="img/index/beneficios/beneficio_HBOMax.JPG" alt="">
                         </div>
 
                         <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_paramount.jpg" alt="">
+                            <img src="img/index/beneficios/beneficio_paramount.JPG" alt="">
                         </div>
                         
                         <div id="flecha_beneficios" class="flecha_cards">

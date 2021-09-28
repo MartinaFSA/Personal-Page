@@ -5,10 +5,12 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-        <meta name="keywords" content="portfolio, personal page, web developer, martina, fernandez, suarez, anzorena"/>
-        <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
+        <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez, anzorena"/>
+        <meta name="description" content="Portfolio de Martina Fernández Suárez Anzorena."/>
         <meta http-equiv="Content-Language" content="es"/>
-        <meta name="author" content="MartinaFSA/">
+        <meta name="author" content="MartinaFSA">
+
+        <link rel = "icon" href = "img/favIcon.svg">
 
         <title>Portfolio - Martina Fernández Suárez Anzorena</title>
 
@@ -29,31 +31,10 @@
         
         <header>
             <!--INTRODUCCIÓN A LA PÁGINa-->
-            <section id="pageIntro">
-                <!--TEXTO BIENVENIDA-->
-                <div id="pageIntro__ctn--text">
-                    <div id="pageIntro__text">
-                        <div class="textoTitulo textoMainColor">
-                            <p>PORTFOLIO</p>
-                        </div>
-                        
-                        <div class="textoTitulo textoGrisVerde">        
-                            <button class="navBar__linkPortfolio" id="introPage__titulosPortfolio--coderMode">DARK THEME</button>
-                        </div>
-                    </div>
-                </div>
-                            
-                <div id="landingDarkTheme">
-                    <!--FIGURAS-->
-                    <div id="introPage__rectanguloStroke" class="formaStroke"></div>
-                    
-                    <div id="introPage__rectanguloVerticalStroke" class="formaStroke"></div>
-
-                    <div id="introPage__cuadradoStroke" class="formaStroke"></div>
-                    
-                    <div id="introPage__trianguloStroke1" class="trianguloStroke"></div>
-                    <div id="introPage__trianguloStroke2" class="trianguloStroke"></div>
-                    <div id="introPage__trianguloStroke3" class="trianguloStroke"></div>
+            <section id="pageIntroPortfolio">
+                <div id="fondo_pageIntroPortfolio"></div>
+                <div id="pageIntro__ctn--textPortfolio">
+                    <p class="textoTitulo">Portfolio</p>
                 </div>
             </section>
             
@@ -92,10 +73,9 @@
 
                     <div class="columnaFlex3 textoSobreLaPagina">
                         <p class="sectionSubtitle textoMediano">Recetario</p>
-                        <p class="descripcionProyecto textoChico">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página <!--tiene un filtro de ingredientes y varias categorías según mis criterios de orden propios, 
-                            además, incluye una sección de recetas guardadas para que el usuario acceda a sus recetas favoritas rápidamente.-->contiene una sección de recetas guardadas a la que se accede iniciando sesión.</p>
+                        <p class="descripcionProyecto textoChico">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página contiene una sección de recetas guardadas a la que se accede iniciando sesión.</p>
                             <p class="textoChico"><b>Tecnologías utilizadas: </b>HTML, CSS, JS, SQL y PHP</p>
-                        <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">acá</a></p>
+                        <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">en GitHub</a></p>
                     </div>
                 </article>
 
@@ -116,7 +96,7 @@
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle textoMediano">Página en proceso</p>
+                        <p class="sectionSubtitle textoMediano">Actividades en CABA (en proceso)</p>
                         <p class="descripcionProyecto textoChico">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
                         <p class="textoChico"><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
                         <p class="textoChico">Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1" target="_blank">este link </a>de Figma.</p>
@@ -140,8 +120,8 @@
                     </div>
 
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle textoMediano">Copia de Mercado Libre</p>
-                        <p class="descripcionProyecto textoChico">Maquetado del front-end de la página de Mercado Libre.</p>
+                        <p class="sectionSubtitle textoMediano">Copia de Mercado Libre (en proceso)</p>
+                        <p class="descripcionProyecto textoChico">Maquetado frontend de la página de Mercado Libre hecho a partir de la página oficial de argentina.</p>
                         <p class="textoChico"><b>Tecnologías utilizadas: HTML, CSS, Bootstrap, JS y PHP.</b></p>
                         <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index.php" target="_blank">acá.</a></p>
                     </div>
@@ -177,20 +157,20 @@
             <!--MODALES-->
             <article class="modal" id="modalDePagina1">
                 <div class="modal__content">
-                    <header class="modal__header">
-                        <p class="modalTitle">pag1</p>
-                        <button class="close-modal" id="close-modal1"> ✕ </button> <!--Estoy ignorando el aria label-->
-                    </header>
+                    <div class="modal__header">
+                        <p class="modalTitle">Actividades en CABA</p>
+                        <button class="close-modal" id="close-modal1"> ✕ </button>
+                    </div>
 
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" class="capturaPaginaEntera">
+                            <img src="img/paginas/primeraPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
-                            <img src="" alt="" class="destacable1">
-                            <img src="" alt="" class="destacable2">
+                            <img src="img/paginas/primeraPagina__destacable1.JPG" alt="" class="destacable1">
+                            <img src="img/paginas/primeraPagina__destacable2.JPG" alt="" class="destacable2">
                         </div>
                     </section>
                 </div>
@@ -199,10 +179,10 @@
 
             <article class="modal" id="modalDePagina2">
                 <div class="modal__content">
-                    <header class="modal__header">
+                    <div class="modal__header">
                         <p class="modalTitle">Recetario</p>
                         <button class="close-modal" id="close-modal2"> ✕ </button>
-                    </header>
+                    </div>
 
                     <section class="modal__body"> 
 
@@ -220,15 +200,15 @@
             
             <article class="modal" id="modalDePagina3">
                 <div class="modal__content">
-                    <header class="modal__header">
+                    <div class="modal__header">
                         <p class="modalTitle">pag3</p>
                         <button class="close-modal" id="close-modal3"> ✕ </button>
-                    </header>
+                    </div>
 
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" class="capturaPaginaEntera">
+                            <img src="img/paginas/terceraPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -242,20 +222,20 @@
         <!--
             <article class="modal" id="modalDePagina4">
                 <div class="modal__content">
-                    <header class="modal__header">
+                    <div class="modal__header">
                         <p class="modalTitle">pag4</p>
                         <button class="close-modal" id="close-modal4"> ✕ </button>
-                    </header>
+                    </div>
 
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="" alt="" class="capturaPaginaEntera">
+                            <img src="img/paginas/cuartaPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
-                            <img src="" alt="" class="destacable1">
-                            <img src="" alt="" class="destacable2">
+                            <img src="img/paginas/cuartaPagina__destacable1.JPG" alt="" class="destacable1">
+                            <img src="img/paginas/cuartaPagina__destacable2.JPG" alt="" class="destacable2">
                         </div>
                     </section>
                 </div>
@@ -380,7 +360,7 @@
                 </div>
             </div>
             <div id="backToTop">
-                <a href="#pageIntro" class="texto__footer textoMediano textoFooter">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
+                <a href="#pageIntroPortfolio" class="texto__footer textoMediano textoFooter">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
             </div>
         </footer>
         
