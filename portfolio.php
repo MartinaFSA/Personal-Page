@@ -165,7 +165,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="img/paginas/primeraPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
+                            <img src="img/paginas/primeraPagina__completa.PNG" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -201,14 +201,14 @@
             <article class="modal" id="modalDePagina3">
                 <div class="modal__content">
                     <div class="modal__header">
-                        <p class="modalTitle">pag3</p>
+                        <p class="modalTitle">Copia de Mercado Libre</p>
                         <button class="close-modal" id="close-modal3"> ✕ </button>
                     </div>
 
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="img/paginas/terceraPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
+                            <img src="img/paginas/terceraPagina__completa.PNG" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
@@ -230,7 +230,7 @@
                     <section class="modal__body"> 
 
                         <div class="modal__body-columna1">
-                            <img src="img/paginas/cuartaPagina__completa.png" alt="Captura completa de la página" class="capturaPaginaEntera">
+                            <img src="img/paginas/cuartaPagina__completa.PNG" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
 
                         <div class="modal__body-columna2">
