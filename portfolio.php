@@ -41,7 +41,7 @@
             <!--NAVIGATION BAR-->
             <section id="ctn__navBarPortfolio">
                 <nav>
-                    <a href="index.php" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem">MartinaFSA</a>
+                    <a href="index" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem">MartinaFSA</a>
                     <a href="#webs" id="navBar__linkWebs" class="navBar__linkPortfolio textoMediano">WEBS</a>
                     <!--<a href="#diseño" class="navBar__linkPortfolio textoMediano" id="navBar__linkDiseño">DISEÑO</a>-->
                 </nav>
@@ -123,7 +123,7 @@
                         <p class="sectionSubtitle textoMediano">Copia de Mercado Libre (en proceso)</p>
                         <p class="descripcionProyecto textoChico">Maquetado frontend de la página de Mercado Libre hecho a partir de la página oficial de argentina.</p>
                         <p class="textoChico"><b>Tecnologías utilizadas: HTML, CSS, Bootstrap, JS y PHP.</b></p>
-                        <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index.php" target="_blank">acá.</a></p>
+                        <p class="textoChico">Podés acceder a esta página <a href="proyectos/mercadoLibre/index" target="_blank">acá.</a></p>
                     </div>
                 </article>
 

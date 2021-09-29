@@ -1,0 +1,22 @@
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php73” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+
+# Acá empieza mi rewrite de links
+
+RewriteEngine on
+
+# Acá van las condiciones
+# Si tengo un directorio que se llama como el file no se ejecutará la acción. -d es directory y el ! significa opuesto.
+RewriteCond %{REQUEST_FILENAME} !-d 
+
+# Busca mi file.
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+# La regla que buscará el file (condiciones de caracteres).
+RewriteRule ^(.*)$ $1.php [NC,L]

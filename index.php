@@ -5,7 +5,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
-        <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez, anzorena, desarrolladora web, diseñadora gráfica"/>
+        <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez anzorena, desarrolladora web, diseñadora gráfica"/>
         <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
         <meta http-equiv="Content-Language" content="es"/>
         <meta name="author" content="MartinaFSA">
@@ -61,8 +61,8 @@
             <!--NAVIGATION BAR-->
             <section id="ctn__navBar">
                 <nav id="navBar">
-                    <a href="portfolio.php" target="_blank" class="navBar__link textoMediano">PORTFOLIO</a>
-                    <a href="index.php" class="navBar__main">MartinaFSA</a>
+                    <a href="portfolio" target="_blank" class="navBar__link textoMediano">PORTFOLIO</a>
+                    <a href="index" class="navBar__main">MartinaFSA</a>
                     <button class="navBar__link textoMediano" id="coderMode">DARK THEME</button>
                 </nav>
             </section>
