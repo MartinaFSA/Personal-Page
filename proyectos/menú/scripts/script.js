@@ -1,4 +1,4 @@
-/*OBJETOS DE LA TIENDA*/
+/*ARRAY LITERALS (nested arrays/matrices) DE LA TIENDA*/
 var recursosTienda = {
 	'textos': [
 		{nombreTienda: 'RestoPepe', //0,0
@@ -7,54 +7,71 @@ var recursosTienda = {
 		metaDescripcion: 'nombreTienda. Slogan. Ubicación. Carta/Menú · Recomendaciones · Contacto.'}, //0,3
 	],
 	'imagenes': [
-		{favIcon: 'logoNegro', //1,0
-		logoNegro: 'logoNegro', //1,1
-		logoBlanco: 'logoBlanco', //1,2
-		portadaHeaderMobile: 'portadaHeaderMobile', //1,3
-		portadaHeaderDesktop: 'portadaHeaderDesktop',} //1,4
+		{favIcon: 'logoNegro',
+		logoNegro: 'logoNegro', //Para el footer
+		logoBlanco: 'logoBlanco', //Para el header
+		portadaHeaderMobile: 'portadaHeaderMobile',
+		portadaHeaderDesktop: 'portadaHeaderDesktop',}
 	],
 	'contacto': [
-		{whatsapp: '1162840250', //No incluyas los ceros, paréntesis ni guiones cuando añadas el número de teléfono en este formato.
-		ubicacion: '',
-		telefono: ''}
+		{whatsapp: '1162840250', //No incluyas los ceros, paréntesis ni guiones cuando añadas el número de teléfono en este formato. (ej: 1166665555)
+		ubicacion: 'Calle 1234, Colegiales.', //Calle, número y barrio
+		telefono: '4812-3456'} //Sin código de área y con guión (ej: 4822-2222)
 	]
 }
 var categoriasTienda = {
 	'categoria': [
-		{nombreCategoria: 'Postres', //1,0
-		iconCategoria: 'fas fa-cookie', //1,1
-		XXXXX: 'XXXXXX'}, //1,2
+		{nombreCategoria: 'Postres',
+		iconCategoria: 'fas fa-cookie', //código class del icon (fontAwesome o similares)
+		menu_id: 'postres'}, //Es el nombre de la categoría pero sin espacios y camelcase
 
-		{nombreCategoria: 'Carnes', //1,0
-		iconCategoria: 'fas fa-bacon', //1,1
-		XXXXX: 'XXXXXX'}, //1,2
+		{nombreCategoria: 'Entradas',
+		iconCategoria: 'fas fa-bacon',
+		menu_id: 'entradas'},
 
-		{nombreCategoria: 'Sandwiches', //1,0
-		iconCategoria: 'fas fa-bread-slice', //1,1
-		XXXXX: 'XXXXXX'} //1,2
+		{nombreCategoria: 'Sandwiches',
+		iconCategoria: 'fas fa-bread-slice',
+		menu_id: 'sandwiches'}
+	],//Los elementos de este array deben estar en la misma posición que en el array anterior
+	'Postres': [
+		{nombrePlato: 'Bizcochuelo',
+		precioPlato: '150.55',
+		descripcionPlato: 'relleno de DDL, duraznos y cubierto con ganache de chocolate'}
+	],
+	'Entradas': [
+		{nombrePlato: 'Bacon',
+		precioPlato: '325',
+		descripcionPlato: 'crocante y cocinado a la plancha'}
+	],
+	'Sandwiches': [
+		{nombrePlato: 'Croque madame',
+		precioPlato: '400.99',
+		descripcionPlato: 'sandwich de pan francés relleno de jamón y queso y cubierto de salsa blanca y queso gratinado'}
 	]
 }
 
 /*RECOMENDACIONES DE MENÚS*/
-/*En estas variables escribiré las recomendaciones*/
+/*En estas variables escribiré las recomendaciones
 let menu_entrada = document.getElementById('menu_entrada');
 let menu_principal = document.getElementById('menu_principal');
 let menu_postre = document.getElementById('menu_postre');
 let menu_imagen = document.getElementById('menu_imagen');
 
-/*Junto los arrays de los menús en una matriz*/
+Junto los arrays de los menús en una matriz
 function outputMenus() { 
 	var menusNested = {
 		'menu': [
-			{entrada: 'entrada', //0,0
-			principal: 'principal', //0,1
-			postre: 'postre', //0,2
-			img: 'imagen1'}, //0,3
+			{nombreDelMenú: 'Había hambre, che',
+			entrada: 'Salpicón de pollo',
+			principal: 'Bife con papas fritas',
+			postre: 'Bocha de helado sobre panqueque con dulce de leche',
+			img: 'imagen1'},
 		
-			{entrada: 'entrada2', //1,0
-			principal: 'principal2', //1,1
-			postre: 'postre2', //1,2
-			img: 'imagen2'} //1,3
+			{nombreDelMenú: 'La navideña',
+			entrada: 'Porción de arollado primavera',
+			principal: 'Vitel Toné acompañado de ensalada rusa',
+			postre: 'Frutilas con crema chantilly',
+			img: 'imagen2'}
 		]
 	}
 	let cantidad = menusNested.menu.length;
@@ -66,6 +83,7 @@ function outputMenus() {
 	}
 };
 outputMenus();
+*/
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*Armo el random number cuando se clickee el link
@@ -134,11 +152,47 @@ let header_slogan = document.getElementById('header_slogan');
 header_slogan.innerHTML = recursosTienda.textos[0].slogan;
 
 /*CATEGORÍAS CARD SLIDER*/
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		autoplay: true,
+		autoplayhoverpause: true, 
+		autoplaytimeout: 100,
+		loop: true, //las cards se mueven en círculo
+		nav: true, //muestra flechas de navegación
+		margin: 8,
+		checkVisibility: false, //ahorro tiempo
+		responsiveBaseElement: "#contenedorDeCards",
+		responsive: {
+			0: {
+				items: 1, //muestra 1 sóla card
+				stagePadding: 50, //muestra un poco de la siguiente card
+			}, 320: {
+				items: 2,
+				stagePadding: 30,
+			}, 500: {
+				items: 3,
+				stagePadding: 40,
+			}, 900: {
+				items: 4,
+				stagePadding: 40,
+			}, 1200: {
+				items: 5,
+				stagePadding: 40,
+			}, 1500: {
+				items: 6,
+				stagePadding: 40,
+			}
+		}
+	});
+});
+
 var cantidadDeCategorias = categoriasTienda.categoria.length;
 ctn_cards = document.getElementById('contenedorDeCards');
+ctn_menuCartaItems = document.getElementById('ctn_menuCartaItems');
 
 for (let i = 0; i < cantidadDeCategorias; i++) {
 	console.log(i);
+	//CARD
 	cardForSlider_a = ctn_cards.appendChild(document.createElement('a'));
 	cardForSlider_a.setAttribute('class', 'categorias_card_a');
 
@@ -149,6 +203,40 @@ for (let i = 0; i < cantidadDeCategorias; i++) {
 	cardForSlider_icon.setAttribute('class', categoriasTienda.categoria[i].iconCategoria + ' textoBeige iconMediano');
 
 	cardForSlider_p = cardForSlider.appendChild(document.createElement('p'));
-	cardForSlider_p.setAttribute('class', 'textoBeige textoMediano');
+	cardForSlider_p.setAttribute('class', 'textoBeige textoMediano primeraLetraMayuscula');
 	cardForSlider_p.innerHTML = categoriasTienda.categoria[i].nombreCategoria; 
+
+	let j = i + 1;
+
+
+/*MENÚ*/
+	cardForSlider_a.addEventListener('click', function muestroMenúCarta() {
+		document.getElementById('tituloMenuCarta').innerHTML = categoriasTienda.categoria[i].nombreCategoria;
+
+		for (let y = 0; y < j; y++) {
+			menuCartaItem = ctn_menuCartaItems.appendChild(document.createElement('li'));
+			menuCartaItem.setAttribute('class', 'ocupaElWidth menuCartaItem');
+			menuCartaItem_nombrePrecio = menuCartaItem.appendChild(document.createElement('div'));
+			menuCartaItem_nombrePrecio.setAttribute('class', 'flex_row textoChico flex_superCenter positionRelative');
+			//item: bullet
+			menuCartaItem_span = menuCartaItem_nombrePrecio.appendChild(document.createElement('span'));
+			menuCartaItem_span.setAttribute('class', 'bulletMenuCarta');
+			//item: nombre del plato
+			menuCartaItem_nombrePlato = menuCartaItem_nombrePrecio.appendChild(document.createElement('p'));
+			menuCartaItem_nombrePlato.setAttribute('class', 'textoGris');
+			menuCartaItem_nombrePlato.innerHTML = categoriasTienda[j].nombrePlato;
+			//item:precio del plato
+			menuCartaItem_precioPlato = menuCartaItem_nombrePrecio.appendChild(document.createElement('p'));
+			menuCartaItem_precioPlato.setAttribute('class', 'textoBeige');
+			menuCartaItem_precioPlato.innerHTML = categoriasTienda[j].precioPlato;
+			//item linea y descripcion
+			menuCartaItem.appendChild(document.createElement('div')).setAttribute('class', 'lineaItemMenuCarta');
+			menuCartaItem.appendChild(document.createElement('p')).setAttribute('class', 'textoGris cursivaMenosOpaco textoCentrado').innerHTML = categoriasTienda[j].precioPlato;
+		} 
+	})
 }
+
+/*FOOTER*/
+document.getElementById('footer_logo').setAttribute('src', 'img/' + recursosTienda.imagenes[0].logoNegro + '.svg');
+document.getElementById('footer_ubicacionTienda').innerHTML = recursosTienda.contacto[0].ubicacion;
+document.getElementById('footer_telefonoTienda').innerHTML = recursosTienda.contacto[0].telefono;

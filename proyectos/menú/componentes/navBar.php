@@ -23,7 +23,7 @@
     </div>
     <div>
         <div id="header_lineaTop" class="header_linea"></div>
-        <h1 id="header_nombreTienda" class="textoBlanco textoPortada"></h1><!--[recursosTienda.textos[0].nombreTienda]-->
+        <h1 id="header_nombreTienda" class="textoBlanco textoGrande"></h1><!--[recursosTienda.textos[0].nombreTienda]-->
         <div id="header_lineaBottom" class="header_linea"></div>
     </div>
     <div>
