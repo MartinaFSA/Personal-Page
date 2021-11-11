@@ -36,23 +36,18 @@ body::-webkit-scrollbar {
 
 .textoChico {
   font-size: 1rem; }
-
 .textoMediano {
   font-size: 1.2rem; }
-
 .textoGrande {
   font-size: 1.3rem; }
-
 .textoTitulo {
   width: 100%;
   font-size: 1.5rem; }
-
+  
 .textoMainColor {
   color: var(--main-text-color); }
-
 .textoGrisVerde {
   color: var(--grisVerde); }
-
 .textoFooter {
   color: #353535;}
 @keyframes teVeo {
@@ -88,43 +83,35 @@ body::-webkit-scrollbar {
   height: 100vh;
   width: 100vw;
   margin: 0%;
-  position: relative;}
-  #pageIntro__ctn--text-icon {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #pageIntro__text {
-    width: 60%;
-    padding: 0%;
-    margin: 0%;
-    font-weight: bold;
-    font-family: 'General Sans', sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    z-index: 8; }
-    #pageIntro__text:not(span:first-of-type) {
-      color: #fafafa;
-    }
-    #pageIntro__text span {
-      color: #8FAE94;
-    }
-  #pageIntro__ctn--text-icon div:nth-of-type(2n) {
-    background: linear-gradient(141.84deg, #6d6967 13.15%, #4b4948 87.41%);
-    border-radius: 100%;
-    box-shadow: 8px 8px 8px #44413F, -8px -8px 8px #706866;
-    width: 30%;
-    padding: 7% 8% 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #pageIntro__ctn--text-icon div:nth-of-type(2n) > img {
-    width: 100%;
-  }
+  position: relative;
+} #pageIntro__ctn--text-icon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} #pageIntro__text {
+  width: 60%;
+  padding: 0%;
+  margin: 0%;
+  font-weight: bold;
+  font-family: 'General Sans', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 8; }
+#pageIntro__text:not(span:first-of-type) {
+  color: #fafafa;
+} #pageIntro__text span:first-of-type {
+  color: #8FAE94;
+} .botonVerdeCallToAction {
+  background-color: transparent;
+  border: 2.5px solid #8FAE94;
+  border-radius: 40px;
+  color: #8FAE94;
+  padding: 0px 10px;
+  margin: 0px;
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Barra de navegación por secciones*/
@@ -176,7 +163,7 @@ body::-webkit-scrollbar {
   #ctn__navBar .navBar__link:hover {
     text-decoration: line-through;
     text-decoration-thickness: from-font; }
-  #ctn__navBar #coderMode {
+  #coderMode {
     background-color: transparent;
     border-color: transparent;
     text-align: right;
@@ -184,7 +171,8 @@ body::-webkit-scrollbar {
     width: 30%;
     height: 100%;
     padding: 0;
-    margin: 0%; }
+    margin: 0%; 
+    cursor:pointer;}
   #ctn__navBar .navBar__main {
     color: var(--main-text-color);
     font-family: 'Clash Display', sans-serif;
@@ -199,18 +187,6 @@ body::-webkit-scrollbar {
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*Sobre Mi*/
-/*path {
-    fill: transparent;
-
-    position: absolute;
-    z-index: 14;
-}
-
-text {
-    font-size: calc(1rem + 0.5vw);
-
-    position: absolute;
-}*/
 .sectionTitle {
   color: var(--main-text-color);
   display: block;
@@ -628,21 +604,27 @@ footer {
       
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*MEDIA SCREENS y breakpoints*/
-@media screen and (max-width: 350px) {
-  /*Perfil*/
-  #perfil__foto--imagen, #perfil__foto--imagen img {
-    width: 50vw;
-    height: 50vw; } }
+
+@media screen and (max-width: 400px) {
+  .botonVerdeCallToAction {
+    width: 150px;
+  } .botonVerdeCallToAction > i {padding-left: 20px;}
+}
+
+@media screen and (min-width: 400px) {
+  .botonVerdeCallToAction {
+    width: 250px;
+  }  .botonVerdeCallToAction > i {padding-left: 80px;}
+}
+
 @media screen and (max-width: 520px) {
   #barraFlotante {
     position: absolute;
     right: 13px; }
-
-  /*Bienvenida*/
-  #pageIntro__text {
-    padding: 0% 15%; }
-
   /*Perfil*/
+  #perfil__foto--imagen, #perfil__foto--imagen img {
+    width: 50vw;
+    height: 50vw; }
   #perfil__misRedes {
     padding: 40px 0 50px;
     flex-direction: column;
@@ -824,6 +806,20 @@ footer {
   #perfil__misRedes {
     padding: 100px 0 0px; } }
 @media screen and (min-width: 800px) {
+  #pageIntro__ctn--text-icon > div:nth-of-type(2) {
+    background: linear-gradient(141.84deg, #6d6967 13.15%, #4b4948 87.41%);
+    border-radius: 100%;
+    box-shadow: 8px 8px 8px #44413F, -8px -8px 8px #706866;
+    width: 30rem;
+    height: 30rem;
+    padding: 10% unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }  #pageIntro__ctn--text-icon > div:nth-of-type(2) > img {
+    object-fit: scale-down;
+  }
+
   /*Perfil*/
   .sectionTitle {
     padding: 60px 0; }
@@ -966,8 +962,13 @@ footer {
     margin-left: 3vw;
     margin-right: 3vw;
     word-wrap: normal; }
-
+  .botonVerdeCallToAction {
+    font-size: 1.3rem;}
   :root {
     font-size: 20px; } }
 
+@media screen and (max-width: 1499px) {
+  .botonVerdeCallToAction {
+    font-size: 1.5rem;}
+  }
 /*# sourceMappingURL=sintaxis.css.map */

@@ -15,18 +15,3 @@
         <li id="whatsAppLink"></li>
     </ul>
 </nav>
-
-<!--Header-->
-<section class="fontAca ocupaTodo flex_superCenter columnaFlex">
-    <div>
-        <img alt="Logo de la página" id="header_logo"><!--[recursosTienda.imagenes[0].logoBlanco]-->
-    </div>
-    <div>
-        <div id="header_lineaTop" class="header_linea"></div>
-        <h1 id="header_nombreTienda" class="textoBlanco textoGrande"></h1><!--[recursosTienda.textos[0].nombreTienda]-->
-        <div id="header_lineaBottom" class="header_linea"></div>
-    </div>
-    <div>
-        <h2 id="header_slogan" class="textoBlanco textoMediano"></h2><!--[recursosTienda.textos[0].slogan]-->
-    </div>
-</section>

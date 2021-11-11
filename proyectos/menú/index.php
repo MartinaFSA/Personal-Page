@@ -15,14 +15,187 @@
         <!--FontAwesome--><script src="https://kit.fontawesome.com/9170870617.js" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="styles/estilos.css">
+        <script>
+            /*ARRAY LITERALS (nested arrays/matrices) DE LA TIENDA. Están acá porque sino no podía acceder a ellos.*/
+            var recursosTienda = {
+                'textos': [
+                    {nombreTienda: 'RestoPepe', //0,0
+                    slogan: 'Las mejores hamburguesas de Zona Sur', //0,1
+                    metaPalabrasClave: 'nombreTienda, ubicación, especialidad', //0,2
+                    metaDescripcion: 'nombreTienda. Slogan. Ubicación. Carta/Menú · Recomendaciones · Contacto.'}, //0,3
+                ],
+                'imagenes': [
+                    {favIcon: 'logoNegro',
+                    busquedaEstructurada: 'busquedaEstructurada',
+                    logoNegro: 'logoNegro', //Para el footer
+                    logoBlanco: 'logoBlanco', //Para el header
+                    portadaHeaderMobile: 'portadaHeaderMobile',
+                    portadaHeaderDesktop: 'portadaHeaderDesktop',}
+                ],
+                'contacto': [
+                    {whatsapp: '1162840250', //No incluyas los ceros, paréntesis ni guiones cuando añadas el número de teléfono en este formato. (ej: 1166665555)
+                    ubicacion: 'Calle 1234, Colegiales.', //Calle, número y barrio
+                    telefono: '4812-3456'} //Sin código de área y con guión (ej: 4822-2222)
+                ]
+            }
+            var categoriasTienda = {
+                'categoria': [//Tiene que haber mínimo 6 categorías. Si hay menos cambiar el card slider responsive
+                    {nombreCategoria: 'Postres',
+                    iconCategoria: 'fas fa-cookie', //código class del icon (fontAwesome o similares)
+                    menu_id: 'postres'}, //Es el nombre de la categoría pero sin espacios y camelcase
 
+                    {nombreCategoria: 'Acompañamientos',
+                    iconCategoria: 'fas fa-bacon',
+                    menu_id: 'Acompañamientos'},
+
+                    {nombreCategoria: 'Sandwiches',
+                    iconCategoria: 'fas fa-bread-slice',
+                    menu_id: 'sandwiches'},
+
+                    {nombreCategoria: 'Vegano',
+                    iconCategoria: 'fas fa-seedling',
+                    menu_id: 'sandwiches'},
+
+                    {nombreCategoria: 'Promociones',
+                    iconCategoria: 'fas fa-fire',
+                    menu_id: 'sandwiches'},
+
+                    {nombreCategoria: 'Bebidas',
+                    iconCategoria: 'fas fa-cocktail',
+                    menu_id: 'bebidas'}
+
+                ],//Los elementos de este array deben estar en la misma posición que en el array anterior
+                'Postres': [
+                    {nombrePlato: 'Bizcochuelo',
+                    precioPlato: '150.55',
+                    descripcionPlato: 'relleno de DDL, duraznos y cubierto con ganache de chocolate'}
+                ],
+                'Acompañamientos': [
+                    {nombrePlato: 'Bacon',
+                    precioPlato: '325',
+                    descripcionPlato: 'crocante y cocinado a la plancha'}
+                ],
+                'Sandwiches': [
+                    {nombrePlato: 'Croque madame',
+                    precioPlato: '400.99',
+                    descripcionPlato: 'sandwich de pan francés relleno de jamón y queso y cubierto de salsa blanca y queso gratinado'}
+                ],
+                'Vegano': [
+                    {nombrePlato: 'vegano',
+                    precioPlato: '325',
+                    descripcionPlato: 'crocante y cocinado a la plancha'}
+                ],
+                'Promociones': [
+                    {nombrePlato: 'promo',
+                    precioPlato: '325',
+                    descripcionPlato: 'crocante y cocinado a la plancha'}
+                ],
+                'Bebidas': [
+                    {nombrePlato: 'chocolatada',
+                    precioPlato: '325',
+                    descripcionPlato: 'crocante y cocinado a la plancha'}
+                ],
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            "image": [
+                "busquedaEstructurada.jpg"
+            ],
+            "name": "nombreTienda",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle 1234",
+                "addressLocality": "Colegiales",
+                "addressRegion": "CABA",
+                "postalCode": "12345",
+                "addressCountry": "Argentina"
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.5",
+                "bestRating": "5"
+                },
+                "author": {
+                "@type": "Person",
+                "name": "Lorena López"
+                }
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 40.761293,
+                "longitude": -73.982294
+            },
+            "url": "https://martinafernandezsuarez.com.ar/proyectos/menú/index.php",
+            "telephone": "+544812-3456",
+            "servesCuisine": "Argentina",
+            "priceRange": "$$",
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday"
+                ],
+                "opens": "11:30",
+                "closes": "22:00"
+                },
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "11:30",
+                "closes": "23:00"
+                },
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "16:00",
+                "closes": "23:00"
+                },
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "16:00",
+                "closes": "22:00"
+                }
+            ],
+            "menu": "https://martinafernandezsuarez.com.ar/proyectos/menú/index.php",
+            "acceptsReservations": "True"
+            }
+        </script>
     </head>
 
     <body>
+    <div itemscope itemtype="https://schema.org/Restaurant">
         <header><!--NOTA: style="background-image: url([recursosTienda.imagenes[0].portadaHeaderDesktop])"-->
-            <?php 
-                require("componentes/navBar.php");
-            ?>
+            <article id="header_background">
+                <?php 
+                    require("componentes/navBar.php");
+                ?>
+                <!--Header-->
+                <section class="fontAca ocupaTodo flex_superCenter columnaFlex">
+                    <div>
+                        <img alt="Logo de la página" id="header_logo"><!--[recursosTienda.imagenes[0].logoBlanco]-->
+                    </div>
+                    <div>
+                        <div id="header_lineaTop" class="header_linea"></div>
+                        <h1 id="header_nombreTienda" class="textoBlanco textoGrande"></h1><!--[recursosTienda.textos[0].nombreTienda]-->
+                        <div id="header_lineaBottom" class="header_linea"></div>
+                    </div>
+                    <div>
+                        <h2 id="header_slogan" class="textoBlanco textoMediano"></h2><!--[recursosTienda.textos[0].slogan]-->
+                    </div>
+                </section>
+            </article>
         </header>
 
         <main> 
@@ -41,37 +214,22 @@
             </article>
 
             <article>
-                <p id="tituloMenuCarta" class="textoGris textoMediano fontAca textoCentrado"></p>
+                <p id="tituloMenuCarta" class="textoGris textoMediano fontAca textoCentrado displayChange"></p>
 
-                <ul id="ctn_menuCartaItems">
+                <ul id="ctn_menuCartaItems" class="displayChange">
                 </ul>
             </article>
 
             <article id="lastSection" class="textoMediano fontAca textoCentrado ocupaElWidth">
                 <p class="textoGris marginPadding0 textoBold">¿No sabés qué pedir?</p>
-                <a href="menuRecomendado.php marginPadding0">Apretá acá</a>
+                <a href="menuRecomendado.php" class="marginPadding0">Apretá acá</a>
             </article>
         </main>
 
         <footer>
-            <section class="textoGris fontAca textoCentrado ocupaElWidth">
-                <p class="textoMediano textoBold">Horarios</p>
-                <p class="textoChico">Lunes - Viernes: 9hs a 18hs</p>
-                <p class="textoChico">Sábados y Domingos: 13hs a 23hs</p>
-                <p class="textoMediano textoBold">Teléfono</p>
-                <p id="footer_telefonoTienda" class="textoChico"></p>
-            </section>
-            <section>
-                <img id="footer_logo" alt="Logo de la tienda">
-                <div class="flex_row">
-                    <p id="footer_ubicacionTienda"></p>
-                </div>
-            </section>
-            <div> 
-                <p>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and <a href="https://fontawesome.com/">FontAwesome</a></p>
-            </div>
+            <?php require("componentes/footer.php"); ?>
         </footer>
-        
+        </div>
         <!--Bootstrap--><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -9,8 +9,9 @@
         <meta name="description" content="Portfolio de Martina Fernández Suárez Anzorena."/>
         <meta http-equiv="Content-Language" content="es"/>
         <meta name="author" content="MartinaFSA">
-
-        <link rel = "icon" href = "img/favIcon.svg">
+        <meta name="sitedomain" content="https://martinafernandezsuarez.com.ar/">
+        
+        <link rel = "icon" href = "img/miLogo.ico">
 
         <title>Portfolio - Martina Fernández Suárez Anzorena</title>
 
@@ -41,7 +42,7 @@
             <!--NAVIGATION BAR-->
             <section id="ctn__navBarPortfolio">
                 <nav>
-                    <a href="index" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem">MartinaFSA</a>
+                    <a href="index" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem" itemprop="url">MartinaFSA</a>
                     <a href="#webs" id="navBar__linkWebs" class="navBar__linkPortfolio textoMediano">WEBS</a>
                     <!--<a href="#diseño" class="navBar__linkPortfolio textoMediano" id="navBar__linkDiseño">DISEÑO</a>-->
                 </nav>
@@ -73,9 +74,9 @@
 
                     <div class="columnaFlex3 textoSobreLaPagina">
                         <p class="sectionSubtitle textoMediano">Recetario</p>
-                        <p class="descripcionProyecto textoChico">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página contiene una sección de recetas guardadas a la que se accede iniciando sesión.</p>
+                        <p class="descripcionProyecto textoChico">Esta página es un proyecto personal realizado para ordenar mis recetas favoritas. La página contiene una sección de recetas guardadas a la que se accede iniciando sesión. Mirá la demo <a href="proyectos/recetario/demoRecetario.php">acá.</a> </p>
                             <p class="textoChico"><b>Tecnologías utilizadas: </b>HTML, CSS, JS, SQL y PHP</p>
-                        <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" target="_blank">en GitHub</a></p>
+                        <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" itemprop="url" target="_blank">en GitHub</a></p>
                     </div>
                 </article>
 
@@ -99,7 +100,7 @@
                         <p class="sectionSubtitle textoMediano">Actividades en CABA (en proceso)</p>
                         <p class="descripcionProyecto textoChico">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
                         <p class="textoChico"><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
-                        <p class="textoChico">Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1" target="_blank">este link </a>de Figma.</p>
+                        <p class="textoChico">Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1"  itemprop="url" target="_blank">este link </a>de Figma.</p>
                     </div>
                 </article>
 
@@ -127,9 +128,7 @@
                     </div>
                 </article>
 
-<!--
-                <article class="filaFlex fade-in">
-                
+                <!-- <article class="filaFlex fade-in">
                     <div class="columnaFlex9 presentacionPagina">
                         <div class="fondo__PresentacionPagina"></div>
 
@@ -148,10 +147,9 @@
                         <p class="sectionSubtitle textoMediano">XXXXX XXXXXXX</p>
                         <p class="descripcionProyecto textoChico">XXXXXXXXX XXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXX XXXXXXXXXXX XXXXXXXXXXXXX XXXX XXXXXX XXXXX XXXXXXXX.</p>
                         <p class="textoChico"><b>Tecnologías utilizadas: </b></p>
-                        <p class="textoChico">Podés acceder a esta página en: <a href="" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
+                        <p class="textoChico">Podés acceder a esta página en: <a href=""  itemprop="url" target="_blank">XXXXXXXXXXXXXX.com.ar</a></p>
                     </div>
-                </article> 
-            -->
+                </article> -->
             </section>
 
             <!--MODALES-->
@@ -169,13 +167,12 @@
                         </div>
 
                         <div class="modal__body-columna2">
-                            <img src="img/paginas/primeraPagina__destacable1.JPG" alt="" class="destacable1">
-                            <img src="img/paginas/primeraPagina__destacable2.JPG" alt="" class="destacable2">
+                            <!--<img src="img/paginas/primeraPagina__destacable1.JPG" alt="" class="destacable1">
+                            <img src="img/paginas/primeraPagina__destacable2.JPG" alt="" class="destacable2"> -->
                         </div>
                     </section>
                 </div>
             </article>
-
 
             <article class="modal" id="modalDePagina2">
                 <div class="modal__content">
@@ -212,8 +209,8 @@
                         </div>
 
                         <div class="modal__body-columna2">
-                            <img src="" alt="" class="destacable1">
-                            <img src="" alt="" class="destacable2">
+                            <!--<img src="" alt="" class="destacable1">
+                            <img src="" alt="" class="destacable2"> -->
                         </div>
                     </section>
                 </div>
@@ -353,9 +350,9 @@
                 <div id="footer__redes"> 
                     <p class="texto__footer textoMediano textoFooter">Seguime en mis redes</p>
                     <div class="social">
-                        <a href="https://github.com/MartinaFSA" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
-                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
-                        <a href="#" target="_blank" class="footer__social--link"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="https://github.com/MartinaFSA" itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
+                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="#" target="_blank" class="footer__social--link" itemprop="url"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                     </div>
                 </div>
             </div>

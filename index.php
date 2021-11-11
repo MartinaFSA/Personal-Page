@@ -9,8 +9,9 @@
         <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
         <meta http-equiv="Content-Language" content="es"/>
         <meta name="author" content="MartinaFSA">
-
-        <link rel = "icon" href = "img/favIcon.svg">
+        <meta name="sitedomain" content="https://martinafernandezsuarez.com.ar/">
+        
+        <link rel = "icon" href = "img/miLogo.ico">
 
         <title>Martina Fernández Suárez</title>
 
@@ -28,16 +29,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-        
+        <div itemscope itemtype="https://schema.org/Person">
         <header> 
             <section id="pageIntro">
                 <!--TEXTO BIENVENIDA-->
                 <div id="pageIntro__ctn--text-icon">
                     <div id="pageIntro__text">
-                        <p class="textoTitulo ">Hola, soy <span>Martina Fernández</span>. desarrolladora web frontend.</p>
+                        <p class="textoTitulo">Hola, soy <span itemprop="name">Martina Fernández</span>. <span itemprop="jobTitle">desarrolladora web frontend.</span></p>
+                        <a href="#ctn__navBar"><button class="botonVerdeCallToAction">Sobre Mí <i class="fas fa-angle-down"></i> </button></a>
                     </div>
                     <div>
-                        <img src="img/viewer.svg" alt="">
+                        <img src="img/logoGradient.svg" alt="">
                     </div>
                 </div>
             </section>
@@ -61,9 +63,9 @@
             <!--NAVIGATION BAR-->
             <section id="ctn__navBar">
                 <nav id="navBar">
-                    <a href="portfolio" target="_blank" class="navBar__link textoMediano">PORTFOLIO</a>
-                    <a href="index" class="navBar__main">MartinaFSA</a>
-                    <button class="navBar__link textoMediano" id="coderMode">DARK THEME</button>
+                    <a href="portfolio" target="_blank" class="navBar__link textoMediano" itemprop="url">PORTFOLIO</a>
+                    <a href="index" class="navBar__main" itemprop="url">MartinaFSA</a>
+                    <button class="navBar__link textoMediano" id="coderMode"></button>
                 </nav>
             </section>
 
@@ -85,18 +87,18 @@
 
                     <article id="perfil__foto">
                         <div id="perfil__foto--imagen">
-                            <img src="img/MFSA_fotocv1.jpg" width="" height="" alt="Foto de Martina">
+                            <img src="img/MFSA_fotocv2.png" alt="Foto de Martina" itemprop="image">
                         </div>
                     </article>
 
                     <article id="perfil__contacto">
                         <p class="sectionSubtitle textoMediano">Datos</p>
                         <ul>
-                            <li class="textoChico"><b>Correo electrónico: </b>
+                            <li class="textoChico" itemprop="email contactPoint"><b>Correo electrónico: </b>
                             martina.fernandez.sa@gmail.com</li>
-                            <li class="textoChico"><b>Ubicación:</b>
-                            Boedo, CABA, Argentina</li>
-                            <li class="textoChico"><b>Nacimiento: </b>
+                            <li class="textoChico" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><b>Ubicación:</b>
+                            <span itemprop="addressRegion">Boedo</span>, <span itemprop="addressLocality">CABA</span>, <span itemprop="addressLocality">Argentina</span></li>
+                            <li class="textoChico" itemprop="birthDate"><b>Nacimiento: </b>
                             14 de julio de 2002</li>
                         </ul>
                     </article>
@@ -194,10 +196,10 @@
                         <p class="cajitaInfo__title textoMediano">Desarrollo Web</p>
                             <p class="cajitaInfo__fechas textoChico"> <span class="cajitaInfo__fechas--linea">|</span> 2019</p>
                                 <p class="cajitaInfo__item textoChico">Programa "Aprende Programando", Ministerio de educación GCBA</p>
-                                    <p class="cajitaInfo__subitem textoChico textoGrisVerde">-HTML, CSS y Bootstrap</p>
+                                    <p class="cajitaInfo__subitem textoChico textoGrisVerde" itemprop="knowsAbout">-HTML, CSS y Bootstrap</p>
                             <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> 2021</p>
                                 <p class="cajitaInfo__item textoChico">Programa "Codo a Codo", Ministerio de educación GCBA</p>
-                                    <p class="cajitaInfo__subitem textoChico textoGrisVerde">-HTML, CSS, JS, GIT, SQL y PHP</p>
+                                    <p class="cajitaInfo__subitem textoChico textoGrisVerde" itemprop="knowsAbout">-HTML, CSS, JS, GIT, SQL y PHP</p>
 
                         <!--<p class="cajitaInfo__title">Diseño</p>
                             <p class="cajitaInfo__item">XXXXXXXXXXX</p>
@@ -218,7 +220,7 @@
                         <div class="portadaHabilidades--interiorBox">
                             <div class="rotar">
                                 <div class="centeringThis">
-                                    <p class="sectionTitle textoGrande">Inglés</p>
+                                    <p class="sectionTitle textoGrande" itemprop="knowsLanguage">Inglés</p>
                                 </div>
                             </div>
                         </div>
@@ -260,8 +262,8 @@
 
                         <p class="cajitaInfo__title spacingElements textoMediano">Estudios superiores</p>
                             <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> 2021 - Actualidad</p>
-                                <p class="cajitaInfo__item textoChico textoGrisVerde">Diseño Gráfico</p>
-                                    <p class="cajitaInfo__subitem textoChico">Universidad de Buenos Aires</p> 
+                                <p class="cajitaInfo__item textoChico textoGrisVerde" itemprop="knowsAbout">Diseño Gráfico</p>
+                                    <p class="cajitaInfo__subitem textoChico" itemprop="alumniOf">Universidad de Buenos Aires</p> 
                         
                             <p class="cajitaInfo__title textoMediano">Estudios medios</p>
                                 <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> 2016 - 2018</p>
@@ -381,9 +383,9 @@
                 <div id="footer__redes"> 
                     <p class="texto__footer textoMediano textoFooter">Seguime en mis redes</p>
                     <div class="social">
-                        <a href="https://github.com/MartinaFSA" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
-                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
-                        <a href="#" target="_blank" class="footer__social--link"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="https://github.com/MartinaFSA"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
+                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="#" target="_blank" class="footer__social--link" itemprop="url"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                     </div>
                 </div>
             </div>
@@ -392,7 +394,7 @@
             </div>
         </footer>
 
+        </div>
         <script src="scripts.js"></script>
-
     </body>
 </html>
