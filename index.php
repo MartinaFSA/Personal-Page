@@ -2,27 +2,13 @@
 <html lang="es">
 
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-
-        <meta name="keywords" content="portfolio, personal page, web developer, martina fernandez suarez anzorena, desarrolladora web, diseñadora gráfica"/>
-        <meta name="description" content="Currículum web y portfolio de Martina Fernández Suárez Anzorena."/>
-        <meta http-equiv="Content-Language" content="es"/>
-        <meta name="author" content="MartinaFSA">
-        <meta name="sitedomain" content="https://martinafernandezsuarez.com.ar/">
-        
-        <link rel = "icon" href = "img/miLogo.ico">
+        <?php
+            include("componentes/head.php");
+        ?>
 
         <title>Martina Fernández Suárez</title>
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         
-        <script src="https://kit.fontawesome.com/9170870617.js" crossorigin="anonymous"></script>
-
-        <link href="https://api.fontshare.com/css?f[]=general-sans@200,300,400,500&f[]=clash-display@500&f[]=bespoke-sans@300&f[]=rx-100@400&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="estilos/sintaxis.css">
-
+        <link rel="stylesheet" href="estilos/indexYGenerales.css">
     </head>
 
     <body>
@@ -35,7 +21,7 @@
                 <!--TEXTO BIENVENIDA-->
                 <div id="pageIntro__ctn--text-icon">
                     <div id="pageIntro__text">
-                        <p class="textoTitulo">Hola, soy <span itemprop="name">Martina Fernández</span>. <span itemprop="jobTitle">desarrolladora web frontend.</span></p>
+                        <p class="textoTitulo">Hola, soy <span itemprop="name">Martina Fernández</span>. <span itemprop="jobTitle">desarrolladora web.</span></p>
                         <a href="#ctn__navBar"><button class="botonVerdeCallToAction">Sobre Mí <i class="fas fa-angle-down"></i> </button></a>
                     </div>
                     <div>
@@ -82,7 +68,7 @@
                     
                     <article id="perfil__sobreMi">
                         <p class="sectionSubtitle textoMediano">Sobre Mí</p>
-                        <p class="textoChico">Estudiante de Diseño Gráfico y desarrolladora web frontend con conocimientos de backend. Me interesa la tecnología, el diseño y la programación.</p>
+                        <p class="textoChico">Estudiante de Diseño Gráfico y desarrolladora web con conocimientos de backend y frontend. Me interesa la tecnología, el diseño y la programación.</p>
                     </article>
 
                     <article id="perfil__foto">
@@ -329,71 +315,14 @@
             </section>
         </main>
 
-        <footer>
-            <div id="footerSec"></div>
-            <div id="footer__fila">
-                <div id="footer__contacto">
-                    <form action="" method="POST">
-                        <p class="texto__footer textoMediano textoFooter">Mandame un mail</p>
-                        
-                        <label for="nombreAsunto" class="textoChico textoFooter">Nombre</label>
-                        <input type="text" name="nombreAsunto" placeholder="Ingresá tu nombre" autocomplete="name" required>
+        <?php
+            include("componentes/footer.php");
+        ?>
 
-                        <label for="emisor" class="textoChico textoFooter">Mail</label>
-                        <input type="email" name="emisor" autocomplete="email" placeholder="Ingresá tu mail" required>
-
-                        <textarea name="mensaje" style="resize: none;" placeholder="Escribí tu mensaje acá" required></textarea>
-
-                        <input type="submit" name="enviarMail" id="enviarMail">
-                    </form>
-
-                    <!--MODAL-->
-                    <?php  
-                        if(isset($_POST["enviarMail"])) {
-                            $emisor = $_POST['emisor'];
-                            
-                            
-                            if(isset($_POST['emisor']) && $emisor = filter_var($emisor, FILTER_VALIDATE_EMAIL)) {
-                                $mensajeMail = $_POST['mensaje'];
-                                $mensajeMail = wordwrap( $mensajeMail, 70, "\r\n" );
-                                $asunto = $_POST['nombreAsunto'] . " - Contacta desde mi página";
-
-                                mail('martina.fernandez.sa@gmail.com', $asunto, $mensajeMail, "From: " . $emisor); //destinatario, asunto, mensaje, quien lo envía
-                                $mensaje = "Gracias por su mensaje! Lo contestaré a la brevedad";
-                                
-                            }else {
-                                $mensaje = "Por favor, inserta una dirección de mail válida";
-                            }
-                        }
-
-                        if(isset($mensaje)) { //Si $mensaje existe...
-                                
-                            echo "<section id='contenedorDeModal'>
-                                <div id='modalAviso'>
-                                    <div class='modalPHP textoChico'>
-                                        <p>" . $mensaje . "</p>
-                                    </div>
-                                </div>
-            
-                            </section>";
-                        }
-                    ?>
-                </div>
-
-                <div id="footer__redes"> 
-                    <p class="texto__footer textoMediano textoFooter">Seguime en mis redes</p>
-                    <div class="social">
-                        <a href="https://github.com/MartinaFSA"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
-                        <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
-                        <a href="#" target="_blank" class="footer__social--link" itemprop="url"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
-                    </div>
-                </div>
-            </div>
             <div id="backToTop">
                 <a href="#pageIntro" class="texto__footer textoMediano textoFooter">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
             </div>
         </footer>
-
         </div>
         <script src="scripts.js"></script>
     </body>

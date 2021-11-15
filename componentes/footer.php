@@ -58,7 +58,3 @@
                     </div>
                 </div>
             </div>
-            <div id="backToTop">
-                <a href="#pageIntro" class="texto__footer textoMediano textoFooter">Volver al inicio <i class="fas fa-angle-down" style="font-size: 3vh; transform: rotate(180deg);"></i> </a>
-            </div>
-        </footer>

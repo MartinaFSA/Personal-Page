@@ -6,7 +6,7 @@
             include("../../componentes/head.php");
         ?>
         <title>Recetario - Martina Fernández Suárez</title>
-        <link rel="stylesheet" href="../../estilos/sintaxis.css">
+        <link rel="stylesheet" href="../../estilos/indexYGenerales.css">
         <link rel="stylesheet" href="../../estilos/estilosDemo.css">
     </head>
 
@@ -35,9 +35,9 @@
             <div id="ctn_mainContent">
                 <!--COLUMNA IZQUEIRDA-->
                 <aside>
-                    <p class="transformVertical textoAsideProyecto textoMainColor">Recetario</p>
-                    <p class="transformVertical textoAsideProyecto textoVerdeAside">Recetario</p>
-                    <section class="transformVertical" id="ctn_paletaDeColores">
+                    <p class="transformVertical textoAsideProyecto textoMainColor soloSeVeEnPantallasGrandes">Recetario</p>
+                    <p class="transformVertical textoAsideProyecto textoVerdeAside soloSeVeEnPantallasGrandes">Recetario</p>
+                    <section class="transformVerticalEnPantallasGrandes" id="ctn_paletaDeColores">
                         <div id="paletaDeColores">
                             <div style="background-color: #fafafa;"></div>
                             <div style="background-color: rgba(121, 143, 129, 1);"></div>
@@ -54,8 +54,9 @@
                 <!--COLUMNA DERECHA-->
                 <section>
                     <article id="about">
-                        <p class="textoMediano textoMainColor">Esta página es un proyecto personal realizado para agrupar y organizar mis recetas favoritas. La misma cuenta con un sistema de registro....Esta página es un proyecto personal realizado para agrupar y organizar mis recetas favoritas. La misma cuenta con un sistema de registro.......</p>
-                        <p class="textoMediano textoMainColor">Si querés ver el código de la página entrá al <a href="">repositorio en GitHub</a>. También podés ver el <a href="">WireFrame en Figma</a>.</p>
+                        <p class="soloSeVeEnPantallasChicas textoGrande textoMainColor">Recetario</p>
+                        <p class="textoMediano textoMainColor">Esta página es un proyecto personal realizado para agrupar y organizar mis recetas favoritas. La misma cuenta con un sistema de registro de usuarios, inicio de sesión y guardado de recetas. Además tiene barras de búsqueda y secciones de recetas sin TACC y sin lactosa. Fue realizado con HTML, CSS, JavaScript, PHP y SQL.</p>
+                        <p class="textoMediano textoMainColor">Si querés ver el código de la página entrá al <a href="https://github.com/MartinaFSA/Recetario-PHP">repositorio en GitHub</a>. <!--También podés ver el <a href="">WireFrame en Figma</a>.--></p>
                     </article>
                     <article id="index">
                         <p class="textoGrande textoMainColor">Página de Inicio</p>
@@ -64,13 +65,16 @@
                 </section>
             </div>
             <!--VIDEO DEMOSTRACIÓN-->
-            <article>
+            <article id="demo">
+                <p class="textoGrande textoMainColor">Video de demostración</p>
                 <video src="" controls></video>
             </article>
         </main>
         <?php
             include("../../componentes/footer.php");
         ?>
+        
+        </footer>
         <script src="scripts.js"></script>
     </body>
 </html>
