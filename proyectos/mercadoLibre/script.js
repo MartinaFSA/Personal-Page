@@ -10,6 +10,20 @@ function categoriasHidden() {
     categorias_indicador.style.display = "none";
 }
 
+
+//Hamburger menu
+var menuHamburguesa = document.querySelector('.menuHamburguesa');
+var menuHamburguesa_ul = document.querySelector('.menuHamburguesa_ul');
+var headerNav = document.querySelector('.navigationBar');
+
+menuHamburguesa.addEventListener('click', openMenu);
+
+function openMenu() {
+    menuHamburguesa.classList.toggle('active');
+    menuHamburguesa_ul.classList.toggle('active');
+	headerNav.classList.toggle('active');    
+}
+
 /*Carrusel*/
 const carrusel = document.getElementById("carrusel");
 carrusel.onmouseenter = function () {
