@@ -10,19 +10,19 @@ function categoriasHidden() {
     categorias_indicador.style.display = "none";
 }
 
-
 //Hamburger menu
 var menuHamburguesa = document.querySelector('.menuHamburguesa');
 var menuHamburguesa_ul = document.querySelector('.menuHamburguesa_ul');
-var headerNav = document.querySelector('.navigationBar');
 
 menuHamburguesa.addEventListener('click', openMenu);
 
 function openMenu() {
     menuHamburguesa.classList.toggle('active');
-    menuHamburguesa_ul.classList.toggle('active');
-	headerNav.classList.toggle('active');    
+    menuHamburguesa_ul.classList.toggle('active'); 
 }
+
+var input = document.getElementById('input_search');
+input.focus();
 
 /*Carrusel*/
 const carrusel = document.getElementById("carrusel");
@@ -59,7 +59,6 @@ let textosHidden_segundo = document.getElementsByClassName("card_segundo_textoHi
 let corazonHidden = document.getElementsByClassName("card_ofertas_corazon");
 
 for (var i = 0; i < card_ofertas.length; i++) {
-    console.log(i);
     card_ofertas[i].addEventListener("mouseenter", muestroTextos);
     card_ofertas[i].addEventListener("mouseleave", muestroTextos);
 
@@ -71,7 +70,6 @@ for (var i = 0; i < card_ofertas.length; i++) {
     break;
 };
 for (var y = 1; y < card_ofertas.length; y++) {
-    console.log(y);
     card_ofertas[y].addEventListener("mouseenter", muestroTextos);
     card_ofertas[y].addEventListener("mouseleave", muestroTextos);
 
@@ -83,7 +81,6 @@ for (var y = 1; y < card_ofertas.length; y++) {
     break;
 };
 for (var t = 2; t < card_ofertas.length; t++) {
-    console.log(t);
     card_ofertas[t].addEventListener("mouseenter", muestroTextos);
     card_ofertas[t].addEventListener("mouseleave", muestroTextos);
 
@@ -95,7 +92,6 @@ for (var t = 2; t < card_ofertas.length; t++) {
     break;
 };
 for (var o = 3; o < card_ofertas.length; o++) {
-    console.log(o);
     card_ofertas[o].addEventListener("mouseenter", muestroTextos);
     card_ofertas[o].addEventListener("mouseleave", muestroTextos);
 
@@ -107,7 +103,6 @@ for (var o = 3; o < card_ofertas.length; o++) {
     break;
 };
 for (var u = 4; u < card_ofertas.length; u++) {
-    console.log(u);
     card_ofertas[u].addEventListener("mouseenter", muestroTextos);
     card_ofertas[u].addEventListener("mouseleave", muestroTextos);
 
@@ -118,6 +113,7 @@ for (var u = 4; u < card_ofertas.length; u++) {
     }
     break;
 };
+
 /*Categorías populares*/
 let categoria = document.querySelectorAll("div.categoria");
 categoria.onmouseenter = function () {
@@ -135,11 +131,10 @@ categoriasPopulares.onmouseleave = function () {
     document.getElementById("flecha_mejoresCategorias").style.display = "none"
 }
 
-
 /*Footer más información despliegue*/
 let botonMasInfo = document.getElementById("masInformacion_btn");
 function despliegueInformacion() {
-    if (botonMasInfo.style.backgroundColor === "transparent") {
+    if (botonMasInfo.style.backgroundColor == "transparent") {
         botonMasInfo.style.backgroundColor = "#f7f7f7";
         document.getElementById("links_masInformacion").style.display = "flex";
         document.getElementById("icon_masInformacion").style.transform = "rotate(180deg)";

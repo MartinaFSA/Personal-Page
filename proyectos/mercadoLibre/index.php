@@ -25,38 +25,71 @@
  
 	<body>
     	<header>
-            <nav class="textoNormal paddingPagina_displayFlex" >
+            <nav class="textoNormal paddingPagina_displayFlex hiddenFrom1024pxAndOn">
                 <!--Primera fila del navigation bar-->
                 <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
-                    <li class="col-2 hiddenUntil1024px"><a href="index.php"><img src="img/generales/logo_navBar.png" alt="Logo de mercado libre"></a></li>
-                    <li class="col-2 hiddenFrom1024pxAndOn"><a href="index.php"><img src="img/generales/favicon.png" alt="Logo de mercado libre"></a></li>
-                    <li id="ctn_input_search" class="col-6"><input id="input_search" class="background_border_shadow" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."></li>
-                    <li class="col-4 hiddenUntil1024px"><a href="sucripcionNivel6.html" class="hiddenUntil1024px"><img src="img/generales/suscripcionAlNivel6.JPG" alt="Suscribite al nivel 6 para obtener beneficios exclusivos"></a></li>
+                    <li class="col-2"><a href="index.php"><img src="img/generales/favicon.png" alt="Logo de mercado libre"></a></li>
+                    <li id="ctn_input_search" class="col-6 background_border_shadow"><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."><button><i class="fas fa-search"></i></button></li>
                     <li>
-                        <div class="menuHamburguesa hiddenFrom1024pxAndOn">
+                        <div class="menuHamburguesa">
                             <div class="menuHamburguesa_linea"></div>
                             <div class="menuHamburguesa_linea"></div>
                             <div class="menuHamburguesa_linea"></div>
                         </div>
-                        <ul class="fontAca textoBeige textoMediano menuHamburguesa_ul">
-                            <li> <a href="">Entradas</a> </li> <!--[categoriasTienda.categoria[].nombreCategoria]-->
-                            <li> <a href="">Acompañamientos</a> </li> 
-                            <li> <a href="">Hamburguesas</a> </li>
-                            <li> <a href="">Bebidas</a> </li>
-                            <li> <a href="">Postres</a> </li>
-                            <div> <div></div> </div>
-                            <li id="whatsAppLink"></li>
+                        <ul class="textoBlanco menuHamburguesa_ul">  <!--Despliegue de categorías-->
+                            <div>
+                                <img src="" alt="">
+                                <div id="menu_bienvenido">
+                                    <p class="textoNormal">Bienvenido</p>
+                                    <p class="textoChico">Ingresa a tu cuenta para ver tus compras, favoritos, etc.</p>
+                                    <div>
+                                        <button class="textoBlanco">Ingresá</button>
+                                        <button class="ghostButtonAzul">Creá tu cuenta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <li> <a href="" class="textoBlanco">Vehículos</a> </li>
+                            <li> <a href="" class="textoBlanco">Inmuebles</a> </li>
+                            <li> <a href="" class="textoBlanco">Tecnología</a> </li>
+                            <li> <a href="" class="textoBlanco">Hogar y Muebles</a> </li>
+                            <li> <a href="" class="textoBlanco">Electrodomésticos</a> </li>
+                            <li> <a href="" class="textoBlanco">Herramientas</a> </li>
+                            <li> <a href="" class="textoBlanco">Construcción</a> </li>
+                            <li> <a href="" class="textoBlanco">Deportes y Fitness</a> </li>
+                            <li> <a href="" class="textoBlanco">Accesorios para Vehículos</a> </li>
+                            <li> <a href="" class="textoBlanco">Moda</a> </li>
+                            <li> <a href="" class="textoBlanco">Juegos y Juguetes</a> </li>
+                            <li> <a href="" class="textoBlanco">Bebés</a> </li>
+                            <li> <a href="" class="textoBlanco">Belleza y Cuidado Personal</a> </li>
+                            <li> <a href="" class="textoBlanco">Salud y Equipamiento Médico</a> </li>
+                            <li> <a href="" class="textoBlanco">Industrias y Oficinas</a> </li>
+                            <li> <a href="" class="textoBlanco">Agro</a> </li>
+                            <li> <a href="" class="textoBlanco">Productos sustentables</a> </li>
+                            <li> <a href="" class="textoBlanco">Ver más categorías</a> </li>
                         </ul>
                     </li>
                 </ul>
 
                 <!--Segunda fila del navigation bar-->
                 <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="segundaFila_navBar">
-                    <li class="col-2 hiddenUntil1024px"><a href="" class="hiddenUntil1024px"> <img src="img/generales/enviarAcaba.JPG" height="100%" alt="Enviar a Capital Federal"></a></li>
-                    <li class="col-2 hiddenFrom1024pxAndOn"><a href="" class="hiddenFrom1024pxAndOn"> <img src="img/generales/enviarAcabaHasta1024px.JPG" height="20px" alt="Enviar a Capital Federal"></a></li>
+                    <li class="col-2"><a href=""> <img src="img/generales/enviarAcabaHasta1024px.JPG" height="20px" alt="Enviar a Capital Federal"></a></li>
+                </ul>
+            </nav>
+            
+            <nav class="textoNormal paddingPagina_displayFlex hiddenUntil1024px">
+                <!--Primera fila del navigation bar-->
+                <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
+                    <li class="col-2"><a href="index.php"><img src="img/generales/logo_navBar.png" alt="Logo de mercado libre"></a></li>
+                    <li id="ctn_input_search" class="col-6 background_border_shadow"><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."><button><i class="fas fa-search"></i></button></li>
+                    <li class="col-4"><a href="sucripcionNivel6.html"><img src="img/generales/suscripcionAlNivel6.JPG" alt="Suscribite al nivel 6 para obtener beneficios exclusivos"></a></li>
+                </ul>
+
+                <!--Segunda fila del navigation bar-->
+                <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="segundaFila_navBar">
+                    <li class="col-2"><a href=""> <img src="img/generales/enviarAcaba.JPG" height="100%" alt="Enviar a Capital Federal"></a></li>
                     <li class="col-6" id="ctn_linksGenerales"> 
                         <ul class="ctn_fila linksNavBar_verticalAlign textoChico" id="linksGenerales">  <!--Links generales-->
-                            <li onmouseenter="categoriasDisplay()" onmouseleave="categoriasHidden()" class="linksNavBar_verticalAlign opacidadReducida seems_clickeable hiddenUntil1024px">Categorías<i class="fas fa-chevron-down" id="categorias_icon"></i>
+                            <li onmouseenter="categoriasDisplay()" onmouseleave="categoriasHidden()" class="linksNavBar_verticalAlign opacidadReducida seems_clickeable">Categorías<i class="fas fa-chevron-down" id="categorias_icon"></i>
                                 <div id="categorias_indicador"></div>
                                 <ul id="categorias" class="textoBlanco">  <!--Despliegue de categorías-->
                                     <li> <a href="" class="textoBlanco">Vehículos</a> </li>
@@ -64,6 +97,19 @@
                                     <li> <a href="" class="textoBlanco">Tecnología</a> </li>
                                     <li> <a href="" class="textoBlanco">Hogar y Muebles</a> </li>
                                     <li> <a href="" class="textoBlanco">Electrodomésticos</a> </li>
+                                    <li> <a href="" class="textoBlanco">Herramientas</a> </li>
+                                    <li> <a href="" class="textoBlanco">Construcción</a> </li>
+                                    <li> <a href="" class="textoBlanco">Deportes y Fitness</a> </li>
+                                    <li> <a href="" class="textoBlanco">Accesorios para Vehículos</a> </li>
+                                    <li> <a href="" class="textoBlanco">Moda</a> </li>
+                                    <li> <a href="" class="textoBlanco">Juegos y Juguetes</a> </li>
+                                    <li> <a href="" class="textoBlanco">Bebés</a> </li>
+                                    <li> <a href="" class="textoBlanco">Belleza y Cuidado Personal</a> </li>
+                                    <li> <a href="" class="textoBlanco">Salud y Equipamiento Médico</a> </li>
+                                    <li> <a href="" class="textoBlanco">Industrias y Oficinas</a> </li>
+                                    <li> <a href="" class="textoBlanco">Agro</a> </li>
+                                    <li> <a href="" class="textoBlanco">Productos sustentables</a> </li>
+                                    <li> <a href="" class="textoBlanco">Ver más categorías</a> </li>
                                 </ul>
                             </li>
                             <li class="linksNavBar_verticalAlign opacidadReducida espaciadoLinks hiddenUntil1024px"> <a href="">Ofertas</a> </li>
@@ -206,7 +252,7 @@
                     <div class="card-deck textoNormal" id="ctn_ofertas">
                         <div class="card card_ofertas">
                             <a href="" style="color: unset;">
-                                <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+                                <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$ 35.999</p>
@@ -222,7 +268,7 @@
 
                         <div class="card card_ofertas">
                             <a href="" style="color: unset;">
-                                <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_segundoProducto.JPG" alt="Card image cap">
+                                <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_segundoProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$88.999</p>
@@ -239,7 +285,7 @@
 
                         <div class="card card_ofertas">
                             <a href="" style="color: unset;">
-                                <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_tercerProducto.JPG" alt="Card image cap">
+                                <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_tercerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$78.999</p>
@@ -256,7 +302,7 @@
 
                         <div class="card card_ofertas">
                             <a href="" style="color: unset;">
-                                <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+                                <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$ 52.899</p>
@@ -273,7 +319,7 @@
 
                         <div class="card card_ofertas">
                             <a href="" style="color: unset;">
-                                <img class="card-img-top card_imagen" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap">
+                                <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
                                     <p class="card_precioAnterior card_textoHidden">$ 73.899</p>
@@ -477,9 +523,9 @@
                                 <div class="card_mejoresTiendas_bajoPortada">
                                     <p class="fontPoppins textoGris textoMedianoGrande">LG</p>
                                     <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/LG/primerProducto_lg.jpg" alt="Anteojos Cinema 3D">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/LG/segundoProducto_lg.jpg" alt="Celular LG K22">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/LG/tercerProducto_lg.jpg" alt="Heladera inteligente">
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/primerProducto_lg.jpg" alt="Anteojos Cinema 3D"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/segundoProducto_lg.jpg" alt="Celular LG K22"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/tercerProducto_lg.jpg" alt="Heladera inteligente"></div>
                                     </div>
                                     <div class="card_mejoresTiendas_logoFlotante">
                                         <img src="img/index/mejores_tiendas/LG/logo-lg.svg" alt="">
@@ -498,9 +544,9 @@
                                 <div class="card_mejoresTiendas_bajoPortada">
                                     <p class="fontPoppins textoGris textoMedianoGrande">Samsung</p>
                                     <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Samsung/primerProducto_samsung.jpg" alt="Celular Samsung">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Samsung/segundoProducto_samsung.jpg" alt="Heladera inteligente">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Samsung/tercerProducto_samsung.jpg" alt="Lavarropas">
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/primerProducto_samsung.jpg" alt="Celular Samsung"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/segundoProducto_samsung.jpg" alt="Heladera inteligente"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/tercerProducto_samsung.jpg" alt="Lavarropas"></div>
                                     </div>
                                     <div class="card_mejoresTiendas_logoFlotante">
                                         <img src="img/index/mejores_tiendas/Samsung/logo-samsung.svg" alt="">
@@ -518,9 +564,9 @@
                                 <div class="card_mejoresTiendas_bajoPortada">
                                     <p class="fontPoppins textoGris textoMedianoGrande">HP Tienda Oficial</p>
                                     <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/HP/primerProducto_HP.jpg" alt="Notebook">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/HP/segundoProducto_HP.jpg" alt="Notebook">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/HP/tercerProducto_HP.jpg" alt="Impresora con scáner">
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/primerProducto_HP.jpg" alt="Notebook"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/segundoProducto_HP.jpg" alt="Notebook"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/tercerProducto_HP.jpg" alt="Impresora con scáner"></div>
                                     </div>
                                     <div class="card_mejoresTiendas_logoFlotante">
                                         <img src="img/index/mejores_tiendas/HP/logo-hp.png" alt="">
@@ -539,9 +585,9 @@
                                 <div class="card_mejoresTiendas_bajoPortada">
                                     <p class="fontPoppins textoGris textoMedianoGrande">Frávega</p>
                                     <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Fravega/primerProducto_fravega.jpg" alt="Afeitadora eléctrica con tres cabezas">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Fravega/segundoProducto_fravega.jpg" alt="Sandwichera smart life">
-                                        <img class="card_mejoresTiendas_productos" src="img/index/mejores_tiendas/Fravega/tercerProducto_fravega.jpg" alt="Microondas">
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/primerProducto_fravega.jpg" alt="Afeitadora eléctrica con tres cabezas"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/segundoProducto_fravega.jpg" alt="Sandwichera smart life"></div>
+                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/tercerProducto_fravega.jpg" alt="Microondas"></div>
                                     </div>
                                     <div class="card_mejoresTiendas_logoFlotante">
                                         <img src="img/index/mejores_tiendas/Fravega/logo-fravega.png" alt="">
@@ -614,7 +660,7 @@
                             </div>
                             <div class="flexColumn_categoriasPopulares">
                                 <div class="categoria">
-                                    <i class="fas fa-desktop"></i>
+                                    <i class="fas fa-blender"></i>
                                     <p>Electrodomésticos y Aires Ac.</p>
                                 </div>
                                 <div class="categoria">
@@ -638,37 +684,37 @@
                                     <p>Inmuebles</p>
                                 </div>
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-car-side"></i>
                                     <p>Accesorios para Vehículos</p>
                                 </div>
                             </div>
                             <div class="flexColumn_categoriasPopulares">
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-spray-can"></i>
                                     <p>Belleza y Cuidado Personal</p>
                                 </div>
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-gamepad"></i>
                                     <p>Consolas y Videojuegos</p>
                                 </div>
                             </div>
                             <div class="flexColumn_categoriasPopulares">
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-puzzle-piece"></i>
                                     <p>Juegos y Juguetes</p>
                                 </div>
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-hamburger"></i>
                                     <p>Alimentos y Bebidas</p>
                                 </div>
                             </div>
                             <div class="flexColumn_categoriasPopulares">
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-ticket-alt"></i>
                                     <p>Entradas para Eventos</p>
                                 </div>
                                 <div class="categoria">
-                                    <i class="fas fa-car"></i>
+                                    <i class="fas fa-tools"></i>
                                     <p>Herramientas</p>
                                 </div>
                             </div>
@@ -755,7 +801,7 @@
                 <!--MÁS INFORMACIÓN-->
                 <div id="ctn_masInformacion">
                     <div id="ctn_masInformacion_btn" class="hiddenUntil1024px">
-                        <button onclick="despliegueInformacion()" id="masInformacion_btn" class="textoMasChico textoGris seems_clickeable">Más información<i class="fas fa-chevron-up" id="icon_masInformacion"></i></button>
+                        <button onclick="despliegueInformacion()" id="masInformacion_btn" class="textoMasChico textoGris seems_clickeable" style="background-color: transparent;">Más información<i class="fas fa-chevron-up" id="icon_masInformacion"></i></button>
                     </div>
 
                     <div id="links_masInformacion">
