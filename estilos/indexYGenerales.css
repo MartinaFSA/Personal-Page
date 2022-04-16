@@ -155,14 +155,13 @@ body::-webkit-scrollbar {
   #ctn__navBar .navBar__link {
     color: var(--main-text-color);
     font-family: 'General Sans', sans-serif;
-    font-weight: lighter;
+    font-weight:300;
     line-height: calc(1rem+ 1vw);
     width: 30%;
     display: block;
     align-self: center; }
   #ctn__navBar .navBar__link:hover {
-    text-decoration: line-through;
-    text-decoration-thickness: from-font; }
+    font-weight:normal;}
   #coderMode {
     background-color: transparent;
     border-color: transparent;
@@ -501,7 +500,7 @@ footer {
     font-weight: 500;
     padding: 2% 0% 0%;
     display: block; }
-  footer #footer__contacto input {
+  footer #footer__contacto input:not(last-of-type){
     background-color: var(--form-bg);
     border: none;
     border-radius: 4px;
@@ -518,15 +517,16 @@ footer {
     opacity: 100%;
     color: var(--inputPlaceholder); }
   footer #footer__contacto input[type=submit] {
-    background-color: transparent !important;
+    background-color: transparent;
     border-radius: 4px;
-    color: var(--form-bg) !important;
+    color: var(--form-bg);
     font-weight: bold;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0% 0% 5%; }
   footer #footer__contacto input[type=submit]:hover {
-    border: 2px solid var(--form-bg) !important; }
+    outline: 2px solid var(--form-bg); 
+    outline-offset: -2px;}
   footer #footer__contacto textarea {
     background-color: var(--form-bg);
     border: none;

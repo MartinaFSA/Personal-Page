@@ -20,7 +20,6 @@
         <header>
             <!--INTRODUCCIÓN A LA PÁGINa-->
             <section id="pageIntroPortfolio">
-                <div id="fondo_pageIntroPortfolio"></div>
                 <div id="pageIntro__ctn--textPortfolio">
                     <p class="textoTitulo">Portfolio</p>
                 </div>
@@ -30,8 +29,6 @@
             <section id="ctn__navBarPortfolio">
                 <nav>
                     <a href="index" target="_blank" id="navBar__mainPortfolio" style="font-size: 1.5rem" itemprop="url">MartinaFSA</a>
-                    <a href="#webs" id="navBar__linkWebs" class="navBar__linkPortfolio textoMediano">WEBS</a>
-                    <!--<a href="#diseño" class="navBar__linkPortfolio textoMediano" id="navBar__linkDiseño">DISEÑO</a>-->
                 </nav>
             </section>
         </header>

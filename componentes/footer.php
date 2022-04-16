@@ -54,7 +54,9 @@
                     <div class="social">
                         <a href="https://github.com/MartinaFSA"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-github" style="font-size: 4vh; margin-top: 0.5vw; margin-top: 1vh;"> </i> </a>
                         <a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"  itemprop="url" target="_blank" class="footer__social--link"> <i class="fab fa-linkedin-in" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
-                        <a href="#" target="_blank" class="footer__social--link" itemprop="url"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
+                        <a href="https://www.instagram.com/mafesa._/" target="_blank" class="footer__social--link" itemprop="url"> <i class="fab fa-instagram" style="font-size: 4vh; margin-top: 1vh;"> </i> </a>
                     </div>
+                    <a  href="portfolio" target="_blank" itemprop="url" class="texto__footer textoMediano textoFooter">Ir al portfolio</a>
                 </div>
+                
             </div>

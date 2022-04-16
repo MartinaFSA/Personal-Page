@@ -25,29 +25,10 @@ body {
   right: 3%;
   top: 3%; }
 
-.navBar__linkPortfolio {
-  color: var(--negro-a-verde);
-  font-family: 'General Sans', sans-serif;
-  font-weight: bold; }
-
-.navBar__linkPortfolio:hover {
-  text-decoration: line-through;
-  text-decoration-thickness: 10%; }
-
-#navBar__linkDiseño {
-  position: fixed;
-  right: 3%;
-  bottom: 0%; }
-
-#navBar__linkWebs {
-  position: fixed;
-  left: 3%;
-  bottom: 0%; }
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
 /*INTRO A LA PÁGINA*/
 header {
-  height: 70vh;
   width: 100vw;
 }
 #pageIntroPortfolio {
@@ -64,26 +45,13 @@ header {
   text-transform: uppercase;
   letter-spacing: 3px;
   z-index: 8;
-  color: #8FAE94;}
+  color: rgba(80, 77, 76, 1);}
 #pageIntro__ctn--textPortfolio {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 15%;}
-#fondo_pageIntroPortfolio {
-  background: rgba(80, 77, 76, 1);
-  width: 100vw;
-  height: 100vw;
-  margin: 0%;
-
-  position: absolute;
-  top: calc((90 * -100vw)/100);
-  left: 0%;
-
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
+  padding-top: 100px;}
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
 /*SECCION PÁGINAS*/

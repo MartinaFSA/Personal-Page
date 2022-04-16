@@ -40,13 +40,12 @@
                         <li><a href="#herramientasInformaticas" class="barraFlotante__aLi">◉</a></li>
                         <li><a href="#idiomas" class="barraFlotante__aLi">◉</a></li>
                         <li> <a href="#formacionAcademica" class="barraFlotante__aLi">◉</a></li>
-                        <!--<li><a href="#experienciaLaboral" class="barraFlotante__aLi">◉</a></li> -->
                         <li><a href="#finPag" class="barraFlotante__aLi">◉</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!--NAVIGATION BAR-->
+            <!--TOP NAVIGATION BAR-->
             <section id="ctn__navBar">
                 <nav id="navBar">
                     <a href="portfolio" target="_blank" class="navBar__link textoMediano" itemprop="url">PORTFOLIO</a>
@@ -58,11 +57,6 @@
             <!--SOBRE MÍ-->
             <section id="perfil">
                 <p class="sectionTitle textoGrande">PERFIL</p>
-
-                <!--<svg viewBox="0 0 500 500">
-                    <path id="curve" d="M 121 458 c -3 -28 19 -152 152 -159 c 118 5 155 108 151 160"/> 
-                    <text> <textPath xlink:href="#curve">Seguime en mis redes</textPath> </text> 
-                </svg> https://css-tricks.com/moving-text-on-a-curved-path/-->
                 
                 <section class="perfil__elementos">
                     
@@ -99,9 +93,6 @@
                         <button> <li><a href="https://www.instagram.com/martinafsa/?utm_medium=copy_link" target="_blank" class="perfil__misRedes--button textoChico">Instagram</a> </li> </button>
                                             
                         <button> <li> <a href="img/MartinaFernándezSuárezAnzorenaCV.pdf" class="perfil__misRedes--button textoChico" download="MartinaFernándezSuárezAnzorena_CV">CV en PDF</a> </li> </button>
-                        <!--<div class="tooltip">
-                            <span class="tooltipText">Click para descargar</span>
-                        </div>-->
 
                     </ul>
                 </section>
@@ -135,19 +126,7 @@
                             </a>
                         </div>
                     </div>
-<!--
-                    <div class="cajasHabilidades__caja col-sm-6 col-md-3 col-lg-3">
-                        <a href="#formacionAcademica">
-                            <i class="fas fa-briefcase iconsSize"></i>
-                            <p class="caja__title textoMediano">Experiencia Laboral</p>
-                        </a>
-                        <div class="flechaCaja">
-                            <a href="#formacionAcademica" alt="Apretá para ir a la sección">
-                                <i class="fas fa-angle-down" style="font-size: 3vh; padding-top: 1%;"></i>
-                            </a>
-                        </div>
-                    </div>
--->
+
                     <div class="cajasHabilidades__caja col-sm-6 col-md-3 col-lg-3">
                         <a href="#idiomas">
                             <i class="fas fa-comment-dots iconsSize"></i>
@@ -187,10 +166,6 @@
                                 <p class="cajitaInfo__item textoChico">Programa "Codo a Codo", Ministerio de educación GCBA</p>
                                     <p class="cajitaInfo__subitem textoChico textoGrisVerde" itemprop="knowsAbout">-HTML, CSS, JS, GIT, SQL y PHP</p>
 
-                        <!--<p class="cajitaInfo__title">Diseño</p>
-                            <p class="cajitaInfo__item">XXXXXXXXXXX</p>
-                                <p class="cajitaInfo__subitem">XXXXXXXXXXX</p>-->
-
                         <p class="cajitaInfo__title textoMediano">Otros</p>
                             <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> 2018</p>
                                 <p class="cajitaInfo__item textoChico">Programa Digital Junior, Universidad Tecnológica Nacional</p>
@@ -214,7 +189,7 @@
                 </div>
 
                 <article class="columnaFlex7 cajitaInfo">
-                    <p class="cajitaInfo__fechas textoChico" style="margin-top: 7vh;"><span class="cajitaInfo__fechas--linea">|</span> 2019</p><!--NIVEL DE CONOCIMIENTO EN GRÁFICOS de torta: Oralidad, Escritura, comprensión-->  
+                    <p class="cajitaInfo__fechas textoChico" style="margin-top: 7vh;"><span class="cajitaInfo__fechas--linea">|</span> 2019</p>  
                         
                     <p class="cajitaInfo__item textoChico" style="font-weight: 500;"> Certificados en Lenguas Extranjeras - GCBA</p>      
                         <p class="cajitaInfo__item textoChico" style="margin-left: 1vw;">Certificado de aprobación del Ciclo de Idiomas Extendido (CIE)</p>
@@ -263,39 +238,6 @@
                     </article>
             </section>
 
-            <!--Ecperiencia Laboral-->
-            <!--
-            <section id="experienciaLaboral" class="fade-in filaFlex">
-
-                <div class="portadaHabilidades columnaFlex5">
-                    <div class="portadaHabilidades__ctn--interiorBox">
-                        <div class="portadaHabilidades--interiorBox">
-                            <div class="rotar">
-                                <div class="centeringThis">
-                                    <p class="sectionTitle textoGrande">Experiencia<br>Laboral</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <article class="columnaFlex7 cajitaInfo">
-                    <p class="cajitaInfo__title spacingElements textoMediano">XXXXXXXXXXXX</p>
-                        <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> XXXX</p>
-                            <p class="cajitaInfo__item textoChico">XXXXXXXXXXX</p>
-                                <p class="cajitaInfo__subitem textoChico">XXXXXXXXXXX</p> 
-                    
-                    <p class="cajitaInfo__title textoMediano"></p>
-                        <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> XXXX</p>
-                            <p class="cajitaInfo__item textoChico">XXXXXXXXXXX</p>
-                                <p class="cajitaInfo__subitem textoChico">XXXXXXXXXXX</p>
-
-                    <p class="cajitaInfo__title textoMediano"></p>
-                        <p class="cajitaInfo__fechas textoChico"><span class="cajitaInfo__fechas--linea">|</span> XXXX</p>
-                            <p class="cajitaInfo__item textoChico">XXXXXXXXXXX</p>
-                                <p class="cajitaInfo__subitem textoChico">XXXXXXXXXXX</p> 
-                </article>
-            </section>
--->
             <!--Fin de página-->
             <section id="finPag">
 
@@ -309,8 +251,6 @@
                     <div id="circulo__capa2"></div>
                     <div id="circulo__capa3"></div>
                     <div id="circulo__capa4"></div> 
-                    
-                    <!--PONER UNA COSITA DANDO VUELTAS ADENTRO DEL CÍRCLO que lleve a ALGUNA COSITA DIVERTIDA-->
                 </div>               
             </section>
         </main>
