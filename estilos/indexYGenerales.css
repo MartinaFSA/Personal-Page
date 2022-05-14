@@ -210,9 +210,9 @@ body::-webkit-scrollbar {
 
 @keyframes hightlighting {
   from {
-    background-color: none; }
+    text-decoration: none; }
   to {
-    background-color: var(--toques-amarillos); } }
+    text-decoration: underline var(--toques-amarillos); } }
 #perfil {
   font-family: 'General Sans', sans-serif;
   color: var(--textos-parrafos);

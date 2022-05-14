@@ -63,28 +63,28 @@
                         <p class="textoChico">Podés acceder al código de la página <a href="https://github.com/MartinaFSA/Recetario-PHP" itemprop="url" target="_blank">en GitHub</a></p>
                     </div>
                 </article>
-
+                        
                 <article class="filaFlex fade-in">
-                
+                    
                     <div class="columnaFlex9 presentacionPagina">
                         <div class="fondo__PresentacionPagina"></div>
-
+        
                         <div class="imagen__PresentacionPagina" >
-                            <img src="img/paginas/portfolio_page1_preview.JPG" alt="" class="previews">
+                            <img src="img/paginas/portfolio_page1_preview.png" alt="" class="previews">
                         </div>
-
+        
                         <div class="clickMe4Modal">
                             <div class="clickMe4Modal__content">
                                 <button class="clickMe4Modal__content--button textoMediano" id="modalDePagina1--abrir">Ver más</button>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="columnaFlex3 textoSobreLaPagina">
-                        <p class="sectionSubtitle textoMediano">Actividades en CABA (en proceso)</p>
-                        <p class="descripcionProyecto textoChico">Esta página recopilará cursos y actividades gratuitos que se puedan realizar en CABA. Tendrá filtros para buscar por día, mes o lugar donde se llevará a cabo y una barra de búsqueda.</p>
-                        <p class="textoChico"><b>Estimación de tecnologías a utilizar: </b> HTML, CSS, JS, PHP.</p>
-                        <p class="textoChico">Podés acceder al prototipo en <a href="https://www.figma.com/file/BOJGILRVeEWAvGmIsq8CUC/CABA?node-id=0%3A1"  itemprop="url" target="_blank">este link </a>de Figma.</p>
+                        <p class="sectionSubtitle textoMediano">Avatar Generator</p>
+                        <p class="descripcionProyecto textoChico">Esta aplicación web es un generador de avatares personalizados. Los usuarios pueden seleccionar el color de piel, ojos y labios del personaje, su peinado y el fondo o seleccionar rasgos al azar. Los personajes pueden ser descargados en formato PNG con un solo click. Mira la demo <a href="proyectos/Avatar_Generator/demoAvatar.php">acá</a>.</p>
+                        <p class="textoChico"><b>Tecnologías utilizadas: </b> HTML, CSS, JS y React.</p>
+                        <p class="textoChico">Podés acceder al repositorio de este proyecto en <a href="https://github.com/MartinaFSA/Avatar_Generator"  itemprop="url" target="_blank">este link </a>de Github.</p>
                     </div>
                 </article>
 
@@ -140,19 +140,18 @@
             <article class="modal" id="modalDePagina1">
                 <div class="modal__content">
                     <div class="modal__header">
-                        <p class="modalTitle">Actividades en CABA</p>
+                        <p class="modalTitle">Avatar Generator</p>
                         <button class="close-modal" id="close-modal1"> ✕ </button>
                     </div>
-
+    
                     <section class="modal__body"> 
-
+    
                         <div class="modal__body-columna1">
                             <img src="img/paginas/primeraPagina__completa.PNG" alt="Captura completa de la página" class="capturaPaginaEntera">
                         </div>
-
+    
                         <div class="modal__body-columna2">
-                            <!--<img src="img/paginas/primeraPagina__destacable1.JPG" alt="" class="destacable1">
-                            <img src="img/paginas/primeraPagina__destacable2.JPG" alt="" class="destacable2"> -->
+                            <img src="img/paginas/primeraPagina__destacable1.png" alt="" class="destacable1">
                         </div>
                     </section>
                 </div>
@@ -190,11 +189,6 @@
 
                         <div class="modal__body-columna1">
                             <img src="img/paginas/terceraPagina__completa.PNG" alt="Captura completa de la página" class="capturaPaginaEntera">
-                        </div>
-
-                        <div class="modal__body-columna2">
-                            <!--<img src="" alt="" class="destacable1">
-                            <img src="" alt="" class="destacable2"> -->
                         </div>
                     </section>
                 </div>

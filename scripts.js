@@ -102,3 +102,5 @@ activateCoderMode.onclick = function cambiosCoderMode() {
         location.reload();
     }
 };
+
+document.querySelector('demo').playbackRate = 1.50;
