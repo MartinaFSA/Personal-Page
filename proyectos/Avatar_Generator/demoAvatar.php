@@ -52,6 +52,7 @@
                     <article id="about">
                         <p class="soloSeVeEnPantallasChicas textoGrande textoMainColor">Avatar Generator</p>
                         <p class="textoMediano textoMainColor">Esta aplicación web es un generador de avatares personalizados. Los usuarios pueden seleccionar el color de piel, ojos y labios del personaje, su peinado y el fondo o seleccionar rasgos al azar. Los personajes pueden ser descargados gracias a la integración de html2canvas. El proyecto fue realizado con HTML, CSS, JavaScript y React.</p>
+                        <p class="textoMediano textoMainColor">Hacé tu propio avatar <a href="https://martinafsa.github.io/Avatar_Generator/"  itemprop="url" target="_blank">apretando acá</a>.</p>
                         <p class="textoMediano textoMainColor">Si querés ver el código de la página entrá al <a href="https://github.com/MartinaFSA/Avatar_Generator">repositorio en GitHub</a>.</p>
                     </article>
                     <article id="index">
