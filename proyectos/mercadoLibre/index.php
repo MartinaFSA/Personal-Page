@@ -21,6 +21,9 @@
    
         <script src="https://kit.fontawesome.com/9170870617.js" crossorigin="anonymous"></script>
         
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 	</head>
  
 	<body>
@@ -237,33 +240,30 @@
                 </section>
 
                 <!--Beneficios de Mercado Puntos-->
-                <section class="seccionProductos" id="ctn_beneficiosCards_flecha">
+                <section class="seccionProductos">
                     <h2 class="encabezado fontLato">Beneficios de Mercado Puntos</h2> 
                     <a href=""><p class="link_encabezado textoMediano">Ver todos los beneficios</p></a>
-
-                    <div class="cardSlider">
-                        <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_disney+.JPG" alt="Hasta 30% OFF en Disney+">
+                    
+                    <div class="swiper beneficiosSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide beneficios_card">
+                                <img src="img/index/beneficios/beneficio_disney+.JPG" alt="Hasta 30% OFF en Disney+">
+                            </div>
+                            <div class="swiper-slide beneficios_card">
+                                <img src="img/index/beneficios/beneficio_star+.JPG" alt="Beneficio en Star+ con tu suscripción al nivel 6">
+                            </div>
+                            <div class="swiper-slide beneficios_card">
+                                <img src="img/index/beneficios/beneficio_HBOMax.JPG" alt="Hasta 50% OFF y 7 días gratis en HBO Max+">
+                            </div>
+                            <div class="swiper-slide beneficios_card">
+                                <img src="img/index/beneficios/beneficio_paramount.JPG" alt="Hasta 40% OFF y 7 días gratis en Paramount+">
+                            </div>
                         </div>
-
-                        <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_star+.JPG" alt="Beneficio en Star+ con tu suscripción al nivel 6">
-                        </div>
-
-                        <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_HBOMax.JPG" alt="Hasta 50% OFF y 7 días gratis en HBO Max+">
-                        </div>
-
-                        <div id="beneficios_card-1" class="beneficios_card">
-                            <img src="img/index/beneficios/beneficio_paramount.JPG" alt="Hasta 40% OFF y 7 días gratis en Paramount+">
-                        </div>
-                        
-                        <div id="flecha_beneficios" class="flecha_cards">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
+                        <div class="swiper-button-next flecha_cards"></div>
+                        <div class="swiper-button-prev flecha_cards"></div>
                     </div>
                 </section>
-                
+
                 <!--PUBLICIDAD-->
                 <section class="seccionProductos" id="espacioPublicitario">
                     
@@ -777,6 +777,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".beneficiosSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                breakpoints: {
+                    // when window width is >= 480px
+                    630: {
+                        slidesPerView: 2
+                    },
+                    900: {
+                    slidesPerView: 3},
+                },
+                loopFillGroupWithBlank: true,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
     </body>
 </html>
 

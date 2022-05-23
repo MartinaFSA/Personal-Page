@@ -26,24 +26,24 @@
                     </div>
                 </div>
                 <ul class="textoChico">
-                    <li> <a href="">Inicio</a> </li>
-                    <li> <a href="" >Ofertas</a> </li>
-                    <li> <a href="" >Historial</a> </li>
-                    <li> <a href="" >Ayuda</a> </li>    
+                    <li> <a href=""><img src="img/generales/icons/home.svg" alt="" class="icon_hamburguerMenu">Inicio</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/tag.svg" alt="" class="icon_hamburguerMenu">Ofertas</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/zap.svg" alt="" class="icon_hamburguerMenu">Historial</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/user.svg" alt="" class="icon_hamburguerMenu">Ayuda</a> </li>    
                 </ul>
                 <ul class="textoChico">
-                    <li> <a href="" >Supermercado</a> </li>
-                    <li> <a href="" >Moda</a> </li>
-                    <li> <a href="" >Más vendidos</a> </li>
-                    <li> <a href="" >Tiendas oficiales</a> </li>
-                    <li> <a href="">Categorías</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/heart.svg" alt="" class="icon_hamburguerMenu">Supermercado</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/umbrella.svg" alt="" class="icon_hamburguerMenu">Moda</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/star.svg" alt="" class="icon_hamburguerMenu">Más vendidos</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/target.svg" alt="" class="icon_hamburguerMenu">Tiendas oficiales</a> </li>
+                    <li> <a href=""><img src="img/generales/icons/list.svg" alt="" class="icon_hamburguerMenu">Categorías</a> </li>
                 </ul>
                 <ul class="textoChico">
-                    <li> <a href="" >Resumen</a> </li>
-                    <li> <a href="" >Vender</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/package.svg" alt="" class="icon_hamburguerMenu">Resumen</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/gift.svg" alt="" class="icon_hamburguerMenu">Vender</a> </li>
                 </ul>
                 <ul class="textoChico">
-                    <li> <a href="" >¡Comprá y vendé con la app!</a> </li>
+                    <li> <a href="" ><img src="img/generales/icons/dollar-sign.svg" alt="" class="icon_hamburguerMenu">¡Comprá y vendé con la app!</a> </li>
                 </ul>
             </ul>
         </li>
