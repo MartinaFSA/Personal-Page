@@ -136,10 +136,102 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div onclick="masOpcionesPago()">
                             <img src="img/index/mas_icon.svg" alt="Ver más opciones de pago" class="paymentData_img">
                         </div>
                     </div>
+                </section>
+
+                <section class="ctn_overlay textoNormal" id="overlay_opcionesPago">
+                    <article>
+                        <div>
+                            <p class="textoMediano">Medios de pago</p>
+                            <p class="overlay_close" id="overlay_opcionesPago_close" onclick="close_masOpcionesPago()">X</p>
+                        </div>
+                        <div>
+                            <p>Podés pagar tus compras con cualquiera de estos medios. Es rápido y seguro, siempre.</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="img/index/overlay/mercadoCredito.svg" alt="Mercado crédito">
+                            </div>
+                            <div>
+                                <p>¡Compra en cuotas sin tarjeta!</p>
+                                <p>Activa Mercado Crédito, es 100% online y sin costos de mantenimiento.</p>
+                            </div>
+                            <div><button>Activar ahora</button></div>
+                        </div>
+                        <div class="overlay_tarjetas">
+                            <div>
+                                <img src="img/index/tCredito_icon.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="textoMediano overlay_titulo">Tarjetas de crédito en hasta 24 cuotas*</p>
+                                <p class="overlay_subtitulo">Acreditación instantánea.</p>
+                                <div>
+                                    <div><img src="img/index/overlay/visa.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/americanExpress.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/cordobesa.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/cabal.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/tarjetaShopping.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/cencosud.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/dinerClub.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/argencard.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/cmr.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/masterCard.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/naranja.svg" alt=""></div>
+                                </div>
+                                <p>*La cantidad de cuotas puede variar según la tarjeta.</p>
+                                <p>Ver promociones de cuotas sin interés</p>
+                            </div>
+                        </div>
+                        <div class="overlay_tarjetas">
+                            <div>
+                                <img src="img/index/tDebito_icon.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="textoMediano overlay_titulo">Tarjetas de débito</p>
+                                <p class="overlay_subtitulo">Acreditación instantánea.</p>
+                                <div>
+                                    <div><img src="img/index/overlay/maestro.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/masterCardDebito.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/cabalDebito.svg" alt=""></div>
+                                    <div><img src="img/index/overlay/visaDebito.svg" alt=""></div>
+                                </div>
+                                <p>*La cantidad de cuotas puede variar según la tarjeta.</p>
+                                <p>Ver promociones de cuotas sin interés</p>
+                            </div>
+                        </div>
+                        <div class="overlay_tarjetas">
+                            <div>
+                                <img src="img/index/efectivo_icon.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="textoMediano overlay_titulo">Efectivo</p>
+                                <p>Es muy simple: cuando termines tu compra, te daremos las instrucciones para que sepas cómo y dónde pagarla.</p>
+                                <div>
+                                    <div><img src="img/index/overlay/pagoFacil.svg" alt=""><p class="overlay_subtitulo textoMasChico">Acreditación en 1 día hábil.</p></div>
+                                    <div><img src="img/index/overlay/rapiPago.svg" alt=""><p class="overlay_subtitulo textoMasChico">Acreditación instantánea.</p></div>
+                                </div>
+                                <p>*La cantidad de cuotas puede variar según la tarjeta.</p>
+                                <p>Ver promociones de cuotas sin interés</p>
+                            </div>
+                        </div>
+                        <div class="overlay_tarjetas">
+                            <div>
+                                <img src="img/index/tCredito_icon.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="textoMediano overlay_titulo">Dinero en tu cuenta de Mercado Pago</p>
+                                <p>Al finalizar tu compra, pagás con el dinero disponible en tu cuenta. Podés ingresar dinero a Mercado Pago con tu tarjeta de débito, en efectivo o por transferencia bancaria.</p>
+                                <p class="overlay_subtitulo">Acreditación instantánea.</p>
+                                <div>
+                                    <div><img src="img/index/overlay/mercado_pago.webp" alt=""></div>
+                                </div>
+                                <a href="">Conocé más</a>
+                            </div>
+                        </div>
+                    </article>
                 </section>
 
                 <!--OFERTAS-->
@@ -430,7 +522,7 @@
                 <section class="textoNormal beneficiosMercadoLibre">
                     <div class="beneficioMercadoLibre"> 
                         <div>
-                            <img src="img/generales/footer_elegiComoPagar.png" alt="">
+                            <img src="img/generales/footer_elegiComoPagar.svg" alt="">
                         </div>
                         <div>
                             <p class="textoMediano">Elegí cómo pagar</p>
@@ -443,7 +535,7 @@
 
                     <div class="beneficioMercadoLibre"> 
                         <div>
-                            <img src="img/generales/footer_envioGratis.png" alt="">
+                            <img src="img/generales/footer_envioGratis.svg" alt="">
                         </div>
                         <div>
                             <p class="textoMediano">Envío gratis desde $ 3.500</p>
@@ -456,7 +548,7 @@
 
                     <div class="beneficioMercadoLibre"> 
                         <div>
-                            <img src="img/generales/footer_seguridad.png" alt="">
+                            <img src="img/generales/footer_seguridad.svg" alt="">
                         </div>
                         <div>
                             <p class="textoMediano">Seguridad, de principio a fin</p>
@@ -483,7 +575,7 @@
                 <!--USUARIOS FINANCIEROS-->
                 <section id="ctn_usuariosFinancieros">
                     <div id="escudoUsuariosFinancieros">
-                        <img src="img/generales/footer_escudo.JPG" alt="Escudo de Data Fiscal">
+                        <img src="img/generales/footer_escudo.png" alt="Escudo de Data Fiscal">
                     </div>
 
                     <div id="usuariosFinancieros">

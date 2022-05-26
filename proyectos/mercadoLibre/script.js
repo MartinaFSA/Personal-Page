@@ -157,3 +157,19 @@ function despliegueInformacion() {
         document.getElementById("icon_masInformacion").style.paddingRight = "0px";
     }
 };
+
+/* Overlay */
+let overlay_opcionesPago = document.getElementById('overlay_opcionesPago');
+
+function masOpcionesPago() {
+    overlay_opcionesPago.style.display = 'flex';
+    window.addEventListener('click', clickOutsideModal);
+} 
+function close_masOpcionesPago() {
+    overlay_opcionesPago.style.display = 'none';
+    
+} function clickOutsideModal(evento){
+    if(evento.target == overlay_opcionesPago){
+        overlay_opcionesPago.style.display = "none";
+    }
+}

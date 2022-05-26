@@ -4,7 +4,7 @@
     <!--Primera fila del navigation bar-->
     <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
         <li class="col-2"><a href="index.php"><img src="img/generales/LogoReducido.svg" alt="Logo de mercado libre"></a></li>
-        <li id="ctn_input_search" class="col-7 background_border_shadow"><button><i class="fas fa-search"></i></button><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."></li>
+        <li id="ctn_input_search" class="col-7 background_border_shadow"><button><img src="img/generales/icons/search.svg" alt="Realizar búsqueda"></button><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."></li>
         <li class="col-1">
             <div class="menuHamburguesa">
                 <div class="menuHamburguesa_linea"></div>
@@ -62,7 +62,7 @@
     <!--Primera fila del navigation bar-->
     <ul class="ctn_fila ocupaTodoElWidth col-12 flexBetween" id="primeraFila_navBar">
         <li class="col-2"><a href="index.php"><img src="img/generales/logo_navBar.png" alt="Logo de mercado libre"></a></li>
-        <li id="ctn_input_search" class="col-6 background_border_shadow"><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."><button><i class="fas fa-search"></i></button></li>
+        <li id="ctn_input_search" class="col-6 background_border_shadow"><input id="input_search" type="search" name="navBar_barraBusqueda" placeholder="Buscar productos, marcas y más..."><button><img src="img/generales/icons/search.svg" alt="Realizar búsqueda"></button></li>
         <li class="col-4"><a href="sucripcionNivel6.html"><img src="img/generales/suscripcionAlNivel6.JPG" alt="Suscribite al nivel 6 para obtener beneficios exclusivos"></a></li>
     </ul>
 
