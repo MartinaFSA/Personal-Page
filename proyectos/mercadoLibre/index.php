@@ -47,41 +47,41 @@
                     </ol>
 
                     <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/firstSlide.JPG" alt="Suscribite al nivel 6, desde $599 por mes.">
-                                </a>
-                            </div>
+                        <div class="carousel-item active">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/firstSlide.webp" alt="Suscribite al nivel 6, desde $599 por mes.">
+                            </a>
+                        </div>
 
-                            <div class="carousel-item">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/secondSlide.JPG" alt="Mega ofertas de fin de semana. Hasta 12 cuotas sin interés.">
-                                </a>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/secondSlide.JPG" alt="Mega ofertas de fin de semana. Hasta 12 cuotas sin interés.">
+                            </a>
+                        </div>
 
-                            <div class="carousel-item">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/thirdSlide.JPG" alt="Comprá los esenciales para cuidarte con hasta 30% off. Envío gratis a partir de los $3500.">
-                                </a>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/thirdSlide.JPG" alt="Comprá los esenciales para cuidarte con hasta 30% off. Envío gratis a partir de los $3500.">
+                            </a>
+                        </div>
 
-                            <div class="carousel-item">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/fourthSlide.JPG" alt="EcoFriday, hasta 40% off en productos sustentables.">
-                                </a>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/fourthSlide.webp" alt="EcoFriday, hasta 40% off en productos sustentables.">
+                            </a>
+                        </div>
 
-                            <div class="carousel-item">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/fifthSlide.JPG" alt="Hasta 12 cuotas sin interés en Mundo Gamer.">
-                                </a>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/fifthSlide.webp" alt="Hasta 12 cuotas sin interés en Mundo Gamer.">
+                            </a>
+                        </div>
 
-                            <div class="carousel-item">
-                                <a href="">
-                                    <img class="d-block" src="img/index/carrusel/sixthSlide.JPG" alt="Especial motopartes, hasta 25% off y 12 cuotas sin interés.">
-                                </a>
-                            </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block" src="img/index/carrusel/sixthSlide.JPG" alt="Especial motopartes, hasta 25% off y 12 cuotas sin interés.">
+                            </a>
+                        </div>
                     </div>
 
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -105,39 +105,39 @@
                 <section id="ctn_paymentData">
                     <div id="paymentData" class="background_border_shadow flexBetween textoNormal">
                         <div> 
-                            <img src="img/index/tCredito_icon.JPG" alt="" class="paymentData_img">
+                            <img src="img/index/tCredito_icon.svg" alt="" class="paymentData_img">
                             <div class="paymentData_texts">
                                 <p class="paymentData_metodoPago textoMediano">Tarjeta de crédito</p>
-                                <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver promociones bancarias</p></a>
+                                <a href="#"><p class="paymentData_metodoPago_linkInfo textoChico">Ver promociones bancarias</p></a>
                             </div>
                         </div>
                         
                         <div id="paymentData_debito">
-                            <img src="img/index/tDebito_icon.JPG" alt="" class="paymentData_img">
+                            <img src="img/index/tDebito_icon.svg" alt="" class="paymentData_img">
                             <div class="paymentData_texts">
                                 <p class="paymentData_metodoPago textoMediano">Tarjeta de débito</p>
-                                <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
+                                <a href="#"><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
                             </div>
                         </div>
 
                         <div id="paymentData_sinTarjeta"> 
-                            <img src="img/index/cuotasSinTarjeta_icon.JPG" alt="" class="paymentData_img">
+                            <img src="img/index/cuotasSinTarjeta_icon.svg" alt="" class="paymentData_img">
                             <div class="paymentData_texts">
                                 <p class="paymentData_metodoPago textoMediano">Cuotas sin tarjeta</p>
-                                <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Conocé Mercado Crédito</p></a>
+                                <a href="#"><p class="paymentData_metodoPago_linkInfo textoChico">Conocé Mercado Crédito</p></a>
                             </div>
                         </div>
 
                         <div id="paymentData_efectivo"> 
-                            <img src="img/index/efectivo_icon.JPG" alt="" class="paymentData_img">
+                            <img src="img/index/efectivo_icon.svg" alt="" class="paymentData_img">
                             <div class="paymentData_texts">
                                 <p class="paymentData_metodoPago textoMediano">Efectivo</p>
-                                <a href=""><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
+                                <a href="#"><p class="paymentData_metodoPago_linkInfo textoChico">Ver más</p></a>
                             </div>
                         </div>
 
                         <div>
-                            <img src="img/index/mas_icon.JPG" alt="Ver más opciones de pago" class="paymentData_img">
+                            <img src="img/index/mas_icon.svg" alt="Ver más opciones de pago" class="paymentData_img">
                         </div>
                     </div>
                 </section>
@@ -145,12 +145,12 @@
                 <!--OFERTAS-->
                 <section class="seccionProductos" id="seccionOfertas">
                     <h2 class="encabezado fontLato">Ofertas</h2> 
-                    <a href=""><p class="link_encabezado textoMediano">Ver todas</p></a>
+                    <a href="#"><p class="link_encabezado textoMediano">Ver todas</p></a>
 
                     <!--Cards-->
                     <div class=" textoNormal cardSlider" id="ctn_ofertas">
                         <div class="card card_ofertas">
-                            <a href="" style="color: unset;">
+                            <a href="#" style="color: unset;">
                                 <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
@@ -166,7 +166,7 @@
                         </div>
 
                         <div class="card card_ofertas">
-                            <a href="" style="color: unset;">
+                            <a href="#" style="color: unset;">
                                 <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_segundoProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
@@ -183,7 +183,7 @@
                         </div>
 
                         <div class="card card_ofertas">
-                            <a href="" style="color: unset;">
+                            <a href="#" style="color: unset;">
                                 <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_tercerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
@@ -200,7 +200,7 @@
                         </div>
 
                         <div class="card card_ofertas">
-                            <a href="" style="color: unset;">
+                            <a href="#" style="color: unset;">
                                 <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
@@ -217,7 +217,7 @@
                         </div>
 
                         <div class="card card_ofertas">
-                            <a href="" style="color: unset;">
+                            <a href="#" style="color: unset;">
                                 <div class="card_imagen"><img class="card-img-top" src="img/index/ofertas/ofertas_primerProducto.JPG" alt="Card image cap"></div>
 
                                 <div class="card-body">
@@ -242,7 +242,7 @@
                 <!--Beneficios de Mercado Puntos-->
                 <section class="seccionProductos">
                     <h2 class="encabezado fontLato">Beneficios de Mercado Puntos</h2> 
-                    <a href=""><p class="link_encabezado textoMediano">Ver todos los beneficios</p></a>
+                    <a href="#"><p class="link_encabezado textoMediano">Ver todos los beneficios</p></a>
                     
                     <div class="swiper beneficiosSwiper">
                         <div class="swiper-wrapper">
@@ -265,68 +265,9 @@
                 </section>
 
                 <!--PUBLICIDAD-->
-                <section class="seccionProductos" id="espacioPublicitario">
-                    
-                    <?php 
-                    /*Matriz de publicidades*/
-                        $publicidades = [
-                            ["nombre" => "seagate",
-                            "imagen" => "seagate.jpg",
-                            "logo" => "seagate-logo.svg",
-                            "altLogo" => "SeaGate",
-                            "link" => "ola",
-                            "color" => "#998678",
-                            "primerParrafo" => "Espacio para todo",
-                            "segundoParrafo" => "La biblioteca de su vida"
-                            ],
-                        ];
-                        /*
-                            ["nombre" => "legion by lenovo",
-                            "imagen" => "legion.jpg",
-                            "logo" => "legionByLenovo.svg",
-                            "altLogo" => "Lenovo",
-                            "link" => "ola",
-                            "color" => "#020002",
-                            "primerParrafo" => "Hasta 6 cuotas sin interés",
-                            "segundoParrafo" => "Elegante por fuera, salvaje por dentro"
-                            ],
-                            
-                            ["nombre" => "HP",
-                            "imagen" => "HP.jpg",
-                            "logo" => ".svg",
-                            "altLogo" => "H.P",
-                            "link" => "ola",
-                            "color" => "#020002",
-                            "primerParrafo" => "Hasta 9 cuotas sin interés",
-                            "segundoParrafo" => "Descuentos increíbles + envíos gratis*"
-                            ]*/
-
-                        $lengthPublidades = count($publicidades); //largo de la matriz
-                        $numeroRandom = rand(1, $lengthPublidades); //random position de la matriz
-                        $numeroRandom = $numeroRandom - 1; //Le resto un número porque los arrays empiezan en 0
-                        echo '<article  style="background-color:' . $publicidades[$numeroRandom]["color"] . '">
-                            <a href="' . $publicidades[$numeroRandom]["link"] . '">
-                                <div id="espacioPublicitario_imagen">
-                                    <div id="imagenPublicitaria"></div>
-                                    <div id="espacioPublicitario_imagen_logo">
-                                        <img src="img/index/publicidades/logos/' . $publicidades[$numeroRandom]["logo"] . '" alt="' . $publicidades[$numeroRandom]["altLogo"]. '">
-                                    </div>
-                                </div>
-                                <div id="espacioPublicitario_textos">
-                                    <p class="textoBlanco textoMasChico textoMayusculaEspaciado cards_textoLight fontPoppins">' . $publicidades[$numeroRandom]["primerParrafo"] . '</p>
-                                    <p class="textoBlanco textoGrandeCardMayuscula fontPoppins">' . $publicidades[$numeroRandom]["segundoParrafo"] . '</p>
-                                    <p class="fontLato textoBlanco texto textoChico">Ver más <i class="fas fa-chevron-right"></i></p>
-                                </div>
-                            </a>
-                        </article>
-                        
-                        <style>
-                            #imagenPublicitaria {
-                                background-image: url("img/index/publicidades/'.$publicidades[$numeroRandom]["imagen"].'")
-                            }
-                        </style>';
-                    ?> 
-                </section>
+                <?php 
+                    include("components/publicidades.php");
+                ?>
 
                 <!--Descubrí-->
                 <section class="seccionProductos">
@@ -355,139 +296,11 @@
                         </div>
                     </div>
                 </section>
-
                 <!--Las mejores tiendas te esperan-->
-                <section class="seccionProductos">
-                    <h2 class="encabezado fontLato">Las mejores tiendas te esperan</h2> 
-                    <a href=""><p class="link_encabezado textoMediano">Ver tiendas</p></a>
-                            
-                    <div id="ctn_card_mejoresTiendas" class="cardSlider flexBetween">
-                        <?php 
-                        /*Matriz de mejores tiendas
-                            $mejoresTiendas = [
-                                ["nombre" => "LG",
-                                "link" => ""
-                                ],
 
-                                ["nombre" => "Samsung",
-                                "link" => ""
-                                ]
-                            ];
-
-                            $lengthMejoresTiendas = count($mejoresTiendas); //largo de la matriz
-                            $numeroRandom = rand(1, $lengthMejoresTiendas); //random position de la matriz
-                            $numeroRandom = $numeroRandom - 1; //Le resto un número porque los arrays empiezan en 0
-                            echo '<a href="' . $mejoresTiendas[$numeroRandom]["link"] . '">
-                                <div class="card_mejoresTiendas background_border_shadow">
-                                    <div class="card_mejoresTiendas_portada">
-                                        <img src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/portada_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
-                                    </div>
-
-                                    <div class="card_mejoresTiendas_bajoPortada">
-                                        <p class="fontPoppins textoGris textoMedianoGrande">LG</p>
-                                        <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                            <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/primerProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
-                                            <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/segundoProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
-                                            <img class="card_mejoresTiendas_productos" src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/tercerProducto_' . $mejoresTiendas[$numeroRandom]["nombre"] . '.jpg" alt="">
-                                        </div>
-                                        <div class="card_mejoresTiendas_logoFlotante">
-                                            <img src="img/index/mejoresTiendas/' . $mejoresTiendas[$numeroRandom]["nombre"] . '/logo-' . $mejoresTiendas[$numeroRandom]["nombre"] . '.svg" alt="">
-                                        </div>
-                                        <p class="textoGris textoNormal textoChico">Ver tienda</p>
-                                    </div>
-                                </div>
-                            </a>';*/
-                        ?> 
-
-                        <a href="">
-                            <div class="card_mejoresTiendas background_border_shadow">
-                                <div class="card_mejoresTiendas_portada">
-                                </div>
-
-                                <div class="card_mejoresTiendas_bajoPortada">
-                                    <p class="fontPoppins textoGris textoMedianoGrande">LG</p>
-                                    <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/primerProducto_lg.jpg" alt="Anteojos Cinema 3D"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/segundoProducto_lg.jpg" alt="Celular LG K22"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/LG/tercerProducto_lg.jpg" alt="Heladera inteligente"></div>
-                                    </div>
-                                    <div class="card_mejoresTiendas_logoFlotante">
-                                        <img src="img/index/mejores_tiendas/LG/logo-lg.svg" alt="">
-                                    </div>
-                                    <p class="textoGris textoNormal textoChico">Ver tienda</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="">
-                            <div class="card_mejoresTiendas background_border_shadow">
-                                <div class="card_mejoresTiendas_portada">
-                                    <img src="img/index/mejores_tiendas/Samsung/portada_samsung.jpg" alt="">
-                                </div>
-
-                                <div class="card_mejoresTiendas_bajoPortada">
-                                    <p class="fontPoppins textoGris textoMedianoGrande">Samsung</p>
-                                    <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/primerProducto_samsung.jpg" alt="Celular Samsung"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/segundoProducto_samsung.jpg" alt="Heladera inteligente"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Samsung/tercerProducto_samsung.jpg" alt="Lavarropas"></div>
-                                    </div>
-                                    <div class="card_mejoresTiendas_logoFlotante">
-                                        <img src="img/index/mejores_tiendas/Samsung/logo-samsung.svg" alt="">
-                                    </div>
-                                    <p class="textoGris textoNormal textoChico">Ver tienda</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="">
-                            <div class="card_mejoresTiendas background_border_shadow">
-                                <div class="card_mejoresTiendas_portada" style="background-color: #015394">
-                                </div>
-
-                                <div class="card_mejoresTiendas_bajoPortada">
-                                    <p class="fontPoppins textoGris textoMedianoGrande">HP Tienda Oficial</p>
-                                    <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/primerProducto_HP.jpg" alt="Notebook"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/segundoProducto_HP.jpg" alt="Notebook"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/HP/tercerProducto_HP.jpg" alt="Impresora con scáner"></div>
-                                    </div>
-                                    <div class="card_mejoresTiendas_logoFlotante">
-                                        <img src="img/index/mejores_tiendas/HP/logo-hp.png" alt="">
-                                    </div>
-                                    <p class="textoGris textoNormal textoChico">Ver tienda</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="">
-                            <div class="card_mejoresTiendas background_border_shadow">
-                                <div class="card_mejoresTiendas_portada">
-                                    <img src="img/index/mejores_tiendas/Fravega/portada_fravega.jpg" alt="">
-                                </div>
-
-                                <div class="card_mejoresTiendas_bajoPortada">
-                                    <p class="fontPoppins textoGris textoMedianoGrande">Frávega</p>
-                                    <div class="card_mejoresTiendas_ctn_productos flexBetween">
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/primerProducto_fravega.jpg" alt="Afeitadora eléctrica con tres cabezas"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/segundoProducto_fravega.jpg" alt="Sandwichera smart life"></div>
-                                        <div class="card_mejoresTiendas_productos"><img src="img/index/mejores_tiendas/Fravega/tercerProducto_fravega.jpg" alt="Microondas"></div>
-                                    </div>
-                                    <div class="card_mejoresTiendas_logoFlotante">
-                                        <img src="img/index/mejores_tiendas/Fravega/logo-fravega.png" alt="">
-                                    </div>
-                                    <p class="textoGris textoNormal textoChico">Ver tienda</p>
-                                </div>
-                            </div>
-                            
-                            <div id="flecha_mejoresTiendas" class="flecha_cards">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-
-                        <!--PASAR ESTA INFORMACIÓN A MATRIZ PORQUE SON RANDOM, VAN CAMBIANDO: Citroen, rex, lego, -->
-                    </div>
-                </section>
+                <?php
+                    include("components/mejoresTiendas.php");
+                ?>
 
                 <!--Te puede interesar-->
                 <section class="seccionProductos">
@@ -520,9 +333,9 @@
                 <!--Categorías populares-->
                 <section class="seccionProductos" id="ctn_categorias_flecha">
                     <h2 class="encabezado fontLato">Categorías populares</h2>
-                    <article id="ctn_ctn_categorias">
-                        <div id="container-fluid" class="background_border_shadow ctn_categorias row-xs-12 row-sm-6 row-md-4 row-lg-2">
-                            <div class="flexColumn_categoriasPopulares">
+                    <article id="ctn_ctn_categorias" class="swiper categoriasPopularesSwiper">
+                        <div id="container-fluid" class="swiper-wrapper background_border_shadow ctn_categorias row-xs-12 row-sm-6 row-md-4 row-lg-2">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-car"></i>
                                     <p class="textoChico">Autos, Motos y Otros</p>
@@ -532,7 +345,7 @@
                                     <p>Celulares y teléfonos</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-desktop"></i>
                                     <p class="textoChico">Computación</p>
@@ -542,7 +355,7 @@
                                     <p>Electrónica, Audio y Video</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-blender"></i>
                                     <p>Electrodomésticos y Aires Ac.</p>
@@ -552,7 +365,7 @@
                                     <p>Ropa y Accesorios</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-futbol"></i>
                                     <p>Deportes y Fitness</p>
@@ -562,7 +375,7 @@
                                     <p>Hogar, Muebles y Jardín</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-building"></i>
                                     <p>Inmuebles</p>
@@ -572,7 +385,7 @@
                                     <p>Accesorios para Vehículos</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-spray-can"></i>
                                     <p>Belleza y Cuidado Personal</p>
@@ -582,7 +395,7 @@
                                     <p>Consolas y Videojuegos</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-puzzle-piece"></i>
                                     <p>Juegos y Juguetes</p>
@@ -592,7 +405,7 @@
                                     <p>Alimentos y Bebidas</p>
                                 </div>
                             </div>
-                            <div class="flexColumn_categoriasPopulares">
+                            <div class="flexColumn_categoriasPopulares swiper-slide">
                                 <div class="categoria">
                                     <i class="fas fa-ticket-alt"></i>
                                     <p>Entradas para Eventos</p>
@@ -604,9 +417,8 @@
                             </div>
                         </div>
                         
-                        <div id="flecha_mejoresCategorias" class="flecha_cards">
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
+                        <div class="swiper-button-next flecha_cards"></div>
+                        <div class="swiper-button-prev flecha_cards"></div>
                     </article>
                 </section>
             </div>
@@ -623,7 +435,7 @@
                         <div>
                             <p class="textoMediano">Elegí cómo pagar</p>
                             <p class="textoChico textoGris">Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
-                            <a href="">Cómo pagar tus compras</a>
+                            <a href="#">Cómo pagar tus compras</a>
                         </div>
                     </div>   
                         
@@ -636,7 +448,7 @@
                         <div>
                             <p class="textoMediano">Envío gratis desde $ 3.500</p>
                             <p class="textoChico textoGris">Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-                            <a href="">Conocé más sobre este beneficio</a>
+                            <a href="#">Conocé más sobre este beneficio</a>
                         </div>
                     </div>   
                     
@@ -649,7 +461,7 @@
                         <div>
                             <p class="textoMediano">Seguridad, de principio a fin</p>
                             <p class="textoChico textoGris">¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
-                            <a href="">Cómo te protegemos</a>
+                            <a href="#">Cómo te protegemos</a>
                         </div>
                     </div> 
                 </section>
@@ -658,13 +470,13 @@
                 <section class="textoNormal flexBetween" id="ctn_informacionMercadoLibre">
                     <div class="informacionMercadoLibre">
                         <p class="textoGris textoChico">Botón de arrepentimiento</p>
-                        <a href=""> <p class="textoChico">Cancelar una compra</p> </a>
-                        <a href=""> <p class="textoChico">Cancelar una suscripción</p> </a>
+                        <a href="#"> <p class="textoChico">Cancelar una compra</p> </a>
+                        <a href="#"> <p class="textoChico">Cancelar una suscripción</p> </a>
                     </div>
 
                     <div class="informacionMercadoLibre">
                         <p class="textoGris textoChico">Conocé las normas que aplican cuando comprás</p>
-                        <a href=""> <p class="textoChico">Ver contratos de adhesión - Ley N.º 24.240 de Defensa del Consumidor</p> </a>
+                        <a href="#"> <p class="textoChico">Ver contratos de adhesión - Ley N.º 24.240 de Defensa del Consumidor</p> </a>
                     </div>
                 </section>
                 
@@ -675,10 +487,7 @@
                     </div>
 
                     <div id="usuariosFinancieros">
-                            <p>USUARIOS FINANCIEROS</p>
-                            <p>Visitá nuestra web</p>
-                            <p>www.usuariosfinancieros.gob.ar</p>
-                            <img src="img/generales/footer_bancoCentral.JPG" alt="Banco Central">
+                        <img src="img/generales/footer_bancoCentral.svg" alt="Banco Central">
                     </div>
                 </section>
             </div>
@@ -693,60 +502,60 @@
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Acerca de</p>
                                 <ul>
-                                    <li> <a href="">Mercado Libre</a> </li>
-                                    <li> <a href="">Investor relations</a> </li>
-                                    <li> <a href="">Tendencias</a> </li>
-                                    <li> <a href="">Sustentabilidad</a> </li>
+                                    <li> <a href="#">Mercado Libre</a> </li>
+                                    <li> <a href="#">Investor relations</a> </li>
+                                    <li> <a href="#">Tendencias</a> </li>
+                                    <li> <a href="#">Sustentabilidad</a> </li>
                                 </ul>
                             </div>
 
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Otros sitios</p>
                                 <ul>
-                                    <li> <a href="">Developers</a> </li>
-                                    <li> <a href="">Mercado Pago</a> </li>
-                                    <li> <a href="">Mercado Shops</a> </li>
-                                    <li> <a href="">Mercado Envíos</a> </li>
-                                    <li> <a href="">Mercado Ads</a> </li>
-                                    <li> <a href="">Mercado Libre Ideas</a> </li>
+                                    <li> <a href="#">Developers</a> </li>
+                                    <li> <a href="#">Mercado Pago</a> </li>
+                                    <li> <a href="#">Mercado Shops</a> </li>
+                                    <li> <a href="#">Mercado Envíos</a> </li>
+                                    <li> <a href="#">Mercado Ads</a> </li>
+                                    <li> <a href="#">Mercado Libre Ideas</a> </li>
                                 </ul>
                             </div>
 
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Ayuda</p>
                                 <ul>                                   
-                                    <li> <a href="">Comprar</a> </li>
-                                    <li> <a href="">Vender</a> </li>
-                                    <li> <a href="">Resolución de problemas</a> </li>
-                                    <li> <a href="">Centro de seguridad</a> </li>
+                                    <li> <a href="#">Comprar</a> </li>
+                                    <li> <a href="#">Vender</a> </li>
+                                    <li> <a href="#">Resolución de problemas</a> </li>
+                                    <li> <a href="#">Centro de seguridad</a> </li>
                                 </ul>
                             </div>
 
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Redes Sociales</p>
                                 <ul>
-                                    <li> <a href="">Twitter</a> </li>
-                                    <li> <a href="">Facebook</a> </li>
-                                    <li> <a href="">Instagram</a> </li>
-                                    <li> <a href="">YouTube</a> </li>
+                                    <li> <a href="#">Twitter</a> </li>
+                                    <li> <a href="#">Facebook</a> </li>
+                                    <li> <a href="#">Instagram</a> </li>
+                                    <li> <a href="#">YouTube</a> </li>
                                 </ul>
                             </div>
 
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Mi cuenta</p>
                                 <ul>
-                                    <li> <a href="">Ingresá</a> </li>
-                                    <li> <a href="">Vender</a> </li>
+                                    <li> <a href="#">Ingresá</a> </li>
+                                    <li> <a href="#">Vender</a> </li>
                                 </ul>
                             </div>
 
                             <div class="ctn_masInformacion_links textoGris textoChico">
                                 <p class="masInformacion_titulo_links">Mercado Puntos</p>
                                 <ul>
-                                    <li> <a href="">Disney+</a> </li>
-                                    <li> <a href="">Star+</a> </li>
-                                    <li> <a href="">HBO MAX</a> </li>
-                                    <li> <a href="">Paramount+</a> </li>
+                                    <li> <a href="#">Disney+</a> </li>
+                                    <li> <a href="#">Star+</a> </li>
+                                    <li> <a href="#">HBO MAX</a> </li>
+                                    <li> <a href="#">Paramount+</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -757,12 +566,12 @@
                 <!--footer ultima parte-->
                 <section id="ultimaParte_links">
                         <div id="fila_ultimaParte_links" class="hiddenUntil1024px textoMasChico">
-                            <a href="" class="textoGris">Trabajá con nosotros</a>
-                            <a href="" class="textoGris">Términos y condiciones</a>
-                            <a href="" class="textoGris">Cómo cuidamos tu privacidad</a>
-                            <a href="" class="textoGris">Información al usuario financiero</a>
-                            <a href="" class="textoGris">Ayuda</a>
-                            <a href="" class="textoGris">Defensa del Consumidor</a>
+                            <a href="#" class="textoGris">Trabajá con nosotros</a>
+                            <a href="#" class="textoGris">Términos y condiciones</a>
+                            <a href="#" class="textoGris">Cómo cuidamos tu privacidad</a>
+                            <a href="#" class="textoGris">Información al usuario financiero</a>
+                            <a href="#" class="textoGris">Ayuda</a>
+                            <a href="#" class="textoGris">Defensa del Consumidor</a>
                         </div>
                         <div>
                             <p class="textogris textoMasChico">Copyright © 1999-2021 MercadoLibre S.R.L</p>
@@ -783,25 +592,37 @@
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".beneficiosSwiper", {
-                slidesPerView: 1,
+                slidesPerView: "auto",
+                loop: false,
+                loopFillGroupWithBlank: false,
                 spaceBetween: 10,
-                slidesPerGroup: 1,
-                loop: true,
-                breakpoints: {
-                    // when window width is >= 480px
-                    630: {
-                        slidesPerView: 2
-                    },
-                    900: {
-                    slidesPerView: 3},
-                },
-                loopFillGroupWithBlank: true,
                 navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-                },
+                }
             });
+
+            var swiper = new Swiper(".mejoresTiendasSwiper", {
+                slidesPerView: "auto",
+                loop: false,
+                loopFillGroupWithBlank: false,
+                spaceBetween: 10,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                }
+            });
+
+            var swiper = new Swiper(".categoriasPopularesSwiper", {
+                slidesPerView: "auto",
+                loop: false,
+                loopFillGroupWithBlank: false,
+                spaceBetween: 10,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                }
+            });           
         </script>
     </body>
 </html>
-

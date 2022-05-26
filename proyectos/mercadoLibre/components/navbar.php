@@ -56,6 +56,7 @@
         <li><a href=""><i class="fas fa-chevron-right"></i></a></li>
     </ul>
 </nav>
+
 <!--NavBar desktop-->
 <nav class="textoNormal paddingPagina_displayFlex hiddenUntil1024px">
     <!--Primera fila del navigation bar-->
@@ -75,7 +76,46 @@
                     <ul id="categorias" class="textoBlanco">  <!--Despliegue de categorías-->
                         <li> <a href="" class="textoBlanco">Vehículos</a> </li>
                         <li> <a href="" class="textoBlanco">Inmuebles</a> </li>
-                        <li> <a href="" class="textoBlanco">Tecnología</a> </li>
+                        <li onmouseenter="tecnologiaDisplay()" onmouseleave="tecnologiaHidden()"> <a class="textoBlanco">Tecnología<i class="fas fa-chevron-right"></i></a> 
+                            <div class="segundoListado textoNormal"  id="tecnologia">
+                                <p class="textoMediano">Tecnología<p>
+                                <div class="textoChico">
+                                    <ul> 
+                                        <li>Celulares y telefonos</li>
+                                        <li>Celulares y Smartphones</li>
+                                        <li>Accesorios para celulares</li>
+                                    </ul>
+                                    <ul> 
+                                        <li>Cámaras y Accesorios</li>
+                                        <li>Cámaras Digitales</li>
+                                        <li>Accesorios para Cámaras</li>
+                                    </ul>
+                                    <ul> 
+                                        <li>Consolas y Videojuegos</li>
+                                        <li>Videojuegos</li>
+                                        <li>Para PlayStation</li>
+                                    </ul>
+                                </div>
+                                <div class="textoChico">
+                                    <ul> 
+                                        <li>Computación</li>
+                                        <li>Componentes de PC</li>
+                                        <li>Tablets y Accesorios</li>
+                                        <li>PC</li>
+                                    </ul>
+                                    <ul> 
+                                        <li>Electrónica, Audio y Video</li>
+                                        <li>Audio</li>
+                                        <li>Accesorios para Audio y Video</li>
+                                        <li>Componentes Electrónicos</li>
+                                        <li>Drones y Accesorios</li>
+                                    </ul>
+                                    <ul> 
+                                        <li>Televisores</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                         <li> <a href="" class="textoBlanco">Hogar y Muebles</a> </li>
                         <li> <a href="" class="textoBlanco">Electrodomésticos</a> </li>
                         <li> <a href="" class="textoBlanco">Herramientas</a> </li>

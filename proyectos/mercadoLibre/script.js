@@ -10,6 +10,15 @@ function categoriasHidden() {
     categorias_indicador.style.display = "none";
 }
 
+/*NavigationBar tecnología*/
+let tecnologia = document.getElementById("tecnologia");
+function tecnologiaDisplay() {
+    tecnologia.style.display = "block";
+};
+function tecnologiaHidden() {
+    tecnologia.style.display = "none";
+}
+
 //Hamburger menu
 var menuHamburguesa = document.querySelector('.menuHamburguesa');
 var menuHamburguesa_ul = document.querySelector('.menuHamburguesa_ul');
