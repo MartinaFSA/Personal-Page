@@ -75,7 +75,10 @@ body::-webkit-scrollbar {
   --toques-amarillos: #8FAE94;
   --borde-rotar: rgba(143, 174, 148, 0.521);
 }
-
+:-webkit-autofill, :-webkit-autofill:hover, :-webkit-autofill:focus { 
+  -webkit-text-fill-color: var(--form-bg);
+  border:none; 
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*INTRO A LA PÁGINA*/
 #pageIntro {
@@ -477,6 +480,7 @@ footer {
   background-color: #dadada;
   box-shadow: 5px -10px 10px rgba(0, 0, 0, 0.03);
   width: 100%;
+  position: relative;
   margin: 0%;
   z-index: 1; }
   footer #footerSec {
@@ -574,16 +578,15 @@ footer {
 
 #contenedorDeModal {
   width: 100%;
-  position: relative;
+  position: absolute;
   right: 0px;
-  top: 90%;
   display: block;
   z-index: 100; }
-  #contenedorDeModal #modalAviso {
+  #modalAviso {
     display: block;
     position: absolute;
     right: 10px; }
-  #contenedorDeModal .modalPHP {
+   .modalPHP {
     background-color: #353535;
     /* Fallback*/
     background-color: #353535bb;
@@ -597,7 +600,7 @@ footer {
     padding: 8px 0px;
     display: flex;
     justify-content: center; }
-    #contenedorDeModal .modalPHP p {
+    .modalPHP p {
       color: #fafafa;
       text-align: center;
       font: 16px 'Karla', sans-serif; }
